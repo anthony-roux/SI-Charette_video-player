@@ -1,6 +1,5 @@
-/**
-* COLORS
-*/
+//************************* COLORS *************************//
+
 
 // PRIMARY :
 $black: #222222;
@@ -22,18 +21,28 @@ $white: #FFFFFF;
 // $green: #06FB85;
 
 
-// GRADIENTS :
+
+
+
+//************************* GRADIENT *************************//
+
 $gradient: linear-gradient(90deg, #6B75CA 0%, rgba(240, 243, 248, 0) 100%);
 
-/**
-* FONTS
-*/
+
+
+
+
+//************************* FONTS *************************//
+
 $font: 'Sofia Pro',
 sans-serif;
 
-/**
-* BREAKPOINTS
-*/
+
+
+
+
+//************************* BREAKING POINTS *************************//
+
 $tablet-up: 768px;
 $tablet-down: 767px;
 
@@ -64,7 +73,27 @@ $desktop-down: 1199px;
   }
 }
 
-/**
-* GLOBAL
-*/
+
+
+//************************* GLOBAL *************************//
+
 $headerHeight: 40px;
+
+
+
+
+
+//************************* MIXINS *************************//
+
+
+@mixin flexbox($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin format_vw-vh {
+  width: 100vw;
+  height: 100vh;
+}
