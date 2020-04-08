@@ -1,0 +1,30 @@
+{
+  "name": "SI-Charette_video-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthony-roux/SI-Charette_video-player.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthony-roux/SI-Charette_video-player/issues"
+  },
+  "homepage": "https://github.com/anthony-roux/SI-Charette_video-player#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3",
+    "prettier": "1.18.2",
+    "stylelint": "10.1.0",
+    "stylelint-config-prettier": "5.2.0",
+    "stylelint-order": "3.0.0"
+  }
+}
