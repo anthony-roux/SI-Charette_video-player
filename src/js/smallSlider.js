@@ -10,7 +10,7 @@ var slider = tns({
   axis: 'horizontal', // or 'vertical'
   items: 4,
   gutter: 1,
-  edgePadding: 100,
+  edgePadding: 0,
   fixedWidth: false,
   slideBy: 1,
   controls: true,
@@ -20,7 +20,7 @@ var slider = tns({
   navContainer: false,
   navAsThumbnails: false,
   arrowKeys: false,
-  speed: 300,
+  speed: 400,
   autoplay: false,
   autoplayTimeout: 5000,
   autoplayDirection: 'forward',
