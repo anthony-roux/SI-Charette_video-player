@@ -22,9 +22,9 @@
 //   //ici les propriétés génériques des titres de chaque slider, (classe à rajouter en plus, sur la balise en question, le style s'appliquera automatiquement.)
 
 
-//******************** PROPERTIES FOR CONNEXION PAGE *********************//
+//******************** PROPERTIES FOR LANDING PAGE *********************//
 
-.title-connexion {
+.title-landing {
   color: $textYellow;
   font-family: $nunito-bold;
   font-size: rem(32px);
@@ -33,7 +33,15 @@
   text-transform: uppercase;
 }
 
-.paragraph-connexion {
+.subtitle-landing {
+  font-family: $nunito-regular;
+  font-size: rem(24px);
+  line-height: 24px;
+  text-transform: uppercase;
+
+}
+
+.paragraph-landing {
   font-family: $nunito-regular;
   font-size: rem(24px);
   line-height: 1.3;
