@@ -8,13 +8,25 @@
 // appliquer la propriété de cette façon : font-size: rem(14px);
 
 
-
-
-
 * {
   box-sizing: border-box;
 }
 
 img {
   max-width: 100%;
+}
+
+.content-wrapper {
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1206px;
+
+  // @include tablet-up {
+  //   padding: 0 60px;
+  // }
+
+  // @include desktop-up {
+  //   padding: 0;
+  // }
 }
