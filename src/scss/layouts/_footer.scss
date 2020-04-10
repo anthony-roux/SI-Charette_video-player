@@ -1,20 +1,20 @@
 .footer {
-  background-image: $BackgroundColor;
+  display: grid;
+  grid-row: 40vh 30vh 2vh 2vh;
+  grid-template-columns: 30vw 15vw 15vw 15vw 25vw;
   width: 100vw;
   color: $textWhite;
   line-height: 2;
-  display: grid;
-  grid-template-columns: 30vw 15vw 15vw 15vw 25vw;
-  grid-row: 40vh 30vh 2vh 2vh;
+  background-image: $BackgroundColor;
   grid-template-areas: "a b c d e"
-                       "f f f f f"
-                       "g g g g g"
-                       "h h h h h";
+    "f f f f f"
+    "g g g g g"
+    "h h h h h";
 
   &__logo {
-    grid-area: a;
     display: flex;
     flex-direction: column;
+    grid-area: a;
     align-items: center;
     margin-top: 20%;
 
@@ -24,8 +24,8 @@
     grid-area: b;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 16px;
+    align-items: flex-start;
+    margin: 16px 0;
 
     .account__title {
       font-size: rem(24px);
@@ -36,8 +36,8 @@
     grid-area: c;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 16px;
+    align-items: flex-start;
+    margin: 16px 0;
 
     .help__title {
       font-size: rem(24px);
@@ -47,13 +47,13 @@
   &__enterprise {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 16px;
+    align-items: flex-start;
+    margin: 16px 0;
 
     .enterprise__title {
       font-size: rem(24px);
     }
-    
+
   }
 
   &__languages {
@@ -68,9 +68,9 @@
       border: 3px solid $textYellow;
       align-content: center;
       color: $textWhite;
-      
+
     }
-    
+
   }
 
   &__socialMedia {
@@ -79,6 +79,7 @@
     @include flexbox;
 
     .socialMedia__text {
+      margin: 16px 0;
       font-size: rem(32px);
       text-decoration: underline $textWhite;
     }
@@ -93,7 +94,7 @@
 
   &__copyRight {
     grid-area: h;
-    @include flexbox(row,flex-end,flex-end);
+    @include flexbox(row, flex-end, flex-end);
     padding-right: 24px;
   }
 
