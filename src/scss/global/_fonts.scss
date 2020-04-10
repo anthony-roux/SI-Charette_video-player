@@ -81,6 +81,13 @@
   line-height: 20px;
   text-align: left;
   text-transform: uppercase;
+  position: relative;
+  top: 112px;
+
+  @include desktop-Xlarge {
+    top: 92px;
+
+  }
 }
 
 

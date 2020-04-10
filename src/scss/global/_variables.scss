@@ -6,12 +6,10 @@ $white: #ffffff;
 
 // SECONDARY
 $BackgroundColor: linear-gradient(90deg, #000a30 0%, #014a8d 100%);
-$secondaryGradient: linear-gradient(
-  90deg,
+$secondaryGradient: linear-gradient(90deg,
   #012659 0%,
   #b4231f 50%,
-  #f9b32d 100%
-);
+  #f9b32d 100%);
 $DetailsDarkGrey: #434656;
 $DetailsLightGrey: #a7aabc;
 $DetailsBlue: #336ed0;
@@ -25,11 +23,16 @@ $gradient: linear-gradient(90deg, #6b75ca 0%, rgba(240, 243, 248, 0) 100%);
 
 //************************* FONTS *************************//
 
-$manga-regular: 'manga_templeregular', sans-serif;
-$manga-bold: 'manga_templebold', sans-serif;
-$nunito-light: 'Nunito Light', sans-serif;
-$nunito-bold: 'Nunito Bold', sans-serif;
-$nunito-regular: 'Nunito Regular', sans-serif;
+$manga-regular: 'manga_templeregular',
+sans-serif;
+$manga-bold: 'manga_templebold',
+sans-serif;
+$nunito-light: 'Nunito Light',
+sans-serif;
+$nunito-bold: 'Nunito Bold',
+sans-serif;
+$nunito-regular: 'Nunito Regular',
+sans-serif;
 
 //************************* BREAKING POINTS *************************//
 
@@ -38,6 +41,7 @@ $tablet-down: 767px;
 
 $desktop-up: 1200px;
 $desktop-down: 1199px;
+$desktop-Xlarge: 1668px;
 
 @mixin tablet-up {
   @media (min-width: $tablet-up) {
@@ -59,6 +63,12 @@ $desktop-down: 1199px;
 
 @mixin desktop-down {
   @media (max-width: $desktop-down) {
+    @content;
+  }
+}
+
+@mixin desktop-Xlarge {
+  @media (min-width: $desktop-Xlarge) {
     @content;
   }
 }

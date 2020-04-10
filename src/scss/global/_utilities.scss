@@ -15,17 +15,26 @@ img {
   max-width: 100%;
 }
 
+//************** ne pas enlever *************//
+$desktop-Xlarge: 1668px;
+
+@mixin desktop-Xlarge {
+  @media (min-width: $desktop-Xlarge) {
+    @content;
+  }
+}
+
+//************** ne pas enlever *************//
+
+
 .content-wrapper {
   padding: 0;
   margin: 0 auto;
   width: 100%;
   max-width: 1206px;
 
-  // @include tablet-up {
-  //   padding: 0 60px;
-  // }
 
-  // @include desktop-up {
-  //   padding: 0;
-  // }
+  @include desktop-Xlarge {
+    max-width: 1406px;
+  }
 }
