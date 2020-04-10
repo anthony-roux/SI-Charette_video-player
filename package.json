@@ -26,5 +26,8 @@
     "stylelint": "10.1.0",
     "stylelint-config-prettier": "5.2.0",
     "stylelint-order": "3.0.0"
+  },
+  "dependencies": {
+    "tiny-slider": "^2.9.2"
   }
 }
