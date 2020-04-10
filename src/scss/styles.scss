@@ -40,6 +40,15 @@
 
 
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+
 body {
   color: white;
   font-family: 'Nunito Regular';
