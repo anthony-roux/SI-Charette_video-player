@@ -11,10 +11,6 @@
   <li>Laurent Dashwood</li>
 </ul>
 
-1 - git clone
-2 - npm install
-3 - npm run dev
-
 Sur VSC, installer les plugins :
 
 - Prettier (formateur de code à la sauvegarde).
