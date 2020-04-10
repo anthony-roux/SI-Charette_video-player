@@ -1,4 +1,11 @@
 // Version: 2.9.2
+.slider__populary,
+.slider__reprendre {
+  max-height: 350px;
+}
+
+
+
 .hover {
   @include scale-animation;
 }
@@ -12,13 +19,13 @@
   width: auto;
 }
 
-.my-slider {
-  min-height: 350px;
+.smallSlider {
+  min-height: 250px;
 }
 
 .tns-controls {
   position: relative;
-  top: 126px;
+  top: 170px;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -26,9 +33,13 @@
   border: none;
   outline: none;
   z-index: 0;
+
+  @include desktop-Xlarge {
+    top: 165px;
+  }
 }
 
-.tns-controls > button:nth-child(1) {
+.tns-controls>button:nth-child(1) {
   position: relative;
   left: -80px;
   color: $textYellow;
@@ -38,7 +49,7 @@
   outline: none;
 }
 
-.tns-controls > button:nth-child(2) {
+.tns-controls>button:nth-child(2) {
   position: relative;
   right: -80px;
   color: $textYellow;
@@ -48,6 +59,11 @@
   outline: none;
 }
 
+#tns2-ow {
+  line-height: 10em;
+
+}
+
 .tns-outer {
   display: content;
   padding: 0 !important; // remove padding: clientWidth = width + padding (0) = width
@@ -55,8 +71,10 @@
   height: auto;
   background: transparent;
 
+
   .tns-inner {
     margin: 0px -72px 0px 100px;
+    line-height: 26em;
   }
 
   [hidden] {
@@ -74,7 +92,7 @@
   -moz-transition: all 0s;
   transition: all 0s;
 
-  > .tns-item {
+  >.tns-item {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -85,8 +103,9 @@
 .tns-horizontal {
   &.tns-subpixel {
     white-space: nowrap;
+    height: 20em;
 
-    > .tns-item {
+    >.tns-item {
       display: inline-block;
       vertical-align: top;
       white-space: normal;
@@ -100,14 +119,14 @@
       clear: both;
     }
 
-    > .tns-item {
+    >.tns-item {
       float: left;
     }
   }
 
   &.tns-carousel {
     &.tns-no-subpixel {
-      > .tns-item {
+      >.tns-item {
         margin-right: -100%;
       }
     }
@@ -126,7 +145,7 @@
   min-height: 1px; // make sure slider container is visible
 
   // overflow: hidden;
-  > .tns-item {
+  >.tns-item {
     position: absolute;
     left: -100%;
     -webkit-transition: transform 0s, opacity 0s;
@@ -135,12 +154,12 @@
     width: auto;
   }
 
-  > .tns-slide-active {
+  >.tns-slide-active {
     position: relative;
     left: auto !important;
   }
 
-  > .tns-moving {
+  >.tns-moving {
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     transition: all 0.25s;
@@ -200,8 +219,8 @@
 .tns-vpfix {
   white-space: nowrap;
 
-  > div,
-  > li {
+  >div,
+  >li {
     display: inline-block;
   }
 }
@@ -235,7 +254,7 @@ $perpage: 3;
       clear: both;
     }
 
-    > div {
+    >div {
       width: (100% / $count);
       width: -webkit-calc(100% / #{$count});
       width: -moz-calc(100% / #{$count});
