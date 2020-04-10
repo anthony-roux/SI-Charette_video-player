@@ -1,4 +1,13 @@
 /.cache
 /dist
 /node_modules
-/.Ds_Store 
+/.Ds_Store
+/src/scss/dist
+/src/scss/dist/global/dist
+/src/scss/dist/layouts/dist
+/src/scss/dist/pages/dist
+/src/js/dist/
+/src/scss/components/dist/
+/src/scss/layouts/dist/
+/src/scss/global/dist/
+/src/scss/pages/dist/
