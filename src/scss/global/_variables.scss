@@ -4,23 +4,10 @@
 // PRIMARY :
 $black: #222222;
 $white: #FFFFFF;
-// $purple: #6B75CA;
-// $lightPurple: #B6BCF2;
-// $ultraLightPurple: #F0F3F8;
 
 // SECONDARY
-// $brown: #D29B85;
-// $turquoise: #64E0B9;
-// $blue: #95E1EC;
-// $darkBlue: #219AAA;
-// $yellow: #F4C61E;
-// $lightPink: #F3A2A2;
-// $marine: #2C3950;
-// $pink: #E972DD;
-// $orange: #FD8F51;
-// $green: #06FB85;
 $BackgroundColor: linear-gradient(90deg, #000a30 0%, #014a8d 100%);
-$secondaryGradient: linear-gradient(90deg, #012659 0%,#b4231f 50%, #f9b32d 100%);
+$secondaryGradient: linear-gradient(90deg, #012659 0%, #b4231f 50%, #f9b32d 100%);
 $DetailsDarkGrey: #434656;
 $DetailsLightGrey: #A7AABC;
 $DetailsBlue: #336ED0;
@@ -42,7 +29,15 @@ $gradient: linear-gradient(90deg, #6B75CA 0%, rgba(240, 243, 248, 0) 100%);
 
 //************************* FONTS *************************//
 
-$font: 'Sofia Pro',
+$manga-regular: 'manga_templeregular',
+sans-serif;
+$manga-bold: 'manga_templebold',
+sans-serif;
+$nunito-light: 'Nunito Light',
+sans-serif;
+$nunito-bold: 'Nunito Bold',
+sans-serif;
+$nunito-regular: 'Nunito Regular',
 sans-serif;
 
 
