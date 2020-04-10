@@ -1,6 +1,6 @@
 .footer {
   display: grid;
-  grid-row: 40vh 30vh 2vh 2vh;
+  grid-row: 40vh 20vh 2vh 2vh;
   grid-template-columns: 30vw 15vw 15vw 15vw 25vw;
   width: 100vw;
   color: $textWhite;
@@ -10,6 +10,7 @@
     "f f f f f"
     "g g g g g"
     "h h h h h";
+  
 
   &__logo {
     display: flex;
@@ -26,6 +27,8 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 16px 0;
+    font-family: $nunito-light;
+    font-size: rem(18px);
 
     .account__title {
       font-size: rem(24px);
@@ -38,6 +41,8 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 16px 0;
+    font-family: $nunito-light;
+    font-size: rem(18px);
 
     .help__title {
       font-size: rem(24px);
@@ -49,6 +54,8 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 16px 0;
+    font-family: $nunito-light;
+    font-size: rem(18px);
 
     .enterprise__title {
       font-size: rem(24px);
@@ -76,12 +83,23 @@
   &__socialMedia {
     grid-area: f;
 
-    @include flexbox;
+    @include flexbox(column, center, center);
+
 
     .socialMedia__text {
       margin: 16px 0;
       font-size: rem(32px);
       text-decoration: underline $textWhite;
+    }
+
+    .socialMedia__icons {
+      @include flexbox(row, space-between, center);
+  
+
+      .icons__facebook, .icons__insta, .icons__twitter {
+        height: 32px;
+        width: 32px;
+      }
     }
   }
 
@@ -89,6 +107,8 @@
     grid-area: g;
 
     @include flexbox(row, space-around, center);
+    font-family: $nunito-light;
+    font-size: rem(18px);
 
   }
 
@@ -96,6 +116,9 @@
     grid-area: h;
     @include flexbox(row, flex-end, flex-end);
     padding-right: 24px;
+    padding-bottom: 8px;
+    font-family: $nunito-light;
+    font-size: rem(18px);
   }
 
 }
