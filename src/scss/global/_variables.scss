@@ -100,3 +100,14 @@ $headerHeight: 40px;
   width: 100vw;
   height: 100vh;
 }
+
+
+// vitesse/scale peut-être à regler.
+@mixin scale-animation {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}

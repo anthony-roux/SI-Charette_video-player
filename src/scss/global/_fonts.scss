@@ -34,16 +34,13 @@
 }
 
 .subtitle-landing {
-  font-family: $nunito-regular;
   font-size: rem(24px);
   line-height: 24px;
   text-transform: uppercase;
 
 }
 
-
 .paragraph-landing {
-  font-family: $nunito-regular;
   font-size: rem(24px);
   line-height: 1.3;
 }
@@ -60,10 +57,19 @@
 }
 
 .synopsis-hero {
-  font-family: $nunito-regular;
   font-size: rem(18px);
   line-height: 1.3;
 }
+
+.titles-genres-hero {
+  font-family: $nunito-bold;
+  font-size: rem(18px);
+  line-height: 18px;
+}
+
+
+
+
 
 
 //*********************** PROPERTIES FOR SLIDERS ***********************//
@@ -89,13 +95,12 @@
 }
 
 .synopsis-cards-hover {
-  font-family: $nunito-regular;
   font-size: rem(10px);
   line-height: 1.3;
+  text-align: left;
 }
 
 .time-date-hover {
-  font-family: $nunito-regular;
   font-size: rem(10px);
   line-height: 10px;
 }
@@ -106,13 +111,67 @@
   line-height: 20px;
 }
 
+//************** PROPERTIES FOR FICHES/bandeau SERIES/FILM ***************//
 
+.synopsis-bandeau {
+  color: $black;
+  font-size: rem(16px);
+  line-height: 1.3;
+  text-align: left;
+
+}
+
+.subtitle-bandeau {
+  color: $black;
+  font-family: $nunito-bold;
+  font-size: rem(20px);
+  line-height: 1.3;
+  text-align: left;
+}
+
+.details-bandeau {
+  font-family: $nunito-bold;
+  font-size: rem(13px);
+  line-height: 13px;
+  text-align: left;
+}
+
+.details-bandeau--grey {
+  color: $DetailsDarkGrey;
+  font-family: $nunito-bold;
+  font-size: rem(13px);
+  line-height: 13px;
+  text-align: left;
+}
+
+
+//***************** PROPERTIES FOR CARDS SERIE/FILM ******************//
+
+.title-card {
+  font-family: $nunito-bold;
+  font-size: rem(18px);
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.genre-card {
+  font-family: $nunito-bold;
+  font-size: rem(14px);
+  line-height: 14px;
+  text-align: left;
+}
+
+.note-card {
+  font-family: $nunito-bold;
+  font-size: rem(14px);
+  line-height: 14px;
+}
 
 
 //***************** PROPERTIES FOR GENERICS ELEMENTS ******************//
 
 .time-date {
-  font-family: $nunito-regular;
   font-size: rem(11px);
   line-height: 10px;
 }
