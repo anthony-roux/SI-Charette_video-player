@@ -17,3 +17,92 @@
 //   // font-family: $font;
 
 // }
+
+
+//   //ici les propriétés génériques des titres de chaque slider, (classe à rajouter en plus, sur la balise en question, le style s'appliquera automatiquement.)
+
+
+//******************** PROPERTIES FOR CONNEXION PAGE *********************//
+
+.title-connexion {
+  color: $textYellow;
+  font-family: $nunito-bold;
+  font-size: rem(32px);
+  line-height: 32px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.paragraph-connexion {
+  font-family: $nunito-regular;
+  font-size: rem(24px);
+  line-height: 1.3;
+}
+
+
+//******* PROPERTIES FOR HERO + MEDIUM SECTION (2nd serie/film mit en avant) *******//
+.title-hero {
+  font-family: $nunito-bold;
+  font-size: rem(48px);
+  line-height: 48px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.synopsis-hero {
+  font-family: $nunito-regular;
+  font-size: rem(18px);
+  line-height: 1.3;
+}
+
+
+//*********************** PROPERTIES FOR SLIDERS ***********************//
+
+.titles-of-sliders {
+  color: $textYellow;
+  font-family: $nunito-bold;
+  font-size: rem(20px);
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+//*********************** PROPERTIES FOR CARD HOVER ***********************//
+
+.title-cards-hover {
+  font-family: $nunito-bold;
+  font-size: rem(12px);
+  line-height: 12px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.synopsis-cards-hover {
+  font-family: $nunito-regular;
+  font-size: rem(10px);
+  line-height: 1.3;
+}
+
+.time-date-hover {
+  font-family: $nunito-regular;
+  font-size: rem(10px);
+  line-height: 10px;
+}
+
+.play-hover {
+  font-family: $nunito-bold;
+  font-size: rem(20px);
+  line-height: 20px;
+}
+
+
+
+
+//***************** PROPERTIES FOR GENERICS ELEMENTS ******************//
+
+.time-date {
+  font-family: $nunito-regular;
+  font-size: rem(11px);
+  line-height: 10px;
+}
