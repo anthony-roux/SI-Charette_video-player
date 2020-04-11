@@ -1,85 +1,91 @@
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
+
 body {
     box-sizing: border-box;
 }
+
 img {
     max-width: 100%;
 }
+
 .connexion-page {
-   background-image:url("../../images/backgroundConnexionPage.png");
-   background-repeat: no-repeat;
-   background-size: cover;
-   width:100vw;
-   height:100vh;
-   position:relative;
-   display:flex;
-   flex-direction: center;
-   justify-content: center;
-   align-items: center;
-}
-.logoConnexion {
-    position:absolute;
-    top:0;
-    left:0;
-    padding:2rem;
+    background-image: url("/images/backgroundConnexionPage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.inputInfo{
-    max-width: 408px;
-    background-color:rgba(0, 0, 0, 0.6);
-    display:flex;
-    flex-direction: column; 
-    padding: 3rem 2.8rem 3rem 2.8rem;
-    border-radius:10px;    
-    
-    
+.logoConnexion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem;
 }
-.inputInfo input{
-    padding:0.8rem;
+
+.inputInfo {
+    max-width: 408px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2.8rem 3rem 2.8rem;
+    border-radius: 10px;
+
+
+}
+
+.inputInfo input {
+    padding: 0.8rem;
     border-radius: 5px;
-    border-style:none;
+    border-style: none;
     font-size: 0.75rem;
 }
+
 .inputInfo a {
-    text-decoration:none;
-    color:#FFB800;
+    text-decoration: none;
+    color: #FFB800;
 }
-   
+
 .inputInfo__title {
-    font-size:2rem;
+    font-size: 2rem;
     margin-bottom: 1.75rem;
-    color:white;
+    color: white;
     font-weight: bold;
     line-height: 2.063rem;
 }
+
 .inputInfo__password {
     margin-top: 0.938rem;
-    margin-bottom:0.2rem;
+    margin-bottom: 0.2rem;
 }
-.inputInfo__password-forgot  {
-    text-align:right;
+
+.inputInfo__password-forgot {
+    text-align: right;
     font-size: 0.75rem;
     margin-bottom: 1.438rem;
 }
 
 .inputInfo__btn {
-    background-color:#FFB800;
+    background-color: #FFB800;
     font-size: 1.5rem;
-    color:white;
+    color: white;
     line-height: 2.063rem;
     border-radius: 8px;
     border-style: none;
     padding: 8px 90px 8px 90px;
-    margin-bottom:2.4rem;
+    margin-bottom: 2.4rem;
 }
+
 .inputInfo__message {
-    color:white;
+    color: white;
     text-align: center;
     font-size: 16px;
 }
-
-
-
