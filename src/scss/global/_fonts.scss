@@ -101,6 +101,22 @@
   }
 }
 
+.titles-of-sliders-medium {
+  color: $textYellow;
+  font-family: $nunito-bold;
+  font-size: rem(20px);
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  top: 92px;
+
+  @include desktop-Xlarge {
+    top: 60px;
+
+  }
+}
+
 
 //*********************** PROPERTIES FOR CARD HOVER ***********************//
 

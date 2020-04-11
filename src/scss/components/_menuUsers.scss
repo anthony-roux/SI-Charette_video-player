@@ -85,7 +85,11 @@
   display: block;
   z-index: 3;
   position: absolute;
-  top: 83px;
+  top: 72px;
   right: 0;
   // left: 238px;
+
+  @include desktop-Xlarge {
+    top: 83px;
+  }
 }

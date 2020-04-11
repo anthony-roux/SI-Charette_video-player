@@ -1,0 +1,137 @@
+.allSliders {
+  margin-top: -100px;
+}
+
+
+.slider__trends {
+  margin-top: 25px;
+  height: 527px;
+
+  .img-medium {
+    width: auto;
+    height: 400px;
+  }
+
+  .hover {
+    @include scale-animation-medium;
+  }
+
+  .slide .tns-item {
+    width: auto;
+    height: auto;
+    padding-right: 0px;
+  }
+
+
+  .smallSlider {
+    min-height: 250px;
+  }
+
+  .tns-controls {
+    position: relative;
+    top: 241px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    z-index: 0;
+
+    @include desktop-Xlarge {
+      top: 241px;
+    }
+  }
+
+  .tns-controls>button:nth-child(1) {
+    position: relative;
+    left: -80px;
+    color: $textYellow;
+    font-size: 60px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .tns-controls>button:nth-child(2) {
+    position: relative;
+    right: -80px;
+    color: $textYellow;
+    font-size: 60px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  #tns2-ow {
+    line-height: 10em;
+
+  }
+}
+
+
+.slider__discover {
+  margin-top: 25px;
+  height: 527px;
+
+  .img-medium {
+    width: auto;
+    height: 400px;
+  }
+
+  .hover {
+    @include scale-animation-medium;
+  }
+
+  .slide .tns-item {
+    width: auto;
+    height: auto;
+    padding-right: 0px;
+  }
+
+
+  .smallSlider {
+    min-height: 250px;
+  }
+
+  .tns-controls {
+    position: relative;
+    top: 241px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    z-index: 0;
+
+    @include desktop-Xlarge {
+      top: 241px;
+    }
+  }
+
+  .tns-controls>button:nth-child(1) {
+    position: relative;
+    left: -80px;
+    color: $textYellow;
+    font-size: 60px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .tns-controls>button:nth-child(2) {
+    position: relative;
+    right: -80px;
+    color: $textYellow;
+    font-size: 60px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  #tns2-ow {
+    line-height: 10em;
+
+  }
+}
