@@ -1,0 +1,40 @@
+.genre {
+  height: 40vh;
+
+  .genre__button{
+    display: block;
+    height: 28px;
+    width: 96px;
+    color: $textWhite;
+    margin-top: 24px;
+    border: 2px solid $textYellow;
+    background-color: #000a30;
+
+    
+  }
+
+  .genre__list{
+    
+    display: none;
+    background-color: #000a30;
+    line-height: 1.5;
+    
+    ul{
+      padding: 32px;
+      
+    }
+  }
+
+  .is-open {
+    opacity: 0.5;
+  }
+
+  
+
+  .is-open-genreList {
+    @include flexbox(row, flex-start, flex-start);
+    background-color: #000a30;
+    line-height: 1.5;
+    
+  }
+}
