@@ -1,13 +1,27 @@
 /************* Genre *************/
 
-var buttonGenre = document.querySelector(".genre__button");
-var listGenre = document.querySelector(".genre__list");
+// var buttonGenre = document.querySelector(".genre__button");
+// var listGenre = document.querySelector(".genre__list");
 
-console.log(buttonGenre);
-buttonGenre.addEventListener('click', function () {
+// buttonGenre.addEventListener('click', function () {
+//   console.log("coucou");
+//   buttonGenre.classList.toggle("is-open");
+//   listGenre.classList.toggle("is-open-genreList");
+//   // buttonGenre.style.display = "none";
+//   // listGenre.style.display = "flex";
+// });
+
+
+
+
+/************* users menu *************/
+
+let buttonUsers = document.querySelector(".headerSecondPart__profilArrow");
+let menuDown = document.querySelector(".menuUsers");
+console.log(menuDown);
+console.log(buttonUsers);
+buttonUsers.addEventListener('click', function () {
   console.log("coucou");
-  buttonGenre.classList.toggle("is-open");
-  listGenre.classList.toggle("is-open-genreList");
- // buttonGenre.style.display = "none";
- // listGenre.style.display = "flex";
+  buttonUsers.classList.toggle("is-open-down");
+  menuDown.classList.toggle("menu-users-is-open");
 });
