@@ -1,0 +1,91 @@
+.menuUsers {
+  width: 240px;
+  height: auto;
+  border-radius: 5px;
+  display: none;
+  transition: transform 250ms;
+
+
+
+  &__firstPart {
+    @include flexbox(column, space-evenly, center);
+
+  }
+
+  &__profilConnected {
+    padding: 16px;
+    width: 100%;
+    background: #000E36;
+    @include flexbox(row, flex-end, center);
+
+    img {
+      margin-right: 8px;
+      cursor: pointer;
+      @include scale-animation-icon;
+
+    }
+
+    .arrowDown {
+      width: 15px;
+    }
+
+  }
+
+  .menuUsers__fonts {
+    margin: 0 16px;
+    font-family: $manga-bold;
+    font-size: rem(18px);
+    text-transform: uppercase;
+  }
+
+  &__othersProfils {
+    width: 100%;
+    background: #010A2F;
+  }
+
+  &__eachProfils {
+    margin: 16px 16px;
+    @include flexbox(row, flex-start, center);
+    @include scale-animation-icon;
+
+
+    .simpleText {
+      margin: 0 16px;
+      font-family: $nunito-bold;
+    }
+  }
+
+  &__secondPart {
+    width: 100%;
+    background: #000824;
+    border-bottom-left-radius: 5px;
+
+
+    p {
+      margin: 12px 0 12px 16px;
+      cursor: pointer;
+      @include scale-animation-text;
+
+    }
+  }
+
+
+}
+
+.is-open-down {
+  opacity: 0.5;
+  transition: 500ms;
+}
+
+
+.menu-users-is-open {
+  // @include flexbox(column, flex-end, flex-end);
+  // background-color: #000a30;
+  // line-height: 1.5;
+  display: block;
+  z-index: 3;
+  position: absolute;
+  top: 83px;
+  right: 0;
+  // left: 238px;
+}

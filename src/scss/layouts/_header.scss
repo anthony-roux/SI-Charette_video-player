@@ -1,42 +1,60 @@
 .header {
-  height: 10vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 80px;
+  height: 10vh;
   overflow: hidden;
   font-family: $nunito-regular;
-
-
+  background: #000E36;
 
   &__firstPart {
     @include flexbox(row, space-evenly, center);
   }
 
   .headerFirstPart__logo {
-    padding-left: 24px;;
+    padding-left: 24px;
+    @include scale-animation-icon;
+
   }
 
   .headerFirstPart__menu {
     padding-left: 24px;
     @include flexbox;
-    
+
 
     .menu__list {
       @include flexbox(row, space-between, center);
 
       li {
-        padding: 20px;
+        padding: 5px 0;
+        margin: 20px 20px;
+        width: auto;
+        height: 30px;
+
+        &:hover {
+          border-bottom: 0.7px solid $textYellow;
+
+        }
+      }
+
+      .icon-text {
+        @include flexbox(row, center, space-between);
+
+        img {
+          margin-right: 5px;
+        }
       }
     }
   }
 
-  &__secondPart{
+  &__secondPart {
     @include flexbox(row, space-between, center);
-    
-    
-    
 
-    .headerSecondPart{
+
+
+
+    .headerSecondPart {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -45,27 +63,36 @@
         height: 40px;
         width: 40px;
         padding: 0 8px;
+        margin-right: 16px;
+        @include scale-animation-icon;
+
       }
 
       &__iconsNotification {
         height: 40px;
         width: 40px;
         padding: 0 8px;
-      
+        margin-right: 8px;
+        @include scale-animation-icon;
+
+
+
       }
 
       &__profilPicture {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        
-      
+        margin-left: 24px;
+        @include scale-animation-icon;
       }
 
       &__profilArrow {
         height: 32px;
         width: 32px;
         padding: 0 8px;
+        @include scale-animation-icon;
+
       }
     }
 

@@ -1,0 +1,13 @@
+.button {
+  padding: 12px 16px;
+  width: 120px;
+  height: 45px;
+  color: white;
+  font-family: $nunito-bold;
+  font-size: rem(16px);
+  text-transform: uppercase;
+  background: $textYellow;
+  border-radius: 5px;
+  cursor: pointer;
+  @include scale-animation-icon;
+}

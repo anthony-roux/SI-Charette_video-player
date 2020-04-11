@@ -10,6 +10,7 @@ $secondaryGradient: linear-gradient(90deg,
   #012659 0%,
   #b4231f 50%,
   #f9b32d 100%);
+$backgroundBlue: #000a30;
 $DetailsDarkGrey: #434656;
 $DetailsLightGrey: #a7aabc;
 $DetailsBlue: #336ed0;
@@ -98,5 +99,25 @@ $headerHeight: 40px;
   &:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+  }
+}
+
+
+@mixin scale-animation-icon {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+@mixin scale-animation-text {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    color: $textYellow;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
   }
 }

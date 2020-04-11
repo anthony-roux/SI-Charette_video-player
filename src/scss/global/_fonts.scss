@@ -21,6 +21,17 @@
 
 //   //ici les propriétés génériques des titres de chaque slider, (classe à rajouter en plus, sur la balise en question, le style s'appliquera automatiquement.)
 
+//******************** PROPERTIES FOR header *********************//
+
+
+.titles-header {
+  font-family: $nunito-regular;
+  font-size: rem(18px);
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 
 //******************** PROPERTIES FOR LANDING PAGE *********************//
 
