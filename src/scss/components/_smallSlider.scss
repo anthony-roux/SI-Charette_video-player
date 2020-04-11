@@ -1,4 +1,8 @@
 // Version: 2.9.2
+.allSliders {
+  margin-top: -100px;
+}
+
 .slider__populary,
 .slider__reprendre {
   max-height: 350px;
@@ -13,10 +17,12 @@
 .slide .tns-item {
   width: auto;
   height: auto;
+  padding-right: 0px;
 }
 
 .img {
   width: auto;
+  height: 167px;
 }
 
 .smallSlider {
@@ -25,7 +31,7 @@
 
 .tns-controls {
   position: relative;
-  top: 170px;
+  top: 160px;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -35,7 +41,7 @@
   z-index: 0;
 
   @include desktop-Xlarge {
-    top: 165px;
+    top: 162px;
   }
 }
 
