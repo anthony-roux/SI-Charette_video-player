@@ -101,3 +101,23 @@ $headerHeight: 40px;
     transform: scale(1.2);
   }
 }
+
+
+@mixin scale-animation-icon {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+@mixin scale-animation-text {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    color: $textYellow;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+}
