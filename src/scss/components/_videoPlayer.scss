@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.primarySvg {
+  width: 3em;
+  height: 3em;
+}
+
+.secondarySvg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.header {
+  width: 100%;
+  height: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: transform 0.5s linear;
+  transform: translateY(0);
+}
+
+.header-transition {
+  transform: translateY(-3em);
+}
+
+.header__Episode {
+  display: flex;
+  align-items: center;
+}
+
+.header__Episode p {
+  margin-left: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.header__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+}
+
+.mainPlay {
+  position: absolute;
+  top: 37%;
+  left: 47%;
+  display: flex;
+  height: 6em;
+  width: 6em;
+  cursor: pointer;
+}
+
+.videoTimeHover {
+  display: none;
+  position: absolute;
+  top: 52em;
+  left: 0;
+  width: 4em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.isHover {
+  display: block;
+}
+
+.settingBar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: transform 0.5s linear;
+  transform: translateY(0);
+}
+
+.settingBar-transition {
+  transform: translateY(4em);
+}
+
+.settingBar__durationBar {
+  width: 100%;
+  height: 0.2em;
+  background-color: grey;
+  overflow: visible;
+}
+
+.settingBar__progressTime {
+  width: 0%;
+	transform-origin: left;
+  height: 0.2em;
+  background-color: #ffb800;
+  position: relative;
+  overflow: visible;
+}
+
+.durationBar-is-hover {
+  height: 0.4em;
+  cursor: pointer;
+}
+
+.settingBar__indicatorTime {
+  width: 0.8em;
+  height: 0.8em;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  background-color: #ffb800;
+  margin-top: -5px;
+  margin-right: -2px;
+}
+
+.indicator-is-hover {
+  height: 1em;
+  width: 1em;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.controller {
+  width: 100%;
+  height: 4em;
+  align-items: center;
+  padding: 0.5em 1em;
+  position: relative;
+}
+
+.controller__sound {
+  width: 1.5em;
+  display: flex;
+  margin: 1em 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.controller__sound:hover {
+  width: 11em;
+  right: 100%;
+}
+
+.controller__soundSlider {
+  -webkit-appearance: none;     /*nécessaire pour Chrome */
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 0.5em;
+}
+
+/* le slider pour chrome*/
+.controller__soundSlider::-webkit-slider-runnable-track {
+  height: 0.5em;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffb800;
+  overflow: visible;
+}
+
+/* le curseur pour chrome*/
+.controller__soundSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;       /* également nécessaire sur le curseur */
+  width: 1em;
+  height: 1em;
+  border: 2px solid white;
+  border-radius: 50%;             
+  padding: 0.25em;                /* largeur du bord */
+  background: #ffb800;
+  margin-top: -0.25em;
+}
+
+.controller__mainSettings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 62%;
+  position: absolute;
+  right: 1em;
+  bottom: 0.5em;
+}
+
+.controller__settings {
+  width: 25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controller__time {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.nextEpisode {
+  display: flex;
+  align-items: center;
+}
+
+.nextEpisode p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+}
