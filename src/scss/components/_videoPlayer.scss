@@ -1,11 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
 html,
 body {
   background-color: black;
-  color: white;
+  background-image: none !important;
+  color: $textWhite;
   overflow: hidden;
 }
 
@@ -20,45 +17,138 @@ button {
 .primarySvg {
   width: 3em;
   height: 3em;
+  fill: $white;
+}
+
+.mainPlay {
+
 }
 
 .secondarySvg {
   width: 1.5em;
   height: 1.5em;
+  fill: $white;
 }
 
-.header {
+.menuPlayer {
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  background-image: $BackgroundColor;
+  transition: transform 0.5s ease;
+  transform: translateX(-320px);
+  overflow-y: scroll;
+  
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $textYellow; 
+    border-radius: 10px;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: $textOrange;
+  }
+}
+
+.is-open {
+  transform: translateX(0);
+}
+
+.menuPlayer__header {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.menuPlayer__episodeCard {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 96.25%), url(../images/aot-s1e1.jpg);
+  width: 100%;
+  height: 10em;
+  margin-bottom: 0.5em;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid white;
+}
+
+.menuPlayer__dureeEpisode {
+  font-size: 10px;
+  margin-left: 1em;
+  padding: 0.1em;
+  border: 1px solid $white;
+}
+
+.menuPlayer__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.menuPlayer__episodeDescriptif {
+  width: 60%;
+  font-size: 12px;
+  padding: 0.3em;
+}
+
+.menuPlayer__buttonPlayEpisode {
+  width: 4.5em;
+  height: 4.5em;
+  background-image: url(../icons/playerIcons/play.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.headerPlayer {
   width: 100%;
   height: 3em;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-image: $BackgroundColor;
   transition: transform 0.5s linear;
   transform: translateY(0);
 }
 
-.header-transition {
+.headerPlayer-transition {
   transform: translateY(-3em);
 }
 
-.header__Episode {
+.headerPlayer__episode {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
-.header__Episode p {
+.headerPlayer__episode p {
   margin-left: 0.5em;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
   text-decoration: underline;
 }
 
-.header__title {
+.headerPlayer__title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -76,6 +166,7 @@ video {
   height: 6em;
   width: 6em;
   cursor: pointer;
+  fill: $white;
 }
 
 .videoTimeHover {
@@ -101,7 +192,7 @@ video {
   left: 0;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-image: $BackgroundColor;
   transition: transform 0.5s linear;
   transform: translateY(0);
 }
@@ -113,7 +204,7 @@ video {
 .settingBar__durationBar {
   width: 100%;
   height: 0.2em;
-  background-color: grey;
+  background-color: $DetailsLightGrey;
   overflow: visible;
 }
 
@@ -121,7 +212,7 @@ video {
   width: 0%;
 	transform-origin: left;
   height: 0.2em;
-  background-color: #ffb800;
+  background-color: $textYellow;
   position: relative;
   overflow: visible;
 }
@@ -137,7 +228,7 @@ video {
   position: absolute;
   right: 0;
   border-radius: 50%;
-  background-color: #ffb800;
+  background-color: $textYellow;
   margin-top: -5px;
   margin-right: -2px;
 }
@@ -186,7 +277,7 @@ video {
   height: 0.5em;
   border: none;
   border-radius: 10px;
-  background-color: #ffb800;
+  background-color: $textOrange;
   overflow: visible;
 }
 
@@ -195,10 +286,10 @@ video {
   -webkit-appearance: none;       /* également nécessaire sur le curseur */
   width: 1em;
   height: 1em;
-  border: 2px solid white;
+  border: 1px solid $textOrange;
   border-radius: 50%;             
   padding: 0.25em;                /* largeur du bord */
-  background: #ffb800;
+  background: $textOrange;
   margin-top: -0.25em;
 }
 
@@ -228,6 +319,7 @@ video {
 .nextEpisode {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .nextEpisode p {
@@ -235,3 +327,4 @@ video {
   font-size: 14px;
   text-decoration: underline;
 }
+
