@@ -1,0 +1,74 @@
+.hero {
+  padding: 120px 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/hero_background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  // object-fit: contain; 
+
+
+  &__content {
+    margin-left: 80px;
+    max-width: 550px;
+    @include flexbox(column, space-between, space-between);
+
+  }
+
+  &__img {
+    margin-right: 200px;
+  }
+
+  &__realisator {
+    margin: 24px 0;
+  }
+
+  &__synopsis {
+    margin: 0 0 24px 0;
+  }
+
+  &__ctas {
+    @include flexbox(row, space-between, center);
+    max-width: 400px;
+  }
+
+
+
+  &__play {
+    padding: 12px;
+    border: none;
+    @include flexbox(row, space-around, center);
+
+
+    img {
+      width: 20px;
+    }
+
+  }
+
+  &__details {
+    border: none;
+    @include flexbox(row, space-between, center);
+
+    img {
+      width: 20px;
+      height: 15px;
+      margin-left: 8px;
+
+    }
+  }
+
+  &__add {
+    width: 35px;
+    @include scale-animation-icon;
+
+
+  }
+
+  &__mute {
+    width: 35px;
+    @include scale-animation-icon;
+
+
+  }
+}
