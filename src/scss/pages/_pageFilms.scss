@@ -1,7 +1,7 @@
 
   .mainFilm {
     height: 80vh;
-    background-color: $textWhite;
+    background-image: url("/images/LesEnfants.png");
 
     .infosMainFilm{
       float: left;
@@ -38,9 +38,9 @@
 
 
   .filmList {
-    width: 320px;
-    height: 240px;
-    background-image: url("/images/filmsOnPageFilms/Naruto\ film\ populaire.svg");
+    width: 360px;
+    height: 260px;
+    background-image: url("/images/PageFilm1-Naruto-Aventure-Film.svg");
     @include flexbox(row, space-between, flex-end);
     margin-top: 24px;
     
@@ -50,7 +50,7 @@
       background-image: $backgroundImageFilm;
       @include flexbox(row, space-between, flex-end);
       height: 100px;
-      width: 320px;
+      width: 360px;
       padding: 0 8px 4px 8px;
       line-height: 1.5;
 
@@ -74,9 +74,60 @@
     background-image: url("/images/filmsOnPageFilms/KUROKO’S\ BASKET\ HIGHLIGHTS\ Film\ populaire.svg");
   }
 
-  .allFilmsThird{
+  .allFilmsThird {
     background-image: url("/images/filmsOnPageFilms/PERFECT\ BLUE\ Film\ populaire.svg");
   }
+
+  .allFilmsFourth {
+    background-image: url("/images/PageFilm4-Boruto-ActionAvendture-film.svg");
+  }
+
+  .allFilmsFifth {
+    background-image: url("/images/PageFilm5-LeChateauAmbulant-Fantastique-Film.svg");
+  }
+
+  .allFilmsSixth {
+    background-image: url("/images/PageFilm6-DragonBallZ-Action:Aventure-Film.svg");
+  }
+
+  .allFilmsSeventh {
+    background-image: url("/images/PageFilm7-MewtwoVsMew-Fantastique-Film.svg");
+  }
+
+  .allFilmsEight {
+    background-image: url("/images/PageFilm8-LaCollineAuxCoquelicots-Romance-Film.svg");
+  }
+
+  .allFilmsNineth {
+    background-image: url("/images/PageFilm9-FairyTail-Fantastique-Film.svg");
+  }
+
+  .allFilmsTenth {
+    background-image: url("/images/PageFilm10-NoGameNoLife-Action:Aventure-Film.svg");
+  }
+
+  .allFilmsElevent {
+    background-image: url("/images/PageFilm11-Doraemon-Fantastique-Film.svg");
+  }
+
+  .allFilmsTwelveth {
+    background-image: url("/images/PageFilm12-BleachAction:Aventure-Film.svg");
+  }
+
+  .allFilmsThirdteenth {
+    background-image: url("/images/PageFilm13-Ponyo-Fantastique-Film.svg");
+  }
+
+  .allFilmsFourteenth {
+    background-image: url("/images/PageFilm14-LaTraverseeDuTemps-Fantastique-Film.svg");
+  }
+
+  .allFilmsFifteenth {
+    background-image: url("/images/PageFilm15-LesEnfantsLoup-Famille-Film.svg");
+  }
+
+
+
 
 
 
