@@ -15,6 +15,10 @@
     margin-left: 80px;
     max-width: 550px;
     @include flexbox(column, space-between, space-between);
+
+    @include desktop-Xlarge {
+      margin-left: 130px;
+    }
   }
 
   &__img {
