@@ -4,8 +4,16 @@
 }
 
 .slider__populary,
-.slider__reprendre {
-  max-height: 350px;
+.slider__reprendre,
+.slider__list,
+.slider__fantastic,
+.slider__police,
+.slider__comedy {
+  max-height: 280px;
+
+  @include desktop-Xlarge {
+    max-height: 330px;
+  }
 }
 
 

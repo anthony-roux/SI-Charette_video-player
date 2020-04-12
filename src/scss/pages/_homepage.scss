@@ -1,5 +1,5 @@
 .hero {
-  padding: 215px 0 50px 0;
+  padding: 165px 0 50px 0;
   width: 100vw;
   height: 100vh;
   background-image: url(/images/hero_background.png);
@@ -8,7 +8,7 @@
   // object-fit: contain;
 
   @include desktop-Xlarge {
-    padding: 300px 0 50px 0;
+    padding: 270px 0 50px 0;
   }
 
   &__content {
@@ -26,11 +26,11 @@
   }
 
   &__realisator {
-    margin: 24px 0;
+    margin: 24px 0 0 0;
   }
 
   &__synopsis {
-    margin: 0 0 16px 0;
+    margin: 0 0 32px 0;
   }
 
   &__average {

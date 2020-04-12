@@ -1,0 +1,30 @@
+.suggestion {
+  margin: 180px 0 0px 0;
+  height: 600px;
+  background-image: url(/images/suggestion_background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @include desktop-Xlarge {
+    margin: 150px 0 70px 0;
+
+  }
+
+  &__content {
+    padding: 64px;
+    background: rgba(0, 10, 48, 0.6);
+    width: 600px;
+    height: 100%;
+  }
+
+  &__season {
+    margin: 12px 0;
+    max-width: 120px;
+    text-transform: uppercase;
+    @include flexbox(row, space-between, center);
+  }
+
+  &__synopsis {
+    margin: 0 0 32px 0;
+  }
+}
