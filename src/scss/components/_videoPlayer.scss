@@ -1,5 +1,4 @@
-html,
-body {
+.bodyPlayer {
   background-color: black;
   background-image: none !important;
   color: $textWhite;
@@ -20,14 +19,15 @@ button {
   fill: $white;
 }
 
-.mainPlay {
-
-}
-
 .secondarySvg {
   width: 1.5em;
   height: 1.5em;
   fill: $white;
+}
+
+.croixSvg {
+  width: 1.5em;
+  height: 2em;
 }
 
 .menuPlayer {
@@ -76,7 +76,6 @@ button {
 }
 
 .menuPlayer__episodeCard {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 96.25%), url(../images/aot-s1e1.jpg);
   width: 100%;
   height: 10em;
   margin-bottom: 0.5em;
@@ -84,7 +83,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid white;
 }
 
 .menuPlayer__dureeEpisode {
@@ -119,7 +117,7 @@ button {
 
 .headerPlayer {
   width: 100%;
-  height: 3em;
+  height: 4em;
   position: absolute;
   top: 0;
   left: 0;
@@ -134,7 +132,7 @@ button {
 }
 
 .headerPlayer-transition {
-  transform: translateY(-3em);
+  transform: translateY(-4em);
 }
 
 .headerPlayer__episode {
@@ -145,7 +143,10 @@ button {
 
 .headerPlayer__episode p {
   margin-left: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   text-decoration: underline;
+  
 }
 
 .headerPlayer__title {
@@ -277,7 +278,7 @@ video {
   height: 0.5em;
   border: none;
   border-radius: 10px;
-  background-color: $textOrange;
+  background-color: $textYellow;
   overflow: visible;
 }
 
@@ -286,10 +287,10 @@ video {
   -webkit-appearance: none;       /* également nécessaire sur le curseur */
   width: 1em;
   height: 1em;
-  border: 1px solid $textOrange;
+  border: 1px solid $textYellow;
   border-radius: 50%;             
   padding: 0.25em;                /* largeur du bord */
-  background: $textOrange;
+  background: $white;
   margin-top: -0.25em;
 }
 

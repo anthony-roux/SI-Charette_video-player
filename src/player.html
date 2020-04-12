@@ -15,7 +15,7 @@
   <title>OKATU - Player</title>
 </head>
 
-<body>
+<body class='bodyPlayer'>
   <svg style="position: absolute; width: 0; height: 0; overflow: hidden">
 		<defs>
       <symbol id="croix" viewBox="0 0 48 48">
@@ -69,21 +69,16 @@
   
   <div class='menuPlayer' id='menuPlayer'>
     <div class='menuPlayer__header'>
+      <div class='menuPlayer__season'>
+        
+      </div>
       <button id='buttonExitMenuPlayer'>
-        <svg class='secondarySvg'>
+        <svg class='primarySvg'>
           <use id='croix' href='#croix'></use>
         </svg>
       </button>
     </div>
-    <ul class='menuPlayer__episodeContainer' id='episodeContainer'>
-      <li class="menuPlayer__episodeCard">
-        <h2 class='menuPlayer__episodeTitle'>1. 2000 ans plus tard <span class='menuPlayer__dureeEpisode' id='dureeEpisode'>24min</span></h2>
-        <div class='menuPlayer__content'>
-          <p class='menuPlayer__episodeDescriptif'>Réfugiés dans une ville fortifiée, les survivants de l'humanité tentent d'échapper aux titans qui les dévorent. Jusqu'au jour où un titan colossal apparaît.</p>
-          <button class='menuPlayer__buttonPlayEpisode' id='buttonPlayMenuPlayer'></button>
-        </div>
-      </li>
-    </ul>
+    <ul class='menuPlayer__episodeContainer' id='episodeContainer'></ul>
   </div>
   <header class='headerPlayer' id='headerPlayer'>
     <div class='headerPlayer__episode' id='episodeButton'>
@@ -94,7 +89,7 @@
     </div>
     <h1 class='headerPlayer__title'>S01:E01 "NomEpisode"</h1>
     <button id='buttonExit'>
-      <svg class='secondarySvg'>
+      <svg class='primarySvg'>
         <use id='croix' href='#croix'></use>
       </svg>
     </button>
