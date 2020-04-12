@@ -2,23 +2,39 @@
   .mainSerie {
     height: 80vh;
     background-image: url("/images/PageSerie-Hero-MyHeroAcademia.svg");
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      height: 80vh;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background-color: black;
+      background: rgb(2,0,36);
+      background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(190,190,198,0) 55%);
+    }
 
     .infosMainSerie{
       float: left;
       @include flexbox(column, space-between, space-between);
+      position: relative;
       width: 50vw;
       margin: 0 80px;
+      z-index: 2;
+
 
       .titleSerie {
 
 
         &__producer {
-          color: $black;
+          color: $textWhite;
         }
       }
 
       .synopsis {
-        color: black;
+        color: $textWhite;
         margin-top: 24px;
       
       }
