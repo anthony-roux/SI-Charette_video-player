@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< Updated upstream
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
+=======
+    "dev": "parcel src/users.html",
+    "build": "parcel build src/users.html"
+>>>>>>> Stashed changes
   },
   "repository": {
     "type": "git",
