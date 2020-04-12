@@ -47,7 +47,7 @@
     
 
     .filmLIstInfos {
-      background-color: powderblue;
+      background-image: $backgroundImageFilm;
       @include flexbox(row, space-between, flex-end);
       height: 100px;
       width: 320px;
