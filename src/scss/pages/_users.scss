@@ -1,0 +1,35 @@
+.account__user {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 80px;
+
+  .profil__picture {
+    width: 364px;
+    height: 364px;
+  }
+
+  .profil__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .animes__info {
+      width: 223px;
+      height: 100px;
+      left: 920px;
+      top: 205px;
+      background: #895280;
+      border-radius: 15px;
+      text-align: center;
+      font-size: rem(24px);
+      display: flex;
+      align-items: center;
+    }
+
+    .animes__info--inProgress {
+      margin-bottom: 30px;
+    }
+  }
+}
