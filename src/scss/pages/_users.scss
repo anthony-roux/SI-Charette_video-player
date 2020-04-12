@@ -1,31 +1,31 @@
 .account__user {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-top: 80px;
+  margin: 150px 10% auto;
+  @include flexbox($justify: space-between);
 
-  .profil__picture {
-    width: 364px;
-    height: 364px;
+  .account__profil {
+    font-family: $manga-bold;
+    font-size: rem(24px);
+    text-align: center;
+
+    .profil__picture {
+      margin-bottom: 24px;
+      width: 360px;
+      height: 360px;
+    }
   }
 
   .profil__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox(column);
 
     .animes__info {
-      width: 223px;
+      font-size: rem(20px);
+      font-family: $nunito-regular;
       height: 100px;
-      left: 920px;
-      top: 205px;
+      width: 223px;
+      text-align: center;
       background: #895280;
       border-radius: 15px;
-      text-align: center;
-      font-size: rem(24px);
-      display: flex;
-      align-items: center;
+      @include flexbox;
     }
 
     .animes__info--inProgress {
@@ -35,21 +35,18 @@
 }
 
 .manage {
-  margin-top: 300px;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  margin-top: 400px;
+  @include flexbox($justify: space-around);
 
   .manage__setting {
-    width: 372px;
-    height: 246px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    font-family: $nunito-regular;
     margin-bottom: 100px;
-    border-radius: 15px;
     font-size: rem(20px);
+    border-radius: 15px;
+    width: 360px;
+    height: 240px;
+    @include flexbox(column);
 
     &:nth-child(1) {
       background-color: #ffb800;
