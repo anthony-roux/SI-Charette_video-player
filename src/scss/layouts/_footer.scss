@@ -6,12 +6,12 @@
   color: $textWhite;
   line-height: 2;
   background-image: $BackgroundColor;
-  grid-template-areas: "a a b c d e"
-    "i f f f f f"
-    "i g g g g g"
-    "i h h h h h";
-  margin-top: 300px;
-
+  grid-template-areas:
+    'a a b c d e'
+    'i f f f f f'
+    'i g g g g g'
+    'i j j j . h';
+  margin-top: 250px;
 
   &__logo {
     display: flex;
@@ -19,7 +19,6 @@
     grid-area: a;
     align-items: center;
     margin-top: 20%;
-
   }
 
   &__account {
@@ -29,10 +28,16 @@
     align-items: flex-start;
     margin: 16px 0;
     font-family: $nunito-light;
-    font-size: rem(18px);
+    font-size: rem(16px);
 
     .account__title {
+      font-family: $nunito-bold;
       font-size: rem(24px);
+      text-transform: uppercase;
+    }
+
+    .account__inside {
+      @include scale-animation-text;
     }
   }
 
@@ -41,12 +46,18 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 16px 0;
     font-family: $nunito-light;
-    font-size: rem(18px);
+    margin: 16px 0;
+    font-size: rem(16px);
 
     .help__title {
+      font-family: $nunito-bold;
       font-size: rem(24px);
+      text-transform: uppercase;
+    }
+
+    .help__inside {
+      @include scale-animation-text;
     }
   }
 
@@ -56,29 +67,35 @@
     align-items: flex-start;
     margin: 16px 0;
     font-family: $nunito-light;
-    font-size: rem(18px);
+    font-size: rem(16px);
 
     .enterprise__title {
+      font-family: $nunito-bold;
       font-size: rem(24px);
+      text-transform: uppercase;
     }
 
+    .enterprise__inside {
+      @include scale-animation-text;
+    }
   }
 
   &__languages {
     grid-area: e;
-    @include flexbox;
+    @include flexbox(column, space-around, center);
 
     .languages__button {
-      background-color: #014a8d;
-      height: 40px;
-      width: 136px;
-      border-radius: 8px;
-      border: 3px solid $textYellow;
-      align-content: center;
-      color: $textWhite;
-
+      // background-color: #014a8d;
+      // border: 1px solid $textYellow;
+      // color: $textWhite;
+      font-weight: bold;
+      width: 170px;
+      @include flexbox(row, space-around, center);
     }
 
+    img {
+      width: 15px;
+    }
   }
 
   &__picture {
@@ -89,44 +106,77 @@
   &__socialMedia {
     grid-area: f;
 
-    @include flexbox(column, center, center);
-
+    @include flexbox(column, space-around, center);
 
     .socialMedia__text {
       margin: 16px 0;
       font-size: rem(32px);
-      text-decoration: underline $textWhite;
+      font-weight: bold;
+
+      // text-decoration: underline $textWhite;
     }
 
     .socialMedia__icons {
-      @include flexbox(row, space-between, center);
-
+      @include flexbox(row, center, center);
 
       .icons__facebook,
       .icons__insta,
       .icons__twitter {
-        height: 32px;
         width: 32px;
+        height: 32px;
+        margin: 0 12px;
+
+        path {
+          fill: white;
+        }
+
+        &:hover {
+          @include scale-animation-icon;
+        }
       }
     }
   }
 
   &__moreInfos {
+    margin: 40px 32px;
     grid-area: g;
+    font-family: $nunito-light;
+    font-size: rem(13px);
+    font-variant: small-caps;
 
     @include flexbox(row, space-around, center);
-    font-family: $nunito-light;
-    font-size: rem(18px);
-
   }
 
   &__copyRight {
     grid-area: h;
     @include flexbox(row, flex-end, flex-end);
+    padding-right: 80px;
+    padding-bottom: 8px;
+    font-family: $nunito-light;
+    font-size: rem(10px);
+
+    @include desktop-Xlarge {
+      padding-right: 110px;
+    }
+  }
+
+  &__project {
+    grid-area: j;
+    @include flexbox(row, flex-end, flex-end);
     padding-right: 24px;
     padding-bottom: 8px;
     font-family: $nunito-light;
-    font-size: rem(18px);
-  }
+    font-size: rem(10px);
 
+    @include desktop-Xlarge {
+      padding-right: 56px;
+    }
+
+    strong {
+      &:hover {
+        color: $textYellow;
+        font-weight: regular;
+      }
+    }
+  }
 }
