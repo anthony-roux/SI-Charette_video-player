@@ -1,0 +1,127 @@
+
+  .mainSerie {
+    height: 80vh;
+    background-image: url("/images/PageSerie-Hero-MyHeroAcademia.svg");
+
+    .infosMainSerie{
+      float: left;
+      @include flexbox(column, space-between, space-between);
+      width: 50vw;
+      margin: 0 80px;
+
+      .titleSerie {
+
+
+        &__producer {
+          color: $black;
+        }
+      }
+
+      .synopsis {
+        color: black;
+        margin-top: 24px;
+      
+      }
+    }
+    
+
+  }
+
+  .allSeries {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 80px;
+  }
+
+
+  .serieList {
+    width: 360px;
+    height: 260px;
+    background-image: url("/images/PageSeries1-Jojo\'sBizarreAdventure-Action:Avneture-serie.svg");
+    @include flexbox(row, space-between, flex-end);
+    margin-top: 24px;
+    
+    
+
+    .serieLIstInfos {
+      background-image: $backgroundImageFilm;
+      @include flexbox(row, space-between, flex-end);
+      height: 100px;
+      width: 360px;
+      padding: 0 8px 4px 8px;
+      line-height: 1.5;
+
+      &__category {
+        font-size: rem(14px);
+        font-family: $nunito-bold;
+      }
+
+      .serieLIstInfos__icons{
+        align-self: center;
+      }
+
+     
+
+    }
+
+
+  }
+
+  .allSeriesSecond {
+    background-image: url("/images/PageSeries2-FairyTail-Fantastique-serie.svg");
+  }
+
+  .allSeriesThird {
+    background-image: url("/images/PageSeries3-OnePunchMan-Action:Aventure-serie.svg");
+  }
+
+  .allSeriesFourth {
+    background-image: url("/images/PageSeries4-MyHeroAcademia-Fantastique-serie.svg");
+  }
+
+  .allSeriesFifth {
+    background-image: url("/images/PageSeries5-OnePiece-Action:Aventure-serie.svg");
+  }
+
+  .allSeriesSixth {
+    background-image: url("/images/PageSeries6-NickyLarson-Mystere-serie.svg");
+  }
+
+  .allSeriesSeventh {
+    background-image: url("/images/PageSeries7-Bakuman-Aventure-serie.svg");
+  }
+
+  .allSeriesEight {
+    background-image: url("/images/PageSeries8-TheGardenOfSinner-Policier-serie.svg");
+  }
+
+  .allSeriesNineth {
+    background-image: url("/images/PageSeries9-MegaloBox-Action-serie.svg");
+  }
+
+  .allSeriesTenth {
+    background-image: url("/images/PageSeries10-NoGameNoLife-Fantastique-serie.svg");
+  }
+
+  .allSeriesElevent {
+    background-image: url("/images/PageSeries11-D.GrayMan-Action-serie.svg");
+  }
+
+  .allSeriesTwelveth {
+    background-image: url("/images/PageSeries12-DeathNote-thriller:pollicier-serie.svg");
+  }
+
+  .allSeriesThirdteenth {
+    background-image: url("/images/PageSeries13-Darwin\'sGame-Aventure-serie.svg");
+  }
+
+  .allSeriesFourteenth {
+    background-image: url("/images/PageSeries14-HunterxHunter-Fantastique-serie.svg");
+  }
+
+  .allSeriesFifteenth {
+    background-image: url("/images/PageSeries15-FateStay-Fantastique-serie.svg");
+  }
