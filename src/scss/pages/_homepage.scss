@@ -5,19 +5,16 @@
   background-image: url(/images/hero_background.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  // object-fit: contain; 
+  // object-fit: contain;
 
   @include desktop-Xlarge {
     padding: 300px 0 50px 0;
   }
 
-
-
   &__content {
     margin-left: 80px;
     max-width: 550px;
     @include flexbox(column, space-between, space-between);
-
   }
 
   &__img {
@@ -29,26 +26,26 @@
   }
 
   &__synopsis {
-    margin: 0 0 24px 0;
+    margin: 0 0 16px 0;
+  }
+
+  &__average {
+    margin: 0 450px 32px 0;
   }
 
   &__ctas {
     @include flexbox(row, space-between, center);
-    max-width: 400px;
+    max-width: 300px;
   }
-
-
 
   &__play {
     padding: 12px;
     border: none;
     @include flexbox(row, space-around, center);
 
-
     img {
       width: 20px;
     }
-
   }
 
   &__details {
@@ -59,21 +56,28 @@
       width: 20px;
       height: 15px;
       margin-left: 8px;
-
     }
+  }
+
+  &__download {
+    width: 33px;
+    @include scale-animation-icon;
   }
 
   &__add {
     width: 35px;
     @include scale-animation-icon;
-
-
   }
 
   &__mute {
+    position: absolute;
+    top: 570px;
+    right: 95px;
     width: 35px;
     @include scale-animation-icon;
 
-
+    @include desktop-Xlarge {
+      top: 670px;
+    }
   }
 }
