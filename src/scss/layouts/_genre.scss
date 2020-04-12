@@ -1,5 +1,8 @@
 .genre {
-  height: 40vh;
+
+  margin-bottom: 150px;
+  position: relative;
+
 
   .genre__button{
     display: block;
@@ -16,6 +19,7 @@
   .genre__list{
     
     display: none;
+    position: absolute;
     background-color: #000a30;
     line-height: 1.5;
     
@@ -35,6 +39,7 @@
     @include flexbox(row, flex-start, flex-start);
     background-color: #000a30;
     line-height: 1.5;
+    margin-bottom: 0;
     
   }
 }

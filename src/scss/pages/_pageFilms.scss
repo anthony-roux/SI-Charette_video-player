@@ -5,7 +5,7 @@
 
     .infosMainFilm{
       float: left;
-      @include flexbox(column, space-between, space-between);
+      @include flexbox(column, flex-start, space-between);
       width: 50vw;
       margin: 0 80px;
 
@@ -22,6 +22,36 @@
         margin-top: 24px;
       
       }
+
+      .ratingStar {
+        padding: 4px 0;
+        justify-self: self-start;
+        width: 80px;
+
+      }
+
+      .mainFilmButtons{
+        @include flexbox(row,space-between, flex-start);
+        width: 180px;
+        margin-top: 16px;
+       
+
+        .buttonPlayMainFilm__box {
+          height: 28px;
+          width: 96px;
+          background-color: $textYellow;
+          text-align: center;
+          @include flexbox(row, space-around, center);
+
+          .boxButton__icon {
+            height: 16px;
+            width: 16px;
+
+          }
+        }
+      }
+
+
     }
     
 
@@ -43,9 +73,12 @@
     background-image: url("/images/PageFilm1-Naruto-Aventure-Film.svg");
     @include flexbox(row, space-between, flex-end);
     margin-top: 24px;
-    
-    
 
+    &:hover {
+      border: 2px solid $textYellow;
+    }
+    
+  
     .filmLIstInfos {
       background-image: $backgroundImageFilm;
       @include flexbox(row, space-between, flex-end);

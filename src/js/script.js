@@ -2,13 +2,15 @@
 
  var buttonGenre = document.querySelector(".genre__button");
  var listGenre = document.querySelector(".genre__list");
+ var Genre = document.querySelector(".genre");
 
  buttonGenre.addEventListener('click', function () {
   console.log("coucou");
   buttonGenre.classList.toggle("is-open");
-  listGenre.classList.toggle("is-open-genreList");
+   listGenre.classList.toggle("is-open-genreList");  
+ });
 
-});
+
 
 
 
@@ -23,6 +25,7 @@ buttonUsers.addEventListener('click', function () {
   console.log("coucou");
   buttonUsers.classList.toggle("is-open-down");
   menuDown.classList.toggle("menu-users-is-open");
+
 });
 
 fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')

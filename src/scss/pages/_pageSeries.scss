@@ -43,6 +43,10 @@
     background-image: url("/images/PageSeries1-Jojo\'sBizarreAdventure-Action:Avneture-serie.svg");
     @include flexbox(row, space-between, flex-end);
     margin-top: 24px;
+
+    &:hover {
+      border: 2px solid $textYellow;
+    }
     
     
 
