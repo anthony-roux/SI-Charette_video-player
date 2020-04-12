@@ -234,3 +234,11 @@ $episodeButton.addEventListener('click', () => {
 $buttonExitMenuPlayer.addEventListener('click', () => {
   $menuPlayer.classList.remove('is-open');
 });
+
+//SAISON
+const $seasonButton = document.getElementById('seasonButton');
+const $seasonMenu = document.getElementById('seasonMenu');
+
+$seasonButton.addEventListener('click', () => {
+  $seasonMenu.classList.toggle('seasonMenu-is-open')
+})

@@ -11,7 +11,6 @@
   <script defer src="./js/mediumSlider.js"></script>
   <script defer src="./js/videoPlayer.js"></script>
   <script defer src="./js/aotEpisodes.js"></script>
-
   <title>OKATU - Player</title>
 </head>
 
@@ -69,11 +68,13 @@
   
   <div class='menuPlayer' id='menuPlayer'>
     <div class='menuPlayer__header'>
-      <div class='menuPlayer__season'>
-        
+      <div class="menuPlayer__seasonMenu" id='seasonMenu'>
+        <div class="menuPlayer__season" id='seasonButton'>Saisons</div>
+        <div class="menuPlayer__season menuPlayer__season--item" id='season1'>Saison 1</div>
+        <div class="menuPlayer__season menuPlayer__season--item" id='season2'>Saison 2</div>
       </div>
       <button id='buttonExitMenuPlayer'>
-        <svg class='primarySvg'>
+        <svg class='croixSvg'>
           <use id='croix' href='#croix'></use>
         </svg>
       </button>
@@ -89,7 +90,7 @@
     </div>
     <h1 class='headerPlayer__title'>S01:E01 "NomEpisode"</h1>
     <button id='buttonExit'>
-      <svg class='primarySvg'>
+      <svg class='croixSvg'>
         <use id='croix' href='#croix'></use>
       </svg>
     </button>
