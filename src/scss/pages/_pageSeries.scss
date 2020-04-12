@@ -22,6 +22,35 @@
         margin-top: 24px;
       
       }
+
+      .ratingStar {
+        padding: 4px 0;
+        justify-self: self-start;
+        width: 80px;
+
+      }
+
+      .mainSerieButtons{
+        @include flexbox(row,space-between, flex-start);
+        width: 180px;
+        margin-top: 16px;
+       
+
+        .buttonPlayMainSerie__box {
+          height: 28px;
+          width: 96px;
+          background-color: $textYellow;
+          text-align: center;
+          @include flexbox(row, space-around, center);
+
+          .boxButton__icon {
+            height: 16px;
+            width: 16px;
+
+          }
+        }
+      }
+
     }
     
 
