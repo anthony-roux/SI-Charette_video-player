@@ -33,3 +33,45 @@
     }
   }
 }
+
+.manage {
+  margin-top: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .manage__setting {
+    width: 372px;
+    height: 246px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    font-size: rem(20px);
+
+    &:nth-child(1) {
+      background-color: #ffb800;
+    }
+    &:nth-child(2) {
+      background-color: #e25f29;
+    }
+    &:nth-child(3) {
+      background-color: #69accb;
+    }
+    &:nth-child(4) {
+      background-color: #e69282;
+    }
+    &:nth-child(5) {
+      background-color: #5b4766;
+    }
+    &:nth-child(6) {
+      background-color: #002de1;
+    }
+
+    .manage__picture {
+      margin-bottom: 10px;
+    }
+  }
+}
