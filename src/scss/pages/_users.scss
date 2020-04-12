@@ -19,6 +19,7 @@
 
     .animes__info {
       font-size: rem(20px);
+      font-family: $nunito-regular;
       height: 100px;
       width: 223px;
       text-align: center;
@@ -39,6 +40,7 @@
   @include flexbox($justify: space-around);
 
   .manage__setting {
+    font-family: $nunito-regular;
     margin-bottom: 100px;
     font-size: rem(20px);
     border-radius: 15px;
