@@ -23,27 +23,22 @@
 @import 'components/_videoPlayer.scss';
 @import 'components/_menuUsers.scss';
 
-
 // LAYOUTS
 // ici importations des pages correspondants aux éléments du site : menuburger, hero, aside, footer, header, caroussel...
 @import 'layouts/_header.scss';
 @import 'layouts/_footer.scss';
 @import 'layouts/_genre.scss';
 
-
-// PAGES 
+// PAGES
 // ici importations des pages du site : homepage, contact, panier, articles, FAQ...
 @import 'pages/_homepage.scss';
 @import 'pages/_connexion.scss';
 @import 'pages/_users.scss';
 @import 'pages/_landing.scss';
 @import 'pages/_ficheFilms.scss';
-@import '../pages/_ficheSeries.scss';
+@import 'pages/_ficheSeries.scss';
 @import 'pages/_PageSeries.scss';
 @import 'pages/_PageFilms.scss';
-
-
-
 
 body {
   color: $textWhite;
@@ -55,5 +50,5 @@ body {
   height: 40vh;
 }
 
-
-p {}
+p {
+}
