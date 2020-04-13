@@ -14,20 +14,25 @@ button {
 }
 
 .primarySvg {
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
   fill: $white;
 }
 
 .secondarySvg {
-  width: 1.5em;
-  height: 1.5em;
+  width: 2em;
+  height: 2em;
   fill: $white;
 }
 
 .croixSvg {
-  width: 1.5em;
-  height: 2em;
+  width: 2.5em;
+  height: 2.5em;
+  fill: $white;
+}
+
+.croixSvg:hover {
+  fill: $textYellow;
 }
 
 .menuPlayer {
@@ -35,7 +40,7 @@ button {
   height: 100vh;
   position: fixed;
   z-index: 10;
-  background-image: $BackgroundColor;
+  background-color: #000A2d;
   transition: transform 0.5s ease;
   transform: translateX(-320px);
   overflow-y: scroll;
@@ -68,11 +73,40 @@ button {
 .menuPlayer__header {
   width: 100%;
   height: 3em;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  position: relative;
   padding: 0.5em;
   margin-bottom: 0.5em;
+}
+
+.menuPlayer__seasonMenu {
+  border: 1px solid $textYellow;
+  border-radius: 8px;
+  width: 5em;
+  height: 2em;
+  position: absolute;
+  left: 38%;
+  top: 25%;
+  overflow: hidden;
+  background-color: #000A2D;
+}
+
+.seasonMenu-is-open {
+  height: auto;
+}
+ 
+.menuPlayer__season {
+   text-align: center;
+   height: 2em;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.menuPlayer__season--item {
+  background-color: #014a8d;
+  font-size: 0.8rem;
+  border-top: 1px solid $DetailsLightGrey;
 }
 
 .menuPlayer__episodeCard {
@@ -173,11 +207,10 @@ video {
 .videoTimeHover {
   display: none;
   position: absolute;
-  top: 52em;
+  top: 51em;
   left: 0;
   width: 4em;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 0.8rem;
 }
@@ -188,6 +221,7 @@ video {
 
 .settingBar {
   width: 100%;
+  height: 5em;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -199,7 +233,7 @@ video {
 }
 
 .settingBar-transition {
-  transform: translateY(4em);
+  transform: translateY(4.8em);
 }
 
 .settingBar__durationBar {
@@ -245,16 +279,18 @@ video {
 
 .controller {
   width: 100%;
-  height: 4em;
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0.5em 1em;
   position: relative;
 }
 
 .controller__sound {
-  width: 1.5em;
+  width: 2em;
   display: flex;
-  margin: 1em 0;
+  margin: 1.4em 0 1em 0;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.5s;
@@ -299,9 +335,6 @@ video {
   justify-content: space-between;
   align-items: center;
   width: 62%;
-  position: absolute;
-  right: 1em;
-  bottom: 0.5em;
 }
 
 .controller__settings {
@@ -312,7 +345,6 @@ video {
 }
 
 .controller__time {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 0.8rem;
 }
@@ -324,8 +356,8 @@ video {
 }
 
 .nextEpisode p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  font-weight: bold;
   text-decoration: underline;
 }
 

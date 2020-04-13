@@ -1,0 +1,42 @@
+.video__container {
+  position: relative;
+  width: 100vw;
+  height: 572vh;
+  background-size: 100%;
+}
+
+.heroFilm__describe {
+  position: absolute;
+  top: 50%;
+  font-size: rem(18px);
+  left: 80px;
+  line-height: 1.3;
+  font-family: $nunito-regular;
+
+  .film__director {
+    margin: 24px 0;
+  }
+
+  .film__synopsis {
+    margin-bottom: 16px;
+  }
+
+  .film__notation {
+    margin-bottom: 32px;
+  }
+
+  .film__player {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+
+    .player__button {
+      display: flex;
+      justify-content: space-between;
+
+      .button__play {
+        width: 20px;
+      }
+    }
+  }
+}

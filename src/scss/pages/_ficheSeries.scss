@@ -1,0 +1,222 @@
+<<<<<<< HEAD
+
+.ficheSeries__banniere  {
+    background-image: url("../images/titans.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    color: $white;
+    padding: 1rem 5rem 5rem 5rem;
+    width: 100%;
+=======
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.ficheSeries {
+  background: linear-gradient(91.2deg, #000a2f 27.46%, #00285c 94.96%);
+}
+
+.ficheSeries__banniere {
+  background-image: url('../../images/titans.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 18px;
+  padding: 1rem 5rem 5rem 5rem;
+>>>>>>> f002de75054809949bcac2ee5a42d4ebb31ef538
+}
+.banniere__returnBtn {
+  margin-bottom: 6rem;
+  text-decoration: none;
+}
+.banniere__returnBtn a {
+<<<<<<< HEAD
+    margin-bottom:6rem;
+    text-decoration: none;
+    color:$white;
+=======
+  margin-bottom: 6rem;
+  text-decoration: none;
+  color: white;
+>>>>>>> f002de75054809949bcac2ee5a42d4ebb31ef538
+}
+.banniere__logo {
+  padding-bottom: 2.875rem;
+}
+.banniere__info {
+  line-height: 24px;
+  width: 29.125rem;
+  height: 9.625rem;
+}
+.banniere__stars {
+  margin-top: 0.5rem;
+}
+.banniere__btn img {
+  padding-top: 1rem;
+  padding-right: 0.4rem;
+  cursor: pointer;
+}
+.muteBtn {
+  float: right;
+}
+<<<<<<< HEAD
+.choice__btn p{
+    color: $white;
+    font-size:20px;
+    padding-left:3rem;
+    display:block;
+    cursor: pointer;
+
+=======
+.choice__btn p {
+  color: white;
+  font-size: 20px;
+  padding-left: 3rem;
+  display: block;
+  cursor: pointer;
+>>>>>>> f002de75054809949bcac2ee5a42d4ebb31ef538
+}
+
+.ficheSeries__choice {
+  padding-bottom: 2.5rem;
+  padding-top: 1.2rem;
+}
+.ficheSeries__episode {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1206px;
+  padding-top: 2.5rem;
+  border-radius: 8px;
+}
+.episode {
+<<<<<<< HEAD
+    margin-bottom:1.5rem;
+    border-radius:8px;
+    display:grid;
+    grid-template-columns: 2fr 2fr 3fr 1fr;
+    grid-template-rows: auto;
+    background-color:$white;
+    color: $black;
+    cursor: pointer;
+    transition: transform .2s ease-in; 
+=======
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr 1fr;
+  grid-template-rows: auto;
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+>>>>>>> f002de75054809949bcac2ee5a42d4ebb31ef538
+}
+.episode:hover {
+  transform: scale(1.1);
+}
+<<<<<<< HEAD
+.episode article  {
+    padding-top:1rem;
+    padding-left:1rem;
+    line-height: 24px;
+    font-size: 14px;
+}
+.episode article h2 {
+    margin-bottom:0.5rem;
+    font-weight: bold;
+=======
+.episode article {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  line-height: 24px;
+}
+.episode article h2 {
+  margin-bottom: 0.5rem;
+>>>>>>> f002de75054809949bcac2ee5a42d4ebb31ef538
+}
+
+.historic__episode {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding-top: 1rem;
+}
+.episode_add {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.9rem;
+}
+.yellowBox {
+<<<<<<< HEAD
+    display: block;
+    background-color: $textYellow;
+    border-radius: 0 8px 8px  0;
+    color:$white;
+    text-align:left;
+    padding:1em;
+    position:relative;
+    
+=======
+  display: block;
+  background-color: #ffb800;
+  border-radius: 0 8px 8px 0;
+  color: white;
+  text-align: left;
+  padding: 1em;
+  position: relative;
+>>>>>>> f002de75054809949bcac2ee5a42d4ebb31ef538
+}
+.yellowBox p {
+  padding-bottom: 0.2rem;
+}
+.yellowBox_download {
+<<<<<<< HEAD
+    position:absolute;
+    bottom: 0;
+    right:0;
+    padding:1rem;
+}
+
+.ficheSeries__seasonMenu {
+    border: 1px solid $textYellow;
+    border-radius: 8px;
+    width: 5em;
+    height: 2em;
+    overflow: hidden;
+    background-color: #000A2D;
+    margin: 2em 0 0 10em;
+}
+
+.seasonMenu-is-open {
+    height: auto;
+}
+ 
+.ficheSeries__season {
+   text-align: center;
+   height: 2em;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.ficheSeries__season--item {
+  background-color: #014a8d;
+  font-size: 0.8rem;
+  border-top: 1px solid $DetailsLightGrey;
+=======
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+>>>>>>> f002de75054809949bcac2ee5a42d4ebb31ef538
+}
