@@ -9,10 +9,12 @@
 .slider__fantastic,
 .slider__police,
 .slider__comedy {
-  max-height: 280px;
+  // max-height: 380px;
+  max-height: 580px;
 
   @include desktop-Xlarge {
-    max-height: 330px;
+    max-height: 630px;
+    // max-height: 430px;
   }
 }
 
@@ -39,7 +41,7 @@
 
 .tns-controls {
   position: relative;
-  top: 160px;
+  top: 175px;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -49,7 +51,7 @@
   z-index: 0;
 
   @include desktop-Xlarge {
-    top: 162px;
+    top: 175px;
   }
 }
 
@@ -74,8 +76,12 @@
 }
 
 #tns2-ow {
-  line-height: 10em;
+  // line-height: 10em;
 
+}
+
+#tns1-mw {
+  height: 400px;
 }
 
 .tns-outer {
@@ -88,7 +94,7 @@
 
   .tns-inner {
     margin: 0px -72px 0px 100px;
-    line-height: 26em;
+    // line-height: 26em;
   }
 
   [hidden] {
@@ -117,7 +123,7 @@
 .tns-horizontal {
   &.tns-subpixel {
     white-space: nowrap;
-    height: 20em;
+    // height: 20em;
 
     >.tns-item {
       display: inline-block;
@@ -199,11 +205,18 @@
   -webkit-transition: height 0s;
   -moz-transition: height 0s;
   transition: height 0s;
+  height: 400px;
+}
+
+#tns1-mw {
+  height: 400px;
 }
 
 .tns-ovh {
   overflow: hidden;
-  // height: 135px;
+  // height: 322px;
+  height: 400px;
+  padding: 40px 0 0 0; // height: 135px;
 }
 
 .tns-visually-hidden {
