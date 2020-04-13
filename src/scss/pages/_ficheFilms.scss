@@ -33,9 +33,14 @@
     .player__button {
       display: flex;
       justify-content: space-between;
+      padding: 0.8em;
 
       .button__play {
         width: 20px;
+      }
+
+      a {
+        margin-right: 0.5em;
       }
     }
   }

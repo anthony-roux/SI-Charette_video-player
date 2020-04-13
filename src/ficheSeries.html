@@ -8,9 +8,6 @@
   
   <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
   <script defer src="./js/script.js"></script>
-  <script defer src="./js/smallSlider.js"></script>
-  <script defer src="./js/mediumSlider.js"></script>
-  <script defer src="./js/videoPlayer.js"></script>
   <title>OTAKU - series</title>
 </head>
 
@@ -67,10 +64,12 @@
             <img class="banniere__stars" src ="icons/stars.png">
           </article>
           <div class="banniere__btn">
-            <img src ="icons/play.png" alt="lectureBtn">
+            <button class="player__button button" id='film'>
+              <a href="playerSerie.html">Lecture</a>
+              <img src="./icons/icon_play.svg" alt="" class="button__play" />
+            </button>
             <img src ="icons/Download.png" alt="downloadBtn">
             <img src ="icons/Plus.png" alt="plusBtn">
-            <img class ="muteBtn" src ="icons/mute.png" alt="muteBtn">
          </div>
       </div>
 

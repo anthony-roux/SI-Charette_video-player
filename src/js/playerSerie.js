@@ -192,9 +192,9 @@ $video.onloadedmetadata = function() {
   })
 
 
-  //INACTIVTÉ (Mise en place d'un tiem)
+  //INACTIVTÉ (Mise en place d'un timer)
 
-  let timeoutInMiliseconds = 10000;
+  let timeoutInMiliseconds = 5000;
   let timeoutId; 
   const $header = document.getElementById('headerPlayer');
   const $settingBar = document.getElementById('settingBar');
@@ -350,32 +350,41 @@ $video.onloadedmetadata = function() {
   const $seasonButtonPlay = document.getElementsByClassName('menuPlayer__buttonPlayEpisode');
   const svgPause = require("../icons/playerIcons/pause.svg");
   const svgPlay = require("../icons/playerIcons/play.svg")
-  const $titlePlayer = document.getElementsByClassName('headerPlayer__title');
-
+  const $titlePlayer = document.getElementById('headerTitle');
 
   for (let i = 0; i < $seasonButtonPlay.length; i++){
-    
-    $seasonButtonPlay[i].addEventListener('click', () => {
-      $titlePlayer.textContent = "S01E"+saison01[i].number+": "+saison01[i].title;
-      console.log("S01E"+saison01[i].number+": "+saison01[i].title)
 
-      if(!$video.paused && !$video.ended){
-        
-        $video.pause()
-        $playSvg.setAttribute('href', '#play');
-        $mainPlay.classList.remove('is-hidden');
+    $seasonButtonPlay[i].addEventListener('click', () => {
+      $titlePlayer.innerHTML = `S01:E${saison01[i].number} - ${saison01[i].title}`;
+
+      $video.setAttribute('src', saison01[i].urlVideo)
+      $video.play();
+      $volumeSlider.value = $video.volume * 100;
+      $playSvg.setAttribute('href', '#pause');
+      $mainPlay.classList.add('is-hidden');
+      $seasonButtonPlay[i].style.backgroundImage = "url('" + svgPause + "')"
+      $seasonButtonPlay[i-1].style.backgroundImage = "url('" + svgPlay + "')"  
+      
+      if($video.ended) {
+        $video.setAttribute('src', saison01[i+1].urlVideo)
         $seasonButtonPlay[i].style.backgroundImage = "url('" + svgPlay + "')" 
-      }else{
-        $video.setAttribute('src', saison01[i].urlVideo)
-        $video.play();
-        $volumeSlider.value = $video.volume * 100;
-        $playSvg.setAttribute('href', '#pause');
-        $mainPlay.classList.add('is-hidden');
         $seasonButtonPlay[i].style.backgroundImage = "url('" + svgPause + "')"
-        $seasonButtonPlay[i-1].style.backgroundImage = "url('" + svgPlay + "')" 
- 
+        $video.play()
+      }
+    })
+
+    // MAJ des éléments playButton et progressBar selon le temps de vidéo atteint
+    $video.addEventListener('timeupdate', () => {
+      if($video.ended){
+        $video.setAttribute('src', saison01[i+1].urlVideo)
+        $seasonButtonPlay[i].style.backgroundImage = "url('" + svgPlay + "')" 
+        $seasonButtonPlay[i+1].style.backgroundImage = "url('" + svgPause + "')"
+        $video.play()
+      }else{
+        const progress = ($video.currentTime / $video.duration) * 100; //récupération du pourcentage de progression
+        $progressBar.style.width = progress + '%';
+        $currentTimeWrapper.textContent = transformTime(Math.floor($video.currentTime))
       }
     })
   }
-
-
+  
