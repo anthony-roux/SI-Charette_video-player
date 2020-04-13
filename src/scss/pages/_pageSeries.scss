@@ -193,3 +193,11 @@
   .allSeriesFifteenth {
     background-image: url("/images/PageSeries15-FateStay-Fantastique-serie.svg");
   }
+  .allSeriesSixteenth {
+    background-image: url("/images/PageSeries6-NickyLarson-Mystere-serie.svg");
+    display: none;
+
+    @include desktop-Xlarge {
+    display: block;
+    }
+  }

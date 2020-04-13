@@ -197,6 +197,15 @@
     background-image: url("/images/PageFilm15-LesEnfantsLoup-Famille-Film.svg");
   }
 
+  .allFilmsSixteenth {
+    background-image: url("/images/PageFilm8-LaCollineAuxCoquelicots-Romance-Film.svg");
+    display: none;
+
+    @include desktop-Xlarge {
+      display: block;
+    }
+  }
+
 
 
 
