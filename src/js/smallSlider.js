@@ -2,9 +2,6 @@ import {
   tns
 } from '../../node_modules/tiny-slider/src/tiny-slider';
 
-
-console.log('caca');
-
 let reprendre = document.querySelector('.my-slider');
 
 var slider = tns({
