@@ -28,6 +28,7 @@ buttonUsers.addEventListener('click', function () {
 
 });
 
+/*
 fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
 .then(response => response.json())
   .then(categories => {
@@ -42,4 +43,5 @@ fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
   
 })
 .catch(error => console.error(error))
+*/
  
