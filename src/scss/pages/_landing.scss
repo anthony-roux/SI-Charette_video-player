@@ -1,16 +1,12 @@
 .landingHero {
   &__contenair {
-    height: 550px;
-    background-image: url(/images/LandingPage-hero-small.svg);
+    height: 650px;
+    background-image: url(/images/LandingPage-hero-medium1.svg);
+    // background-image: url(/images/Landingpage-1hero.svg);
+
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 4px solid #ffb800;
-
-    // @include tablet-up {
-    //   background-image: url(/images/LandingPage-hero-medium.svg);
-    //   background-repeat: no-repeat;
-    //   background-size: 100%;
-    // }
   }
 
   &__header {
@@ -102,7 +98,7 @@
   }
 
   &__infosAll {
-    margin-top: 72px;
+    // margin-top: 72px;
     font-family: $nunito-regular;
     font-size: rem(24px);
     line-height: 40px;
@@ -150,7 +146,7 @@
 }
 
 .landing__allScreens {
-  margin: 68px 80px 0px 80px;
+  margin: 150px 80px 0px 80px;
 
   &__container {
     margin-top: 70px;
@@ -162,6 +158,19 @@
     font-size: rem(24px);
     line-height: 50px;
     text-align: center;
+  }
+
+  &__mobTab__img {
+    padding-bottom: 29px;
+  }
+
+  &__console__img {
+    padding-bottom: 18px;
+  }
+
+  &__mobTab,
+  &__console {
+    transform: translateY(12px);
   }
 }
 
@@ -176,13 +185,28 @@
   line-height: 50px;
 }
 
+.Landing__offline__animeDownload {
+  width: 450px;
+}
+
 .landing__offline {
-  margin: 68px 80px 0px 80px;
+  margin: 150px 80px 0px 80px;
   font-family: $nunito-regular;
   font-size: rem(24px);
   line-height: 50px;
 
+  &__animeDownload {
+    width: 450px;
+  }
+
+  &__addMail {
+    margin-top: 250px;
+    text-align: center;
+  }
+
   &__container {
+    margin-top: 62px;
+
     @include flexbox($justify: space-evenly);
 
     &__layout {
@@ -204,8 +228,15 @@
       padding-left: 50px;
     }
   }
-
-  &__downalds {
-    margin-top: 62px;
-  }
 }
+
+.Landing__offline__iconsDownload {
+  padding-left: 58px;
+}
+
+// footer social media transform: translateY(-80px)
+//footer entreprise help account retirer margin: 16px ou mettre o social medi la mm
+// contenair div  footer__picture__personnage
+//     <img
+//     class="footer__picture footerPicture"
+//     src="images/Footer-Img-Personnage.svg" />
