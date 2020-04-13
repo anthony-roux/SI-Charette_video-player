@@ -43,14 +43,20 @@
 
 .slider__fantastic {
   margin-top: 100px;
+
+  @include desktop-Xlarge {
+    margin-top: 150px;
+  }
 }
+
 
 .slider__police {
   // margin-top: -130px;
   margin-top: -110px;
 
   @include desktop-Xlarge {
-    top: -105px;
+    // margin-top: -105px;
+    margin-top: -98px;
   }
 }
 
@@ -59,7 +65,9 @@
   margin-top: -110px;
 
   @include desktop-Xlarge {
-    margin-top: -103px;
+    // margin-top: -103px;
+    margin-top: -96px;
+
   }
 
 }
@@ -99,7 +107,8 @@
   z-index: 0;
 
   @include desktop-Xlarge {
-    top: 175px;
+    // top: 175px;
+    top: 168px;
   }
 }
 

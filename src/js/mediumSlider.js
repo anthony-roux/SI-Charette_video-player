@@ -3,8 +3,6 @@ import {
 } from '../../node_modules/tiny-slider/src/tiny-slider';
 
 
-console.log('caca');
-
 let tendance = document.querySelector('.my-slider-medium-1');
 
 var slider = tns({
@@ -13,7 +11,7 @@ var slider = tns({
   axis: 'horizontal', // or 'vertical'
   items: 5,
   gutter: 1,
-  edgePadding: 0,
+  edgePadding: 50,
   fixedWidth: false,
   slideBy: 1,
   controls: true,
@@ -54,7 +52,7 @@ var slider = tns({
   axis: 'horizontal', // or 'vertical'
   items: 5,
   gutter: 1,
-  edgePadding: 0,
+  edgePadding: 50,
   fixedWidth: false,
   slideBy: 1,
   controls: true,

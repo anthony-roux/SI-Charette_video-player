@@ -1,19 +1,26 @@
 .suggestion {
-  // margin: 180px 0 0px 0;
-  height: 600px;
   background-image: url(/images/suggestion_background.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  object-fit: cover;
+  // background-size: 100%;
+  margin-bottom: 110px;
+  margin-top: -40px;
+  min-height: 500px;
+  min-height: 600px;
+  width: auto;
 
-  // @include desktop-Xlarge {
-  //   margin: 150px 0 70px 0;
-  // }
+  @include desktop-Xlarge {
+    margin-bottom: 125px;
+    background-size: 100%;
+
+  }
 
   &__content {
-    padding: 64px;
+    padding: 40px;
     background: rgba(0, 10, 48, 0.6);
-    width: 600px;
-    height: 100%;
+    width: 500px;
+    max-height: 600px;
+    min-height: 600px;
   }
 
   &__season {
@@ -60,7 +67,7 @@
   border-radius: 5px;
 
   @include desktop-Xlarge {
-    width: 270px;
+    width: 261px;
   }
 }
 
@@ -134,7 +141,7 @@
   width: 25px;
   position: relative;
   top: 62px;
-  left: 200px;
+  left: 190px;
   fill: #E6E6E6;
 
   &:hover {
@@ -146,7 +153,7 @@
 
 
   @include desktop-Xlarge {
-    left: 232px;
+    left: 227px;
 
   }
 }
@@ -154,7 +161,7 @@
 .slideCard__star {
   position: relative;
   top: 98px;
-  left: 172px;
+  left: 163px;
   width: 25px;
   fill: #E6E6E6;
 
@@ -167,7 +174,7 @@
 
 
   @include desktop-Xlarge {
-    left: 204px;
+    left: 199px;
 
   }
 }
