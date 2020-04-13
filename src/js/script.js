@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
   var reprendreSlider = document.querySelector('.reprendre');
 
   // route to connexion if not logged
-  if (userId == null || userId == undefined || userId == 'null') {
-    window.location.href = 'connexion.html';
-  }
+  // if (userId == null || userId == undefined || userId == 'null') {
+  //   window.location.href = 'connexion.html';
+  // }
 
   fetch('http://localhost:8888/getCategoriesForUser.php?userId=' + userId)
     .then(response => response.json())
