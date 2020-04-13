@@ -1,10 +1,11 @@
-.ficheSeries__banniere {
-  background-image: url("../images/titans.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: $white;
-  padding: 1rem 5rem 5rem 5rem;
-  width: 100%;
+
+.ficheSeries__banniere  {
+    background-image: url("/images/titans.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    color: $white;
+    padding: 1rem 5rem 5rem 5rem;
+    width: 100%;
 }
 
 .banniere__returnBtn {
@@ -13,9 +14,9 @@
 }
 
 .banniere__returnBtn a {
-  margin-bottom: 6rem;
-  text-decoration: none;
-  color: $white;
+    margin-bottom:6rem;
+    text-decoration: none;
+    color:$white;
 }
 
 .banniere__logo {
@@ -41,13 +42,12 @@
 .muteBtn {
   float: right;
 }
-
-.choice__btn p {
-  color: $white;
-  font-size: 20px;
-  padding-left: 3rem;
-  display: block;
-  cursor: pointer;
+.choice__btn p{
+    color: $white;
+    font-size:20px;
+    padding-left:3rem;
+    display:block;
+    cursor: pointer;
 
 }
 
@@ -65,31 +65,29 @@
 }
 
 .episode {
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  display: grid;
-  grid-template-columns: 2fr 2fr 3fr 1fr;
-  grid-template-rows: auto;
-  background-color: $white;
-  color: $black;
-  cursor: pointer;
-  transition: transform .2s ease-in;
+    margin-bottom:1.5rem;
+    border-radius:8px;
+    display:grid;
+    grid-template-columns: 2fr 2fr 3fr 1fr;
+    grid-template-rows: auto;
+    background-color:$white;
+    color: $black;
+    cursor: pointer;
+    transition: transform .2s ease-in; 
 }
 
 .episode:hover {
   transform: scale(1.1);
 }
-
-.episode article {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  line-height: 24px;
-  font-size: 14px;
+.episode article  {
+    padding-top:1rem;
+    padding-left:1rem;
+    line-height: 24px;
+    font-size: 14px;
 }
-
 .episode article h2 {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+    margin-bottom:0.5rem;
+    font-weight: bold;
 }
 
 .historic__episode {
@@ -107,14 +105,14 @@
 }
 
 .yellowBox {
-  display: block;
-  background-color: $textYellow;
-  border-radius: 0 8px 8px 0;
-  color: $white;
-  text-align: left;
-  padding: 1em;
-  position: relative;
-
+    display: block;
+    background-color: $textYellow;
+    border-radius: 0 8px 8px  0;
+    color:$white;
+    text-align:left;
+    padding:1em;
+    position:relative;
+    
 }
 
 .yellowBox p {
@@ -122,10 +120,10 @@
 }
 
 .yellowBox_download {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 1rem;
+    position:absolute;
+    bottom: 0;
+    right:0;
+    padding:1rem;
 }
 
 .ficheSeries__seasonMenu {
