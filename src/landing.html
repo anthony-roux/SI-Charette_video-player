@@ -1,24 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/smallSlider.js"></script>
+    <script defer src="./js/mediumSlider.js"></script>
+    <script defer src="./js/videoPlayer.js"></script>
+    <title>OTAKU - explications</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
-  <script defer src="./js/script.js"></script>
-  <script defer src="./js/smallSlider.js"></script>
-  <script defer src="./js/mediumSlider.js"></script>
-  <script defer src="./js/videoPlayer.js"></script>
-  <title>OTAKU - explications</title>
-</head>
+  <body>
+  
+    <main class="Landing__contenair">
 
-<body>
-  <header></header>
-  <main class="content-wrapper">
-    <section>
+      <section class="landingHero">
+        <div class="landingHero__contenair">
+        <div class="landingHero__header">
+          <img
+            class="landingHero__header__Otaku"
+            src="/logos/logo.png"
+            alt="logo Otaku"
+          />
+          <div class="landingHero__header__layoutbtn">
+            <button class="landingHero__header__layoutbtn__btnLogin">
+              S'identifier
+            </button>
+          </div>
+        </div>
+
+        <div class="landingHero__unlimited">
+          
+          <h1 class="landingHero__unlimited__tittle">
+            Tout l’univers Manga en illimité <br />
+            sur une seule plateforme.
+          </h1>
+
+          <form class="landingHero__unlimited__content" action="">
+            <input class="landingHero__unlimited__input"
+              type="email"
+              id="email" placeholder="Adresse mail"
+              pattern=".+@gmail.com"
+              size="30"
+              required
+            />
+            <button class="landingHero__unlimited__btn" type="submit">
+              Essayer
+            </button>
+          </form>
+
+          <p class="landingHero__unlimited__forUsers">
+            Saisis ton adresse mail pour créer ton compte et commence un essai de
+            <span class="landingHero__unlimited__forUsers daysFree"> 30 jours gratuits.</span>
+          </p>
+        </div>
+      </section>
+
+
+    <section class="landing__Otaku">
+      <h2 class="landing__Otaku__description"> <span class="logoTittle">Otaku</span> C'EST: </h2>
+      <div class="landing__Otaku__contenair">
+        <div class="landing__Otaku__avatar">
+          <img class="landing__Otaku__avatar__Lufy" src="images/LandingPage-personnage-lufy.svg" alt="Personnage Lufy One Piece">
+        </div>
+      
+    
+        <div class="landing__Otaku__descriptions"> 
+
+          <ul class="landing__Otaku__infosAll">
+            <li class="landing__Otaku__infosAll__info">• Une infinitée de séries et de films d’animations</li>
+            <li class="landing__Otaku__infosAll__info">• Des nouveautées chaque semaine </li>
+            <li class="landing__Otaku__infosAll__info">• Une communauté de plus de 15 M de membres à travers le monde  </li>
+          </ul>
+        </div>
+      </div>
     </section>
-  </main>
-</body>
 
+
+
+    <section class="landing__platform">
+        <div><h2 class="landing__platform__tittle">UNE PLATEFORME SIMPLE ET INTUITIF</h2>
+      
+
+      <div class="landing__platform__container">
+        <div>     
+          <ul class="landing__platform__serve">
+            <li class="landing__platform__serve__service">• Suis l’actualité de tes animés favoris grâce à un agenda des futures sorties et des notifications personnalisées</li>
+            <li class="landing__platform__serve__service">• Partage ton experience avec de nombreux passionnés directement sur notre forum</li>
+            <li class="landing__platform__serve__service">• Ajoute tes envies à ta liste et retrouve les plus tard</li>
+          </ul>
+        </div>
+
+        <div>
+          <img class="landing__platform__imgScreen" src="/images/landingPage-Screen-VisuelPlateforme.svg" alt="Screen d'écran de la plateforme sur TV">
+        </div>
+      </div>
+    </section>
+
+    <section class="landing__allScreens">
+      <h2 class="landing__h2">EN SIMULTANÉ SUR VOS APPAREILS FAVORIS</h2>
+      
+      <h3 class="landing__allScreens__simultaneous">Profite de <span class="otakuSpan">OTAKU</span> sur 4 écrans en simultané, en mobilité sur téléphone et tablette ou à la maison sur 
+        TV et console.</h3>
+
+        <div class="landing__allScreens__container">
+          <div>
+            <img src="images/LandingPage-tv.svg" alt="">
+            <p class="landing__allScreens__text">TÉLÉVISION</p>
+          </div>
+
+          <div>
+            <img src="images/LandingPage-pc.svg" alt="">
+            <p class="landing__allScreens__text">ORDINATEUR</p>
+          </div>
+
+          <div>
+            <img src="images/LandingPage-mobileTablette.svg" alt="">
+            <p class="landing__allScreens__text">MOBILE / TABLETTE</p>
+          </div>
+
+          <div>            
+            <img src="images/landingPage-console.svg" alt="">
+            <p class="landing__allScreens__text">CONSOLE</p>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="landing__offline">
+      <h2 class="landing__h2">MEME HORS LIGNE</h2>
+
+      
+
+      <div class="landing__offline__container">
+
+        <div class="landing__offline__container__layout">
+          <h3 class="landing__offline__downalds">Télécharge tes animes préférés pour les regarder même hors connexion. Népuise plus ton forfait !</h3>
+        </div>
+
+
+        <div class="landing__offline__underContainer">
+
+              <div><img src="images/LandingPage-Img-Telechargement-Serie.svg" alt=""></div>
+
+              <div>
+                <ul>
+                  <li>Attack on Titans</li>
+                  <li>Téléchargement en cours <img src="" alt=""></li>
+                </ul>
+              </div>
+
+        </div>
+
+      </div>
+      <form class="landingHero__unlimited__content" action="">
+        <input class="landingHero__unlimited__input"
+          type="email"
+          id="email" placeholder="Adresse mail"
+          pattern=".+@gmail.com"
+          size="30"
+          required
+        />
+        <button class="landingHero__unlimited__btn" type="submit">
+          Essayer
+        </button>
+      </form>
+  
+      <p class="landingHero__unlimited__forUsers">
+        Ajoute ton adresse mail pour créer ton compte et commence un essai
+        de <span class="landingHero__unlimited__forUsers daysFree"> 30 jours gratuits.</span>
+      </p>
+    </section>
+    </main>
+    <footer class="footer ">
+      <div class="footer__logo">
+        <img class="logo" src="logos/Group 92.png" />
+      </div>
+      <div class="footer__account account">
+        <h2 class="account__title">Compte</h2>
+        <p class="account__inside">Paramètres</p>
+        <p class="account__inside">Abonnement</p>
+        <p class="account__inside">Se déconnecter</p>
+      </div>
+      <div class="footer__help help">
+        <h2 class="help__title">Aide</h2>
+        <p class="help__inside">FAQ</p>
+        <p class="help__inside">Appareils compatibles</p>
+        <p class="help__inside">Nous contacter</p>
+      </div>
+      <div class="footer__enterprise enterprise">
+        <h2 class="enterprise__title">Société</h2>
+        <p class="enterprise__inside">Confidentialité</p>
+        <p class="enterprise__inside">Conditions</p>
+      </div>
+      <div class="footer__languages languages">
+        <button class="languages__button button">
+          <img src="/icons/icon_france.svg" alt="Français" />
+          <p>Français</p>
+          <img class="arrowDown" src="/images/users_chevron-down.png" alt="chevron déroulant" />
+        </button>
+      </div>
+      <img class="footer__picture footerPicture" src="images/Footer-Img-Personnage.svg" />
+      <div class="footer__socialMedia socialMedia">
+        <h2 class="socialMedia__text">Suivez-nous</h2>
+        <div class="socialMedia__icons icons">
+          <img class="icons__facebook" src="icons/icons8-facebook_old.svg" />
+          <img class="icons__insta" src="icons/icons8-instagram.svg" />
+          <img class="icons__twitter" src="icons/icons8-twitter_circled.svg" />
+        </div>
+      </div>
+      <div class="footer__moreInfos">
+        <p>règles de respect de la vie privée</p>
+        <p>modalités relatives aux cookies</p>
+        <p>conditions générales d’abonnement</p>
+        <p>à propos de ...</p>
+      </div>
+  
+      <p class="footer__project">
+        Projet étudiant réalisé par &nbsp
+        <strong>Priska Sentiany Sumampow</strong>,&nbsp
+        <strong>Anthony Roux</strong>,&nbsp
+        <strong>Quentin Trouve</strong>,&nbsp <strong>Hanna Achab</strong>,&nbsp
+        <strong>Oum Mauduit</strong> &nbsp et &nbsp
+        <strong>Laurent Dashwood</strong>.
+      </p>
+      <p class="footer__copyRight">© Copyright 2020</p>
+    </footer>
+  </body>
 </html>

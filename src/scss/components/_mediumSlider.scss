@@ -5,7 +5,12 @@
 
 .slider__trends {
   margin-top: 25px;
-  height: 527px;
+  height: 490px;
+
+  @include desktop-Xlarge {
+    height: 510px;
+
+  }
 
   .img-medium {
     width: auto;

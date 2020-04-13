@@ -7,9 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
   <script defer src="./js/script.js"></script>
+  <script defer src="./js/buttonGenre.js"></script>
   <script defer src="./js/smallSlider.js"></script>
   <script defer src="./js/mediumSlider.js"></script>
   <script defer src="./js/videoPlayer.js"></script>
+
   <title>OTAKU - our films</title>
 </head>
 
@@ -53,6 +55,12 @@
   </header>
   <main class=" mainPageFilms">
     <section class="mainFilm">
+      <video  class="videoOnPage"  controls autoplay>
+        <source src="http://sentiany.fr/trailer/lesEnfantsDuTemps-bo-film.mp4" type="video/mp4">
+        <source src="http://sentiany.fr/trailer/lesEnfantsDuTemps-bo-film.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlayOnFilm"></div>
       <div class="infosMainFilm">
       <div class="genre">
         <button class="genre__button">Genre</button>
@@ -86,6 +94,17 @@
       </div>
       <p class="synopsis synopsis-hero">Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo. <br>Sans argent ni emploi, 
         il tente de survivre dans la jungle urbaine. </p>
+      <img  class="ratingStar" src="icons/icon_stars.svg">
+      <div class="mainFilmButtons">
+        <a class="mainFilmButtons__play buttonPlayMainFilm">
+          <div class="buttonPlayMainFilm__box boxButton">
+            <p>Lecture</p>
+            <img class="boxButton__icon" src="icons/icon_play.svg">
+          </div>
+        </a>
+        <img src="icons/DownloadYellow.svg">
+        <img src= "icons/Plus.svg">
+      </div>
     </div>
     </section>
     <section class="allFilms">
@@ -99,7 +118,7 @@
             <p class="filmLIstInfos__category category">Action/Aventure</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -114,7 +133,7 @@
             <p class="filmLIstInfos__category category">Populaire</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -129,7 +148,7 @@
             <p class="filmLIstInfos__category category">Policier/Thriller</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -138,13 +157,13 @@
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
+              <p class="titleText title-card">BORUTO</p>
               <p class="ratingFilm">4.8</h3>
             </div>
             <p class="filmLIstInfos__category category">Action/Aventure</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -159,7 +178,7 @@
             <p class="filmLIstInfos__category category">Action/Aventure</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -168,28 +187,28 @@
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
+              <p class="titleText title-card">Le Château<br> ambulant</p>
               <p class="ratingFilm">4.8</h3>
             </div>
-            <p class="filmLIstInfos__category category">Action/Aventure</p>
+            <p class="filmLIstInfos__category category">Fantastique</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
-      <div class="allFilmsSEventh filmList">
+      <div class="allFilmsSeventh filmList">
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
+              <p class="titleText title-card">Dragon Ball Z</p>
               <p class="ratingFilm">4.8</h3>
             </div>
             <p class="filmLIstInfos__category category">Action/Aventure</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -198,13 +217,13 @@
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
+              <p class="titleText title-card">Mewtwo VS Mew</p>
               <p class="ratingFilm">4.8</h3>
             </div>
-            <p class="filmLIstInfos__category category">Action/Aventure</p>
+            <p class="filmLIstInfos__category category">Fantastique</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -213,13 +232,13 @@
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
-              <p class="ratingFilm">4.8</h3>
+              <p class="titleText title-card">Fairy Tale</p>
+              <p class="ratingFilm">4.5</h3>
             </div>
-            <p class="filmLIstInfos__category category">Action/Aventure</p>
+            <p class="filmLIstInfos__category category">Fantastique</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -228,13 +247,13 @@
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
-              <p class="ratingFilm">4.8</h3>
+              <p class="titleText title-card">No game<br> no life</p>
+              <p class="ratingFilm">3.6</h3>
             </div>
-            <p class="filmLIstInfos__category category">Action/Aventure</p>
+            <p class="filmLIstInfos__category category">Ecchi</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -243,13 +262,13 @@
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
-              <p class="ratingFilm">4.8</h3>
+              <p class="titleText title-card">Doraemon <br>Stand By Me</p>
+              <p class="ratingFilm">4.9</h3>
             </div>
-            <p class="filmLIstInfos__category category">Action/Aventure</p>
+            <p class="filmLIstInfos__category category">Fantastique</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -258,13 +277,13 @@
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
+              <p class="titleText title-card">Bleach</p>
               <p class="ratingFilm">4.8</h3>
             </div>
             <p class="filmLIstInfos__category category">Action/Aventure</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -273,13 +292,13 @@
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
+              <p class="titleText title-card">Ponyo</p>
               <p class="ratingFilm">4.8</h3>
             </div>
-            <p class="filmLIstInfos__category category">Action/Aventure</p>
+            <p class="filmLIstInfos__category category">Fantastique</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -288,13 +307,13 @@
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
+              <p class="titleText title-card">La traversé<br> du temps</p>
               <p class="ratingFilm">4.8</h3>
             </div>
-            <p class="filmLIstInfos__category category">Action/Aventure</p>
+            <p class="filmLIstInfos__category category">Fantastique</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -303,13 +322,13 @@
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
-              <p class="titleText title-card">NARUTO</p>
+              <p class="titleText title-card">Le enfant <br> Loup</p>
               <p class="ratingFilm">4.8</h3>
             </div>
-            <p class="filmLIstInfos__category category">Action/Aventure</p>
+            <p class="filmLIstInfos__category category">Famille</p>
           </div>
           <div class="filmLIstInfos__icons">
-            <img src="icons/Download.svg">
+            <img src="icons/DownloadYellow.svg">
             <img src= "icons/Plus.svg">
           </div>
         </div>
@@ -323,25 +342,29 @@
     </div>
     <div class="footer__account account">
       <h2 class="account__title">Compte</h2>
-      <p class="account__settings">Paramètres</p>
-      <p class="account__subscribtion">Abonnement</p>
-      <p class="account__logOut">Se déconnecter</p>
+      <p class="account__inside">Paramètres</p>
+      <p class="account__inside">Abonnement</p>
+      <p class="account__inside">Se déconnecter</p>
     </div>
     <div class="footer__help help">
       <h2 class="help__title">Aide</h2>
-      <p class="help__QandA">FAQ</p>
-      <p class="help__devices">Appareils compatibles</p>
-      <p class="help__contactUs">Nous contacter</p>
+      <p class="help__inside">FAQ</p>
+      <p class="help__inside">Appareils compatibles</p>
+      <p class="help__inside">Nous contacter</p>
     </div>
     <div class="footer__enterprise enterprise">
       <h2 class="enterprise__title">Société</h2>
-      <p>Confidentialité</p>
-      <p>Conditions</p>
+      <p class="enterprise__inside">Confidentialité</p>
+      <p class="enterprise__inside">Conditions</p>
     </div>
     <div class="footer__languages languages">
-      <button class="languages__button">Français</button>
+      <button class="languages__button button">
+        <img src="/icons/icon_france.svg" alt="Français" />
+        <p>Français</p>
+        <img class="arrowDown" src="/images/users_chevron-down.png" alt="chevron déroulant" />
+      </button>
     </div>
-    <img class="footer__picture footerPicture" src="images/Footer-Img-Personnage.svg">
+    <img class="footer__picture footerPicture" src="images/Footer-Img-Personnage.svg" />
     <div class="footer__socialMedia socialMedia">
       <h2 class="socialMedia__text">Suivez-nous</h2>
       <div class="socialMedia__icons icons">
@@ -351,11 +374,20 @@
       </div>
     </div>
     <div class="footer__moreInfos">
-      <p>Règle de Respect de la Vie Privée</p>
-      <p>Modalités relatives aux cookies</p>
-      <p>Conditions générales d’abonnement</p>
-      <p>A propos de ...</p>
+      <p>règles de respect de la vie privée</p>
+      <p>modalités relatives aux cookies</p>
+      <p>conditions générales d’abonnement</p>
+      <p>à propos de ...</p>
     </div>
+
+    <p class="footer__project">
+      Projet étudiant réalisé par &nbsp
+      <strong>Priska Sentiany Sumampow</strong>,&nbsp
+      <strong>Anthony Roux</strong>,&nbsp
+      <strong>Quentin Trouve</strong>,&nbsp <strong>Hanna Achab</strong>,&nbsp
+      <strong>Oum Mauduit</strong> &nbsp et &nbsp
+      <strong>Laurent Dashwood</strong>.
+    </p>
     <p class="footer__copyRight">© Copyright titre 2020</p>
   </footer>
 </body>

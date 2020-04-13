@@ -1,0 +1,211 @@
+.landingHero {
+  &__contenair {
+    height: 550px;
+    background-image: url(/images/LandingPage-hero-small.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid #ffb800;
+
+    // @include tablet-up {
+    //   background-image: url(/images/LandingPage-hero-medium.svg);
+    //   background-repeat: no-repeat;
+    //   background-size: 100%;
+    // }
+  }
+
+  &__header {
+    &__Otaku {
+      margin-top: 48px;
+      margin-left: 80px;
+    }
+
+    &__layoutbtn {
+      transform: translateY(-90px);
+      @include flexbox($justify: flex-end);
+
+      &__btnLogin {
+        justify-content: flex-end;
+        margin-top: 48px;
+        margin-right: 80px;
+        width: 168px;
+        height: 48px;
+        color: white;
+        font-family: $nunito-bold;
+        font-size: rem(20px);
+        background: #ffb800;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__unlimited {
+    transform: translateY(40px);
+    @include flexbox(column);
+
+    &__content {
+      margin-top: 48px;
+    }
+
+    &__tittle {
+      font-family: $nunito-bold;
+      font-size: 42px;
+      line-height: 52px;
+      text-align: -webkit-center;
+    }
+
+    &__input {
+      padding-left: 15px;
+      width: 565px;
+      height: 48px;
+      font-family: $nunito-light;
+      font-size: rem(20px);
+    }
+
+    &__btn {
+      width: 159px;
+      height: 48px;
+      color: white;
+      font-family: $nunito-bold;
+      font-size: rem(20px);
+      font-weight: 800;
+      background: #ffb800;
+      border-radius: 8px;
+    }
+
+    &__forUsers {
+      margin-top: 18px;
+      font-family: $nunito-bold;
+      font-size: 17px;
+    }
+  }
+}
+
+.daysFree {
+  color: #ffb800;
+}
+
+.logoTittle {
+  color: #ffb800;
+  font-family: $manga-bold;
+}
+
+.landing__Otaku {
+  margin: 68px 80px 0px 80px;
+
+  &__contenair {
+    @include flexbox(row-reverse, space-evenly);
+  }
+
+  &__description {
+    font-family: $nunito-bold;
+    font-size: rem(32px);
+  }
+
+  &__infosAll {
+    margin-top: 72px;
+    font-family: $nunito-regular;
+    font-size: rem(24px);
+    line-height: 40px;
+
+    &__info {
+      margin-bottom: 53px;
+    }
+  }
+}
+
+.landing__platform {
+  margin: 68px 80px 0px 80px;
+
+  &__imgScreen {
+    margin-top: 62px;
+  }
+
+  &__tittle {
+    color: #ffb800;
+    font-family: $nunito-bold;
+    font-size: rem(32px);
+  }
+
+  &__container {
+    @include flexbox(row-reverse, space-evenly);
+  }
+
+  &__serve {
+    margin-top: 62px;
+    margin-left: 50px;
+    font-family: $nunito-regular;
+    font-size: rem(24px);
+    line-height: 50px;
+
+    &__service {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.landing__h2 {
+  color: #ffb800;
+  font-family: $nunito-bold;
+  font-size: rem(32px);
+}
+
+.landing__allScreens {
+  margin: 68px 80px 0px 80px;
+
+  &__container {
+    margin-top: 70px;
+    @include flexbox($justify: space-evenly);
+  }
+
+  &__text {
+    font-family: $nunito-regular;
+    font-size: rem(24px);
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+.otakuSpan {
+  color: #ffb800;
+}
+
+.landing__allScreens__simultaneous {
+  margin-top: 62px;
+  font-family: $nunito-regular;
+  font-size: rem(24px);
+  line-height: 50px;
+}
+
+.landing__offline {
+  margin: 68px 80px 0px 80px;
+  font-family: $nunito-regular;
+  font-size: rem(24px);
+  line-height: 50px;
+
+  &__container {
+    @include flexbox($justify: space-evenly);
+
+    &__layout {
+      margin-right: 90px;
+    }
+  }
+
+  &__underContainer {
+    box-sizing: border-box;
+    padding: 50px;
+    width: 800px;
+    height: 184px;
+    border: 1px solid #ffb800;
+    border-radius: 8px;
+
+    @include flexbox($justify: space-evenly);
+
+    ul {
+      padding-left: 50px;
+    }
+  }
+
+  &__downalds {
+    margin-top: 62px;
+  }
+}
