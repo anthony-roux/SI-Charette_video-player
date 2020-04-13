@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category.anime.forEach(anime => {
               console.log(anime.name);
               console.log(anime.picture);
-              reprendreSlider.insertAdjacentHTML('beforeend', generateSliderElement(anime.picture, anime.name));
+              //reprendreSlider.insertAdjacentHTML('beforeend', generateSliderElement(anime.picture, anime.name));
             })
             break;
           case "ma liste":
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
       });
 
-      window.reprendreSlider.rebuild();
+      //window.reprendreSlider.rebuild();
     
   })
   .catch(error => console.error(error))
