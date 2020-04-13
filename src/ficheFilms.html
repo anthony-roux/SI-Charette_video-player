@@ -1,24 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/smallSlider.js"></script>
+    <script defer src="./js/mediumSlider.js"></script>
+    <script defer src="./js/videoPlayer.js"></script>
+    <title>OTAKU - films</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
-  <script defer src="./js/script.js"></script>
-  <script defer src="./js/smallSlider.js"></script>
-  <script defer src="./js/mediumSlider.js"></script>
-  <script defer src="./js/videoPlayer.js"></script>
-  <title>OTAKU - films</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="header__firstPart headerFirstPart">
+        <img class="headerFirstPart__logo" src="logos/logo.png" />
+        <div class="headerFirstPart__menu menu">
+          <ul class="menu__list titles-header">
+            <li>
+              <a href="pageFilms.html">Accueil</a>
+            </li>
+            <li>
+              <a href="pageFilms.html">Films</a>
+            </li>
+            <li>
+              <a href="pageSeries.html">Séries</a>
+            </li>
+            <li>
+              <a class="icon-text">
+                <img src="/icons/hero_addToMyList.svg" alt="add" />
+                <p>Ma liste</p>
+              </a>
+            </li>
+            <li>
+              <a>Agenda</a>
+            </li>
+            <li>
+              <a>Forum</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__secondPart headerSecondPart">
+        <img
+          class="headerSecondPart__iconsSearch"
+          src="icons/icons8-search.svg"
+        />
+        <img
+          class="headerSecondPart__iconsNotification"
+          src="icons/icons8-notification.svg"
+        />
+        <img
+          class="headerSecondPart__profilPicture"
+          src="images/users_profil1.png"
+        />
+        <img
+          class="headerSecondPart__profilArrow"
+          src="icons/icons8-expand_arrow.svg"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="hero__section heroFilm">
+        <video autoplay loop>
+          <source
+            src="../src/vidéos/fairyTailDragonCry-bo-film.mp4"
+            type="video/mp4"
+            class="heroFilm__video"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="heroFilm__describe film">
+          <img src="./images/pageFilm-farcry3.svg" alt="" class="film__title" />
 
-<body>
-  <header></header>
-  <main class="content-wrapper">
-    <section>
-    </section>
-  </main>
-</body>
-
+          <p class="film__director">Réalisé par Shinji Higuchi</p>
+          <p class="film__synopsis">
+            Dragon Cry, un artefact magique, possède<br />suffisamment de
+            pouvoir pour détruire le monde.<br />Il contient la colère des
+            dragons confinée dans un sceptre.<br />Ce dernier est consigné dans
+            un temple du Royaume de Fiore.
+          </p>
+          <div class="film__notation notation">
+            <img src="./icons/icon_stars.svg" alt="" class="notation__stars" />
+          </div>
+          <div class="film__fonctionnality">
+            <div class="film__player player">
+              <button class="player__button button">
+                Lecture
+                <img src="./icons/icon_play.svg" alt="" class="button__play" />
+              </button>
+              <!-- <button class="player__button button"
+            type="button">
+            Lecture
+            <img src="./icons/icon_play.svg" alt="" class="player__upload" />
+            </button> -->
+              <img
+                src="./icons/icons-download-Hero.svg"
+                alt=""
+                class="player__upload"
+              />
+              <img
+                src="../src/icons/icons-add-Hero.svg"
+                alt=""
+                class="player__addToMyList"
+              />
+              <div class="player__mute">
+                <img src="./icons/icon_mute.svg" alt="" class="player__mute" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
