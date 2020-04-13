@@ -1,13 +1,13 @@
 .suggestion {
-  margin: 180px 0 0px 0;
+  // margin: 180px 0 0px 0;
   height: 600px;
   background-image: url(/images/suggestion_background.png);
   background-repeat: no-repeat;
   background-size: 100%;
 
-  @include desktop-Xlarge {
-    margin: 150px 0 70px 0;
-  }
+  // @include desktop-Xlarge {
+  //   margin: 150px 0 70px 0;
+  // }
 
   &__content {
     padding: 64px;
@@ -95,7 +95,11 @@
 
 .slideCard__synopsis {
   margin: 8px 0 16px 16px;
-  max-width: 200px;
+  max-width: 195px;
+
+  @include desktop-Xlarge {
+    max-width: 200px;
+  }
 }
 
 .slideCard__lecture {
@@ -106,6 +110,13 @@
 
 .slideCard__button {
   width: 30px;
+  fill: #E6E6E6;
+
+  &:hover {
+    .lecture {
+      fill: $textYellow;
+    }
+  }
 }
 
 .slideCard__season {
@@ -123,14 +134,42 @@
   width: 25px;
   position: relative;
   top: 62px;
-  left: 232px;
+  left: 200px;
+  fill: #E6E6E6;
+
+  &:hover {
+    .plus {
+      fill: $textYellow;
+    }
+
+  }
+
+
+  @include desktop-Xlarge {
+    left: 232px;
+
+  }
 }
 
 .slideCard__star {
   position: relative;
   top: 98px;
-  left: 204px;
+  left: 172px;
   width: 25px;
+  fill: #E6E6E6;
+
+  &:hover {
+    .star {
+      fill: $textYellow;
+    }
+
+  }
+
+
+  @include desktop-Xlarge {
+    left: 204px;
+
+  }
 }
 
 .slideCard:hover .slideCard__info {
