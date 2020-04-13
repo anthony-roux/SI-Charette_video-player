@@ -1,8 +1,27 @@
 
   .mainSerie {
     height: 80vh;
-    background-image: url("/images/PageSerie-Hero-MyHeroAcademia.svg");
+    //background-image: url("/images/PageSerie-Hero-MyHeroAcademia.svg");
     position: relative;
+
+    .videoOnPage {
+      /*
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        height: 80vh;
+        z-index: -100;
+
+        */
+        position: absolute;
+        min-width: 100%;
+        height: 80vh;
+        width: 100vw;
+        z-index: -100;
+
+    }
 
     .overlay {
       position: absolute;

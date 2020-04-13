@@ -22,7 +22,7 @@ let menuDown = document.querySelector(".menuUsers");
 console.log(menuDown);
 console.log(buttonUsers);
 buttonUsers.addEventListener('click', function () {
-  console.log("coucou");
+  console.log("mama");
   buttonUsers.classList.toggle("is-open-down");
   menuDown.classList.toggle("menu-users-is-open");
 
