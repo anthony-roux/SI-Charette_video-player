@@ -1,132 +1,124 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    box-sizing: border-box;
-  }
-  
-  img {
-    max-width: 100%;
-  }
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
 
 .ficheSeries {
-    background: linear-gradient(91.2deg, #000A2F 27.46%, #00285C 94.96%);
-    
+  background: linear-gradient(91.2deg, #000a2f 27.46%, #00285c 94.96%);
 }
 
-.ficheSeries__banniere  {
-    background-image: url("../../images/titans.png");
-    background-size:cover;
-    background-repeat:no-repeat;
-    color:white;
-    font-size:18px;
-    padding: 1rem 5rem 5rem 5rem;
+.ficheSeries__banniere {
+  background-image: url('../../images/titans.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 18px;
+  padding: 1rem 5rem 5rem 5rem;
 }
 .banniere__returnBtn {
-    margin-bottom:6rem;
-    text-decoration: none;
+  margin-bottom: 6rem;
+  text-decoration: none;
 }
 .banniere__returnBtn a {
-    margin-bottom:6rem;
-    text-decoration: none;
-    color:white;
+  margin-bottom: 6rem;
+  text-decoration: none;
+  color: white;
 }
 .banniere__logo {
-    padding-bottom:2.875rem;
-    
+  padding-bottom: 2.875rem;
 }
 .banniere__info {
-    line-height: 24px;
-    width: 29.125rem;
-    height:9.625rem;
+  line-height: 24px;
+  width: 29.125rem;
+  height: 9.625rem;
 }
 .banniere__stars {
-    margin-top:0.5rem;
+  margin-top: 0.5rem;
 }
-.banniere__btn img{
-    padding-top: 1rem;
-    padding-right:0.4rem;
-    cursor: pointer;
-
+.banniere__btn img {
+  padding-top: 1rem;
+  padding-right: 0.4rem;
+  cursor: pointer;
 }
-.muteBtn  {
-    float: right;
+.muteBtn {
+  float: right;
 }
-.choice__btn p{
-    color: white;
-    font-size:20px;
-    padding-left:3rem;
-    display:block;
-    cursor: pointer;
-
+.choice__btn p {
+  color: white;
+  font-size: 20px;
+  padding-left: 3rem;
+  display: block;
+  cursor: pointer;
 }
 
 .ficheSeries__choice {
-    padding-bottom: 2.5rem;
-    padding-top: 1.2rem;
-
+  padding-bottom: 2.5rem;
+  padding-top: 1.2rem;
 }
 .ficheSeries__episode {
-    margin-right:auto;
-    margin-left:auto;
-    max-width: 1206px;
-    padding-top:2.5rem;
-    border-radius:8px;
-    
-    
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1206px;
+  padding-top: 2.5rem;
+  border-radius: 8px;
 }
 .episode {
-    margin-bottom:1.5rem;
-    border-radius:8px;
-    display:grid;
-    grid-template-columns: 2fr 2fr 3fr 1fr;
-    grid-template-rows: auto;
-    background-color:white;
-    cursor: pointer;
-    transition: transform .2s ease-in; 
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr 1fr;
+  grid-template-rows: auto;
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
 }
 .episode:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-.episode article  {
-    padding-top:1rem;
-    padding-left:1rem;
-    line-height: 24px;
+.episode article {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  line-height: 24px;
 }
 .episode article h2 {
-    margin-bottom:0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .historic__episode {
-    display:flex;
-    justify-content: space-evenly;
-    position:relative;
-    padding-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding-top: 1rem;
 }
 .episode_add {
-    position:absolute;
-    top:0;
-    right:0;
-    padding:0.9rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.9rem;
 }
 .yellowBox {
-    display: block;
-    background-color: #FFB800;
-    border-radius: 0 8px 8px  0;
-    color:white;
-    text-align:left;
-    padding:1em;
-    position:relative;
-    
+  display: block;
+  background-color: #ffb800;
+  border-radius: 0 8px 8px 0;
+  color: white;
+  text-align: left;
+  padding: 1em;
+  position: relative;
 }
 .yellowBox p {
-    padding-bottom:0.2rem;
+  padding-bottom: 0.2rem;
 }
 .yellowBox_download {
-    position:absolute;
-    bottom: 0;
-    right:0;
-    padding:1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
 }
