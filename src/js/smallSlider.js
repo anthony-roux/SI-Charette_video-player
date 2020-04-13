@@ -45,6 +45,8 @@ var slider = tns({
   onInit: false
 });
 
+window.reprendreSlider = slider; // DON'T REMOVE 
+
 let populaire = document.querySelector('.my-slider--2');
 
 var slider = tns({
