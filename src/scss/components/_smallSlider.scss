@@ -1,6 +1,6 @@
 // Version: 2.9.2
 .allSliders {
-  margin-top: -100px;
+  // margin-top: -100px;
 }
 
 .slider__populary,
@@ -19,10 +19,55 @@
 }
 
 
+.slider__reprendre {
+  margin-top: 80px;
 
-.hover {
-  @include scale-animation;
+  @include desktop-Xlarge {
+    margin-bottom: 12px;
+  }
 }
+
+.slider__populary {
+  // margin-top: -125px;
+  margin-top: -110px;
+
+  @include desktop-Xlarge {
+    top: -99px;
+  }
+
+}
+
+.slider__list {
+  margin-top: 100px;
+}
+
+.slider__fantastic {
+  margin-top: 100px;
+}
+
+.slider__police {
+  // margin-top: -130px;
+  margin-top: -110px;
+
+  @include desktop-Xlarge {
+    top: -105px;
+  }
+}
+
+.slider__comedy {
+  // margin-top: -130px;
+  margin-top: -110px;
+
+  @include desktop-Xlarge {
+    margin-top: -103px;
+  }
+
+}
+
+
+// .hover {
+//   @include scale-animation;
+// }
 
 .slide .tns-item {
   width: auto;
@@ -31,8 +76,11 @@
 }
 
 .img {
-  width: auto;
+  width: 272px;
+  // width: auto;
   height: 167px;
+  z-index: -1;
+  position: relative;
 }
 
 .smallSlider {
