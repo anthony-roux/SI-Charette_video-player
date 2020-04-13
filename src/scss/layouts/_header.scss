@@ -2,11 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 80px;
+  padding: 0 40px;
   height: 10vh;
   overflow: hidden;
   font-family: $nunito-regular;
   background: #000E36;
+
+  @include desktop-Xlarge {
+    padding: 0 80px;
+  }
 
   &__firstPart {
     @include flexbox(row, space-evenly, center);
@@ -28,13 +32,21 @@
 
       li {
         padding: 5px 0;
-        margin: 20px 20px;
+        margin: 20px 10px;
         width: auto;
         height: 30px;
 
         &:hover {
           border-bottom: 0.7px solid $textYellow;
+        }
 
+
+        @include desktop-Xlarge {
+          margin: 20px 20px;
+        }
+
+        a {
+          font-size: rem(14px);
         }
       }
 
