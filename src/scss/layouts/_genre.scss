@@ -39,7 +39,8 @@
     @include flexbox(row, flex-start, flex-start);
     background-color: #000a30;
     line-height: 1.5;
-    margin-bottom: 0;
+    margin-bottom: 24px 0 0 0;
+    border: 2px solid $textYellow;
     
   }
 }

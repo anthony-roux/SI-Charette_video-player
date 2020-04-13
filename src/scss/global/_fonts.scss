@@ -80,9 +80,6 @@
 
 
 
-
-
-
 //*********************** PROPERTIES FOR SLIDERS ***********************//
 
 .titles-of-sliders {
@@ -93,10 +90,12 @@
   text-align: left;
   text-transform: uppercase;
   position: relative;
-  top: 112px;
+  // top: 112px;
+  top: 95px;
 
   @include desktop-Xlarge {
-    top: 92px;
+    top: 105px;
+    top: 85px;
 
   }
 }
@@ -109,10 +108,10 @@
   text-align: left;
   text-transform: uppercase;
   position: relative;
-  top: 92px;
+  top: 125px;
 
   @include desktop-Xlarge {
-    top: 60px;
+    top: 130px;
 
   }
 }

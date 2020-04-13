@@ -105,25 +105,28 @@
         TV et console.</h3>
 
         <div class="landing__allScreens__container">
-          <div>
-            <img src="images/LandingPage-tv.svg" alt="">
+
+          <div class="landing__allScreens__tv">
+            <img  class="landing__allScreens__tv__img"src="images/LandingPage-tv.svg" alt="Icon TV">
             <p class="landing__allScreens__text">TÉLÉVISION</p>
           </div>
 
-          <div>
-            <img src="images/LandingPage-pc.svg" alt="">
+          <div class="landing__allScreens__pc">
+            <img class="landing__allScreens__pc__img" src="images/LandingPage-pc.svg" alt="Icon PC">
             <p class="landing__allScreens__text">ORDINATEUR</p>
           </div>
 
-          <div>
-            <img src="images/LandingPage-mobileTablette.svg" alt="">
+          <div class="landing__allScreens__mobTab">
+            <img class="landing__allScreens__mobTab__img" src="images/LandingPage-mobileTablette.svg" alt="Icon Mobile & Tablette">
             <p class="landing__allScreens__text">MOBILE / TABLETTE</p>
           </div>
 
-          <div>            
-            <img src="images/landingPage-console.svg" alt="">
+          <div class="landing__allScreens__console">            
+            <img class="landing__allScreens__console__img"src="images/landingPage-console.svg" alt="Icon Console">
             <p class="landing__allScreens__text">CONSOLE</p>
           </div>
+
+
         </div>
     </section>
 
@@ -142,35 +145,39 @@
 
         <div class="landing__offline__underContainer">
 
-              <div><img src="images/LandingPage-Img-Telechargement-Serie.svg" alt=""></div>
+              <div><img src="images/LandingPage-Img-Telechargement-Serie.svg" alt="Série Attack On Titans"></div>
 
-              <div>
+              <div class="Landing__offline__animeDownload">
                 <ul>
-                  <li>Attack on Titans</li>
-                  <li>Téléchargement en cours <img src="" alt=""></li>
+                  <li>Attack On Titans <img class="Landing__offline__iconsDownload" src="icons/LandingPage-icons-download.svg" alt="Icons Télécharger"></li>
+                  <li>Téléchargement en cours</li>
                 </ul>
               </div>
 
         </div>
 
       </div>
-      <form class="landingHero__unlimited__content" action="">
-        <input class="landingHero__unlimited__input"
-          type="email"
-          id="email" placeholder="Adresse mail"
-          pattern=".+@gmail.com"
-          size="30"
-          required
-        />
-        <button class="landingHero__unlimited__btn" type="submit">
-          Essayer
-        </button>
-      </form>
-  
-      <p class="landingHero__unlimited__forUsers">
-        Ajoute ton adresse mail pour créer ton compte et commence un essai
-        de <span class="landingHero__unlimited__forUsers daysFree"> 30 jours gratuits.</span>
-      </p>
+
+      <div class="landing__offline__addMail">
+        <form class="landingHero__unlimited__content" action="">
+          <input class=" landingHero__unlimited__input"
+            type="email"
+            id="email" placeholder="Adresse mail"
+            pattern=".+@gmail.com"
+            size="30"
+            required
+          />
+          <button class=" landing__addMail__btn landingHero__unlimited__btn" type="submit">
+            Essayer
+          </button>
+        </form>
+    
+        <p class=" landing__addMail__forUsers landingHero__unlimited__forUsers">
+          Ajoute ton adresse mail pour créer ton compte et commence un essai
+          de <span class="landingHero__unlimited__forUsers daysFree"> 30 jours gratuits.</span>
+        </p>
+      </div>
+
     </section>
     </main>
     <footer class="footer ">
