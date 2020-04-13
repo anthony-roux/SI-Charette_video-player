@@ -10,7 +10,7 @@ var slider = tns({
   axis: 'horizontal', // or 'vertical'
   items: 5,
   gutter: 1,
-  edgePadding: 0,
+  edgePadding: 50,
   fixedWidth: false,
   slideBy: 1,
   controls: true,
@@ -50,7 +50,7 @@ var slider = tns({
   axis: 'horizontal', // or 'vertical'
   items: 5,
   gutter: 1,
-  edgePadding: 0,
+  edgePadding: 50,
   fixedWidth: false,
   slideBy: 1,
   controls: true,
@@ -91,7 +91,7 @@ var slider = tns({
   axis: 'horizontal', // or 'vertical'
   items: 5,
   gutter: 1,
-  edgePadding: 0,
+  edgePadding: 50,
   fixedWidth: false,
   slideBy: 1,
   controls: true,
@@ -131,7 +131,7 @@ var slider = tns({
   axis: 'horizontal', // or 'vertical'
   items: 5,
   gutter: 1,
-  edgePadding: 0,
+  edgePadding: 50,
   fixedWidth: false,
   slideBy: 1,
   controls: true,
@@ -172,7 +172,7 @@ var slider = tns({
   axis: 'horizontal', // or 'vertical'
   items: 5,
   gutter: 1,
-  edgePadding: 0,
+  edgePadding: 50,
   fixedWidth: false,
   slideBy: 1,
   controls: true,
@@ -213,9 +213,9 @@ var slider = tns({
   axis: 'horizontal', // or 'vertical'
   items: 5,
   gutter: 1,
-  edgePadding: 0,
+  edgePadding: 50,
   fixedWidth: false,
-  slideBy: 1,
+  slideBy: 3,
   controls: true,
   controlsText: ['\u3008', '\u3009'],
   controlsContainer: false,
