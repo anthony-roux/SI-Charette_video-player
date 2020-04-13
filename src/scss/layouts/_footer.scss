@@ -1,7 +1,7 @@
 .footer {
   display: grid;
   grid-row: 40vh 20vh 2vh 2vh;
-  grid-template-columns: 15vw 15vw 15vw 15vw 15vw 25vw;
+  grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
   width: 100vw;
   color: $textWhite;
   line-height: 2;
@@ -11,7 +11,8 @@
     'i f f f f f'
     'i g g g g g'
     'i j j j . h';
-  margin-top: 250px;
+  margin-top: 150px;
+
 
   &__logo {
     display: flex;
@@ -82,12 +83,11 @@
 
   &__languages {
     grid-area: e;
-    @include flexbox(column, space-around, center);
+    @include flexbox(column, flex-start, center);
+    margin: 16px 0;
+    padding: 10px;
 
     .languages__button {
-      // background-color: #014a8d;
-      // border: 1px solid $textYellow;
-      // color: $textWhite;
       font-weight: bold;
       width: 170px;
       @include flexbox(row, space-around, center);

@@ -24,17 +24,33 @@ $desktop-Xlarge: 1668px;
   }
 }
 
+$desktop-up: 1300px;
+
+@mixin desktop-up {
+  @media (min-width: $desktop-up) {
+    @content;
+  }
+}
+
 //************** ne pas enlever *************//
 
 
 .content-wrapper {
-  padding: 0;
+  padding: 40px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1206px;
+  max-width: 1106px;
 
+
+  @include desktop-up {
+    max-width: 1206px;
+    padding: 0;
+
+  }
 
   @include desktop-Xlarge {
     max-width: 1406px;
+    padding: 0;
+
   }
 }

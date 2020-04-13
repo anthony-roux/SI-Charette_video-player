@@ -5,10 +5,7 @@
 .slider__trends {
   margin-top: -140px;
 
-  @include desktop-Xlarge {
-    margin-top: -70px;
-
-  }
+  @include desktop-Xlarge {}
 }
 
 .slider__discover {
@@ -27,6 +24,9 @@
   .img-medium {
     width: auto;
     height: 400px;
+    object-fit: cover;
+    margin: 50px 0;
+
   }
 
   .hover {
@@ -56,7 +56,8 @@
     z-index: 0;
 
     @include desktop-Xlarge {
-      top: 241px;
+      // top: 241px;
+      top: 331px;
     }
   }
 
