@@ -53,65 +53,65 @@
   }
 
   .allSeriesSecond {
-    background-image: url("/images/PageSeries2-FairyTail-Fantastique-serie.svg");
+    background-image: url('/images/PageSeries2-FairyTail-Fantastique-serie.svg');
   }
-
+  
   .allSeriesThird {
-    background-image: url("/images/PageSeries3-OnePunchMan-Action:Aventure-serie.svg");
+    background-image: url('/images/PageSeries3-OnePunchMan-ActionAventure-serie.svg');
   }
-
+  
   .allSeriesFourth {
-    background-image: url("/images/PageSeries4-MyHeroAcademia-Fantastique-serie.svg");
+    background-image: url('/images/PageSeries4-MyHeroAcademia-Fantastique-serie.svg');
   }
-
+  
   .allSeriesFifth {
-    background-image: url("/images/PageSeries5-OnePiece-Action:Aventure-serie.svg");
+    background-image: url('/images/PageSeries5-OnePiece-ActionAventure-serie.svg');
   }
-
+  
   .allSeriesSixth {
-    background-image: url("/images/PageSeries6-NickyLarson-Mystere-serie.svg");
+    background-image: url('/images/PageSeries6-NickyLarson-Mystere-serie.svg');
   }
-
+  
   .allSeriesSeventh {
-    background-image: url("/images/PageSeries7-Bakuman-Aventure-serie.svg");
+    background-image: url('/images/PageSeries7-Bakuman-Aventure-serie.svg');
   }
-
+  
   .allSeriesEight {
-    background-image: url("/images/PageSeries8-TheGardenOfSinner-Policier-serie.svg");
+    background-image: url('/images/PageSeries8-TheGardenOfSinner-Policier-serie.svg');
   }
-
+  
   .allSeriesNineth {
-    background-image: url("/images/PageSeries9-MegaloBox-Action-serie.svg");
+    background-image: url('/images/PageSeries9-MegaloBox-Action-serie.svg');
   }
-
+  
   .allSeriesTenth {
-    background-image: url("/images/PageSeries10-NoGameNoLife-Fantastique-serie.svg");
+    background-image: url('/images/PageSeries10-NoGameNoLife-Fantastique-serie.svg');
   }
-
+  
   .allSeriesElevent {
-    background-image: url("/images/PageSeries11-D.GrayMan-Action-serie.svg");
+    background-image: url('/images/PageSeries3-OnePunchMan-ActionAventure-serie.svg');
   }
-
+  
   .allSeriesTwelveth {
-    background-image: url("/images/PageSeries12-DeathNote-thriller:pollicier-serie.svg");
+    background-image: url('/images/PageSeries12-DeathNote-pollicier-serie.svg');
   }
-
+  
   .allSeriesThirdteenth {
-    background-image: url("/images/PageSeries13-Darwin\'sGame-Aventure-serie.svg");
+    background-image: url("/images/PageSeries13-Darwin'sGame-Aventure-serie.svg");
   }
-
+  
   .allSeriesFourteenth {
-    background-image: url("/images/PageSeries14-HunterxHunter-Fantastique-serie.svg");
+    background-image: url('/images/PageSeries14-HunterxHunter-Fantastique-serie.svg');
   }
-
+  
   .allSeriesFifteenth {
-    background-image: url("/images/PageSeries15-FateStay-Fantastique-serie.svg");
+    background-image: url('/images/PageSeries15-FateStay-Fantastique-serie.svg');
   }
   .allSeriesSixteenth {
-    background-image: url("/images/PageSeries6-NickyLarson-Mystere-serie.svg");
+    background-image: url('/images/PageSeries6-NickyLarson-Mystere-serie.svg');
     display: none;
-
+  
     @include desktop-Xlarge {
-    display: block;
+      display: block;
     }
   }
