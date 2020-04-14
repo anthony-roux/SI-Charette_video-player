@@ -1,7 +1,7 @@
 import iconAdd from '/icons/icons-add-vignette-hover-2.svg';
 import iconStar from '/icons/stars-circle.svg';
 import iconPlay from '/icons/icons-play-vignette-hover.svg';
-import {users} from './user.js';
+import { users } from './user.js';
 
 /************* users menu *************/
 
@@ -18,14 +18,11 @@ buttonUsers.addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', () => {
   var userId = window.localStorage.getItem('userId');
 
-  var user = users.find(function(user) { 
-    return user.id === userId; 
+  var user = users.find(function(user) {
+    return user.id === userId;
   });
 
   console.log(user.email);
-
-
-
 
   var userLogOut = document.querySelector('.userMenuSecondPart__logOut');
   var reprendreSlider = document.querySelector('.reprendre');
@@ -111,7 +108,6 @@ function generateSliderElement(picture, title) {
     '</div>' +
     '</div>';
 }
-});
 
 /*
 fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
