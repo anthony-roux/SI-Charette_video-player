@@ -127,4 +127,8 @@
   background-color: #014a8d;
   font-size: 0.8rem;
   border-top: 1px solid $DetailsLightGrey;
+
+  &:hover{
+    background-color: #000A2D;
+  }
 }
