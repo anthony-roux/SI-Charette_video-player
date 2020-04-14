@@ -29,12 +29,10 @@
   background-color: $white;
   color: $black;
   cursor: pointer;
-  transition: transform 0.2s ease-in;
+
+  @include scale-animation-text;
 }
 
-.episode:hover {
-  transform: scale(1.1);
-}
 .episode article {
   padding-top: 1rem;
   padding-left: 1rem;
@@ -105,7 +103,7 @@
 
 .ficheSeries__seasonMenu--serie {
   // position: absolute;
-  top: 47em;
+  // top: 47em;
   transform: translate(-160px, -50px);
 }
 
@@ -127,3 +125,13 @@
   font-size: 0.8rem;
   border-top: 1px solid $DetailsLightGrey;
 }
+
+.ficheSeries__season--item:hover {
+  background-color: #000a2d;
+}
+
+// .icheSeries__seasonMenu {
+//   // position: absolute;
+//   top: 47em;
+//   transform: translate(-160px, -50px);
+// }

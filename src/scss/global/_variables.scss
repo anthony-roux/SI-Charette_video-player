@@ -6,10 +6,12 @@ $white: #ffffff;
 
 // SECONDARY
 $BackgroundColor: linear-gradient(90deg, #000a30 0%, #014a8d 100%);
-$secondaryGradient: linear-gradient(90deg,
+$secondaryGradient: linear-gradient(
+  90deg,
   #012659 0%,
   #b4231f 50%,
-  #f9b32d 100%);
+  #f9b32d 100%
+);
 $backgroundBlue: #000a30;
 $DetailsDarkGrey: #434656;
 $DetailsLightGrey: #a7aabc;
@@ -17,7 +19,12 @@ $DetailsBlue: #336ed0;
 $textYellow: #f9b32d;
 $textOrange: #b4231f;
 $textWhite: #f5f5f5;
-$backgroundImageFilm: linear-gradient(to top, rgba(0, 4, 11, 1) 0%, rgba(0, 4, 11, 1) 50%, rgba(0, 4, 11, 0) 100%);
+$backgroundImageFilm: linear-gradient(
+  to top,
+  rgba(0, 4, 11, 1) 0%,
+  rgba(0, 4, 11, 1) 50%,
+  rgba(0, 4, 11, 0) 100%
+);
 
 //************************* GRADIENT *************************//
 
@@ -25,16 +32,11 @@ $gradient: linear-gradient(90deg, #6b75ca 0%, rgba(240, 243, 248, 0) 100%);
 
 //************************* FONTS *************************//
 
-$manga-regular: 'manga_templeregular',
-sans-serif;
-$manga-bold: 'manga_templebold',
-sans-serif;
-$nunito-light: 'Nunito Light',
-sans-serif;
-$nunito-bold: 'Nunito Bold',
-sans-serif;
-$nunito-regular: 'Nunito Regular',
-sans-serif;
+$manga-regular: 'manga_templeregular', sans-serif;
+$manga-bold: 'manga_templebold', sans-serif;
+$nunito-light: 'Nunito Light', sans-serif;
+$nunito-bold: 'Nunito Bold', sans-serif;
+$nunito-regular: 'Nunito Regular', sans-serif;
 
 //************************* BREAKING POINTS *************************//
 
