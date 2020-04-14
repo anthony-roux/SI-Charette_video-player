@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // logout
   userLogOut.addEventListener('click', () => {
-    window.localStorage.setItem('userId', null);
+    window.localStorage.setItem('userId' , null);
     window.location.href = 'connexion.html';
   });
 
@@ -107,7 +107,7 @@ function generateSliderElement(picture, title) {
     '</div>' +
     '</div>' +
     '</div>';
-}
+};
 
 /*
 fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
