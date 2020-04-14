@@ -1,10 +1,18 @@
+<<<<<<< Updated upstream
+.ficheSeries__banniere {
+  background-image: url('/images/titans.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+=======
+
 .ficheSeries__banniere  {
-    background-image: url("/images/titans.png");
-    background-size:cover;
-    background-repeat:no-repeat;
-    color: $white;
-    padding: 1rem 5rem 5rem 10rem;
-    width: 100%;
+  background-image: url("/images/titans.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+>>>>>>> Stashed changes
+  color: $white;
+  padding: 1rem 5rem 5rem 10rem;
+  width: 100%;
 }
 
 .ficheSeries__choice {
@@ -21,23 +29,39 @@ border-radius: 8px;
 }
 
 .episode {
+<<<<<<< Updated upstream
   margin-bottom: 1.5rem;
   border-radius: 8px;
   display: grid;
+=======
+  margin-bottom:1.5rem;
+  border-radius:8px;
+  display:grid;
+>>>>>>> Stashed changes
   grid-template-columns: 2fr 3fr 2fr 1fr;
   grid-template-rows: auto;
   background-color:$white;
   color: $black;
   cursor: pointer;
+<<<<<<< Updated upstream
   transition: transform 0.2s ease-in;
+=======
+  transition: transform .2s ease-in; 
+>>>>>>> Stashed changes
 }
 
 .episode:hover {
 transform: scale(1.1);
 }
+<<<<<<< Updated upstream
 .episode article {
   padding-top: 1rem;
   padding-left: 1rem;
+=======
+.episode article  {
+  padding-top:1rem;
+  padding-left:1rem;
+>>>>>>> Stashed changes
   line-height: 24px;
   font-size: 14px;
 }
@@ -63,11 +87,20 @@ padding: 0.9rem;
 .yellowBox {
   display: block;
   background-color: $textYellow;
+<<<<<<< Updated upstream
   border-radius: 0 8px 8px 0;
   color: $white;
   text-align: left;
   padding: 1em;
   position: relative;
+=======
+  border-radius: 0 8px 8px  0;
+  color:$white;
+  text-align:left;
+  padding:1em;
+  position:relative;
+  
+>>>>>>> Stashed changes
 }
 
 .yellowBox p {
@@ -75,6 +108,7 @@ padding-bottom: 0.2rem;
 }
 
 .yellowBox_download {
+<<<<<<< Updated upstream
   position: absolute;
   bottom: 0;
   right: 0;
@@ -106,6 +140,39 @@ padding-bottom: 0.2rem;
 .ficheSeries__seasonMenu--serie {
   position: absolute;
   top: 47em;
+=======
+  position:absolute;
+  bottom: 0;
+  right:0;
+  padding:1rem;
+}
+
+.hero--serie {
+background-image: url("/images/titans.png");
+background-size:cover;
+background-repeat:no-repeat;
+color: $white;
+width: 100%;
+}
+
+.hero__content--serie {
+background: transparent;
+}
+
+.ficheSeries__seasonMenu {
+border: 1px solid $textYellow;
+border-radius: 8px;
+width: 5em;
+height: 2em;
+overflow: hidden;
+background-color: #000A2D;
+margin: 2em 0 0 10em;
+}
+
+.ficheSeries__seasonMenu--serie {
+position: absolute;
+top: 47em;
+>>>>>>> Stashed changes
 }
 
 .seasonMenu-is-open {
@@ -122,12 +189,8 @@ align-items: center;
 }
 
 .ficheSeries__season--item {
-  background-color: #014a8d;
-  font-size: 0.8rem;
-  border-top: 1px solid $DetailsLightGrey;
-
-  &:hover{
-    background-color: #000A2D;
-  }
+background-color: #014a8d;
+font-size: 0.8rem;
+border-top: 1px solid $DetailsLightGrey;
 }
 

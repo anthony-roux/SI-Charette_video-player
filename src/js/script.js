@@ -1,6 +1,7 @@
 import iconAdd from '/icons/icons-add-vignette-hover-2.svg';
 import iconStar from '/icons/stars-circle.svg';
 import iconPlay from '/icons/icons-play-vignette-hover.svg';
+import { users } from './user.js';
 
 /************* users menu *************/
 
@@ -16,6 +17,13 @@ buttonUsers.addEventListener('click', function() {
 
 document.addEventListener('DOMContentLoaded', () => {
   var userId = window.localStorage.getItem('userId');
+
+  var user = users.find(function(user) {
+    return user.id === userId;
+  });
+
+  console.log(user.email);
+
   var userLogOut = document.querySelector('.userMenuSecondPart__logOut');
   var reprendreSlider = document.querySelector('.reprendre');
 
@@ -52,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // logout
   userLogOut.addEventListener('click', () => {
-    window.localStorage.setItem('userId', null);
+    window.localStorage.setItem('userId' , null);
     window.location.href = 'connexion.html';
   });
 
@@ -99,4 +107,33 @@ function generateSliderElement(picture, title) {
     '</div>' +
     '</div>' +
     '</div>';
-}
+};
+
+/*
+fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
+.then(response => response.json())
+  .then(categories => {
+    
+    categories.forEach(category => {
+      console.log(category.anime);
+      category.anime.forEach(anime => {
+        console.log(anime.name);
+        console.log(anime.picture);
+      })
+    });
+  
+})
+.catch(error => console.error(error))
+*/
+const videoFarcry = document.querySelector('.video__background');
+const vid = document.querySelector('.player__mute');
+
+vid.addEventListener('click', function() {
+  videoFarcry.muted = true;
+});
+
+const visible = document.querySelector('.heroFilm__info');
+
+setTimeout(function() {
+  visible.style.display = 'none';
+}, 9000);

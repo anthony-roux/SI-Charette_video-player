@@ -6,12 +6,18 @@
 
   .genre__button{
     display: block;
-    height: 28px;
-    width: 96px;
+    padding: 12px 16px;
+    width: 120px;
+    height: 45px;
+    color: $textWhite;
+    width: 120px;
     color: $textWhite;
     margin-top: 24px;
     border: 2px solid $textYellow;
-    background-color: #000a30;
+    border-radius: 5px;
+    cursor: pointer;
+    //background-color: #000a30;
+    @include scale-animation-text;
 
     
   }
@@ -25,6 +31,12 @@
     
     ul{
       padding: 32px;
+
+      li {
+        &:hover {
+          @include scale-animation-text;
+        }
+      }
       
     }
   }
@@ -41,6 +53,8 @@
     line-height: 1.5;
     margin-bottom: 24px 0 0 0;
     border: 2px solid $textYellow;
+    width: 100%;
+    margin-top: 32px;
     
   }
 }

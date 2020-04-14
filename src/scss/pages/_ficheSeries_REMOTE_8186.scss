@@ -1,10 +1,11 @@
+
 .ficheSeries__banniere  {
-    background-image: url("/images/titans.png");
-    background-size:cover;
-    background-repeat:no-repeat;
-    color: $white;
-    padding: 1rem 5rem 5rem 10rem;
-    width: 100%;
+  background-image: url("/images/titans.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  color: $white;
+  padding: 1rem 5rem 5rem 10rem;
+  width: 100%;
 }
 
 .ficheSeries__choice {
@@ -21,23 +22,23 @@ border-radius: 8px;
 }
 
 .episode {
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  display: grid;
+  margin-bottom:1.5rem;
+  border-radius:8px;
+  display:grid;
   grid-template-columns: 2fr 3fr 2fr 1fr;
   grid-template-rows: auto;
   background-color:$white;
   color: $black;
   cursor: pointer;
-  transition: transform 0.2s ease-in;
+  transition: transform .2s ease-in; 
 }
 
 .episode:hover {
 transform: scale(1.1);
 }
-.episode article {
-  padding-top: 1rem;
-  padding-left: 1rem;
+.episode article  {
+  padding-top:1rem;
+  padding-left:1rem;
   line-height: 24px;
   font-size: 14px;
 }
@@ -63,11 +64,12 @@ padding: 0.9rem;
 .yellowBox {
   display: block;
   background-color: $textYellow;
-  border-radius: 0 8px 8px 0;
-  color: $white;
-  text-align: left;
-  padding: 1em;
-  position: relative;
+  border-radius: 0 8px 8px  0;
+  color:$white;
+  text-align:left;
+  padding:1em;
+  position:relative;
+  
 }
 
 .yellowBox p {
@@ -75,37 +77,37 @@ padding-bottom: 0.2rem;
 }
 
 .yellowBox_download {
-  position: absolute;
+  position:absolute;
   bottom: 0;
-  right: 0;
-  padding: 1rem;
+  right:0;
+  padding:1rem;
 }
 
 .hero--serie {
-  background-image: url('/images/titans.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: $white;
-  width: 100%;
+background-image: url("/images/titans.png");
+background-size:cover;
+background-repeat:no-repeat;
+color: $white;
+width: 100%;
 }
 
 .hero__content--serie {
-  background: transparent;
+background: transparent;
 }
 
 .ficheSeries__seasonMenu {
-  border: 1px solid $textYellow;
-  border-radius: 8px;
-  width: 5em;
-  height: 2em;
-  overflow: hidden;
-  background-color: #000a2d;
-  margin: 2em 0 0 10em;
+border: 1px solid $textYellow;
+border-radius: 8px;
+width: 5em;
+height: 2em;
+overflow: hidden;
+background-color: #000A2D;
+margin: 2em 0 0 10em;
 }
 
 .ficheSeries__seasonMenu--serie {
-  position: absolute;
-  top: 47em;
+position: absolute;
+top: 47em;
 }
 
 .seasonMenu-is-open {
@@ -122,12 +124,8 @@ align-items: center;
 }
 
 .ficheSeries__season--item {
-  background-color: #014a8d;
-  font-size: 0.8rem;
-  border-top: 1px solid $DetailsLightGrey;
-
-  &:hover{
-    background-color: #000A2D;
-  }
+background-color: #014a8d;
+font-size: 0.8rem;
+border-top: 1px solid $DetailsLightGrey;
 }
 
