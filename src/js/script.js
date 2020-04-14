@@ -57,6 +57,20 @@ document.addEventListener('DOMContentLoaded', () => {
       //window.reprendreSlider.rebuild();
     })
     .catch(error => console.error(error));
+  
+  //connection users to page users
+
+  var userhanna = document.querySelector('.userHanna');
+  var userquentin = document.querySelector('.userQuentin');
+  var userPriska = document.querySelector('.userPriska');
+  var userOum = document.querySelector('.userOum');
+  var toPageUsers = document.querySelector('.goToPageUser');
+
+  toPageUsers.addEventListener('click', function () {
+    window.location.href = 'users.html';
+  })
+
+
 
   // logout
   userLogOut.addEventListener('click', () => {
