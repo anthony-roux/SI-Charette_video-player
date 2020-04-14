@@ -12,7 +12,6 @@
   @include desktop-Xlarge {
     margin-bottom: 125px;
     background-size: 100%;
-
   }
 
   &__content {
@@ -41,9 +40,6 @@
     display: flex;
   }
 }
-
-
-
 
 .slideCard {
   width: 100%;
@@ -127,8 +123,9 @@
 }
 
 .slideCard__button {
-  width: 30px;
-  fill: #E6E6E6;
+  width: 25px;
+  height: 25px;
+  fill: #e6e6e6;
 
   &:hover {
     .lecture {
@@ -150,43 +147,40 @@
 
 .slideCard__add {
   width: 25px;
+  height: 25px;
   position: relative;
-  top: 62px;
+  top: 29px;
   left: 190px;
-  fill: #E6E6E6;
+  fill: #e6e6e6;
 
   &:hover {
     .plus {
       fill: $textYellow;
     }
-
   }
-
 
   @include desktop-Xlarge {
     left: 227px;
-
   }
 }
 
 .slideCard__star {
   position: relative;
-  top: 98px;
+  top: 65px;
   left: 163px;
   width: 25px;
-  fill: #E6E6E6;
+  height: 25px;
+
+  fill: #e6e6e6;
 
   &:hover {
     .star {
       fill: $textYellow;
     }
-
   }
-
 
   @include desktop-Xlarge {
     left: 199px;
-
   }
 }
 
@@ -194,15 +188,6 @@
   opacity: 1;
   transform: translateY(0px);
 }
-
-
-
-
-
-
-
-
-
 
 .medium-slideCard {
   width: 100%;
@@ -288,7 +273,7 @@
 
 .medium-slideCard__button {
   width: 30px;
-  fill: #E6E6E6;
+  fill: #e6e6e6;
 
   &:hover {
     .lecture {
@@ -313,19 +298,16 @@
   position: relative;
   top: 62px;
   left: 190px;
-  fill: #E6E6E6;
+  fill: #e6e6e6;
 
   &:hover {
     .plus {
       fill: $textYellow;
     }
-
   }
-
 
   @include desktop-Xlarge {
     left: 227px;
-
   }
 }
 
@@ -334,19 +316,16 @@
   top: 98px;
   left: 163px;
   width: 25px;
-  fill: #E6E6E6;
+  fill: #e6e6e6;
 
   &:hover {
     .star {
       fill: $textYellow;
     }
-
   }
-
 
   @include desktop-Xlarge {
     left: 199px;
-
   }
 }
 
