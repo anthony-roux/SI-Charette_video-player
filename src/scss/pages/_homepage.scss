@@ -69,6 +69,14 @@
     border: none;
     @include flexbox(row, space-around, center);
 
+    a {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+
+    }
+
     img {
       margin-left: 5px;
       width: 18px;
