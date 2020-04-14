@@ -47,6 +47,7 @@
     margin: 16px 16px;
     @include flexbox(row, flex-start, center);
     @include scale-animation-icon;
+    cursor: pointer;
 
 
     .simpleText {
