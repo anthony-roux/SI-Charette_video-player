@@ -1,83 +1,79 @@
-/* .hero__section {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 90vh;
-  overflow: hidden;
+// .hero__section {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   width: 100%;
+//   height: 90vh;
+//   overflow: hidden;
 
-  .heroFilm__container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-width: 100%;
-    height: 100vh;
+//   .heroFilm__container {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     min-width: 100%;
+//     height: 100vh;
 
-    .video__background {
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
+//     .video__background {
+//       min-width: 100%;
+//       min-height: 100%;
+//       object-fit: cover;
+//       object-position: center;
+//     }
+//   }
 
-  .heroFilm__describe {
-    font-family: $nunito-regular;
-    position: relative;
-    padding: 32px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 5px;
-    width: 100vw;
-    
+//   .heroFilm__describe {
+//     font-family: $nunito-regular;
+//     position: relative;
+//     padding: 32px;
+//     margin-left: 80px;
+//     margin-right: 80px;
+//     margin-bottom: 5px;
+//     width: 100vw;
 
-    .film__director {
-      margin: 24px 0;
-    }
+//     .film__director {
+//       margin: 24px 0;
+//     }
 
-    .heroFilm__notation {
-      margin-bottom: 32px;
-      margin-top: 16px;
-    }
+//     .heroFilm__notation {
+//       margin-bottom: 32px;
+//       margin-top: 16px;
+//     }
 
-    .heroFilm__fonctionnality {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
+//     .heroFilm__fonctionnality {
+//       display: flex;
+//       justify-content: space-between;
+//       width: 100%;
 
-      .film__player {
-        display: flex;
-        justify-content: space-between;
-        width: 300px;
+//       .film__player {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 300px;
 
-        .player__button {
-          display: flex;
-          justify-content: space-between;
-          cursor: pointer;
-          @include scale-animation-icon;
+//         .player__button {
+//           display: flex;
+//           justify-content: space-between;
+//           cursor: pointer;
+//           @include scale-animation-icon;
 
-          .button__play {
-            width: 20px;
-          }
-        }
+//           .button__play {
+//             width: 20px;
+//           }
+//         }
 
-        .player__addToMyList {
-          @include scale-animation-icon;
-          cursor: pointer;
-        }
+//         .player__addToMyList {
+//           @include scale-animation-icon;
+//           cursor: pointer;
+//         }
 
-        .player__upload {
-          @include scale-animation-icon;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-<<<<<<< Updated upstream
-} */
-=======
-}
+//         .player__upload {
+//           @include scale-animation-icon;
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//   }
+// }
 .allFilms__title {
   color: #f9b32d;
   font-family: 'Nunito Bold', sans-serif;
@@ -147,4 +143,3 @@
 .allFilmsSix {
   background-image: url('/images/ficheFilms-psychoPass.svg');
 }
->>>>>>> Stashed changes
