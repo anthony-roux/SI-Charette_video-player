@@ -8,6 +8,7 @@
   
   <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
   <script defer src="./js/script.js"></script>
+  <script defer src="./js/ficheSeries.js"></script>
   <title>OTAKU - series</title>
 </head>
 
@@ -50,32 +51,44 @@
     </div>
   </header>
     <section class ="ficheSeries">
-      <div class ="ficheSeries__banniere">
-        <div class ="banniere__returnBtn">
-          <a href="index.html"><p>Retour</p></a> 
-        </div>
-        <div class ="banniere__logo logo">
-          <img src ="logos/FicheSerie-Logo-AttackOnTitan.png" alt ="attackTitanLogo">
-        </div>
-          <article class="banniere__info info">
-            <p>Realisé par Shinji Higuchi</p>
-            <p>L'humanité vit regroupée  dans une citadelle pour se protéger  des Titans. des gigantesque monstres dévoreurs de chair humaine.
-              Un jeune garçon  va néanmoins déjouer le destin destin  des siens lorsqu'il se découvre la possibilité  de se transformer en Titan...</p>
-            <img class="banniere__stars" src ="icons/stars.png">
-          </article>
-          <div class="banniere__btn">
-            <button class="player__button button" id='film'>
+      <section class="hero hero--serie">
+
+        <div class="hero__content hero__content--serie">
+          <img class="hero__img" src="/logos/FicheSerie-Logo-AttackOnTitan.png" alt="" />
+          <p class="hero__realisator titles-genres-hero">
+            Réalisé par Shinji Higuchi
+          </p>
+          <div class="suggestion__season">
+            <p class="time-date">saison 2</p>
+            <p class="time-date">2020</p>
+          </div>
+          <img
+            class="hero__average"
+            src="/icons/icon_stars.svg"
+            alt="note des utilisateurs"
+          />
+          <p class="hero__synopsis synopsis-hero">
+            L'humanité vit regroupée  dans une citadelle pour se protéger  des Titans. des gigantesque monstres dévoreurs de chair humaine.
+            Un jeune garçon  va néanmoins déjouer le destin destin  des siens lorsqu'il se découvre la possibilité  de se transformer en Titan...
+          </p>
+          <div class="hero__ctas">
+            <button class="hero__play button">
               <a href="playerSerie.html">Lecture</a>
-              <img src="./icons/icon_play.svg" alt="" class="button__play" />
+              <img src="/icons/icon_play.svg" alt="" />
             </button>
-            <img src ="icons/Download.png" alt="downloadBtn">
-            <img src ="icons/Plus.png" alt="plusBtn">
-         </div>
-      </div>
+            <img
+              class="hero__download"
+              src="/icons/download--yellow.svg"
+              alt="download"
+            />
+            <img class="hero__add" src="/icons/icon_add.svg" alt="add" />
+          </div>
+        </div>
+      </section>
 
     <div class ="ficheSeries__choice">
-      <div class="ficheSeries__seasonMenu" id='choiceSeason'>
-        <div class="ficheSeries__season" id='seasonButton'>Saisons</div>
+      <div class="ficheSeries__seasonMenu ficheSeries__seasonMenu--serie" id='choiceSeason'>
+        <div class="ficheSeries__season" id='buttonSeason'>Saisons</div>
         <div class="ficheSeries__season ficheSeries__season--item" id='season1'>Saison 1</div>
         <div class="ficheSeries__season ficheSeries__season--item" id='season2'>Saison 2</div>
       </div>

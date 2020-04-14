@@ -260,6 +260,7 @@ $video.onloadedmetadata = function() {
   $seasonButton.addEventListener('click', () => {
     $seasonMenu.classList.toggle('seasonMenu-is-open')
   })
+  console.log($seasonButton, $seasonMenu)
 
 
   // CLASS EPIDOSE
