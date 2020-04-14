@@ -62,66 +62,80 @@
       />
     </div>
   </header>
-  <main class=" mainPageFilms">
-    <section class="mainFilm">
-      <div class="mainFilm__videoContainer">
-        <video  class="videoOnPageFilm"  muted autoplay>
+  <main class="mainPageFilms">
+    <div class="genre">
+    <button class="genre__button button">Genre</button>
+    <div class="genre__list">
+      <ul>
+        <li>Arts Martiaux</li>
+        <li>Policier/Thriller</li>
+        <li>Aventure/Action</li>
+        <li>Ecchi/ Fan service</li>
+        <li>Fantastique/Science-Fiction</li>
+      </ul>
+      <ul>
+        <li>Shojo</li>
+        <li>Mecha</li>
+        <li>Seinen</li>
+        <li>Shonen</li>
+        <li>Violence</li>
+      </ul>
+      <ul>
+        <li>Sport</li>
+        <li>Drama</li>
+        <li>Comédie</li>
+        <li>Romance</li>
+        <li>Psychologie</li>
+      </ul>
+      <ul>
+        <li>Paramètres</li>
+        <li>Abonnement</li>
+        <li>Se déconnecter</li>
+      </ul>
+    </div>
+  </div>
+    <section class="hero">
+      <div class="hero__videoContainer">
+        <video
+          class="videoOnPage"
+          autoplay
+          loop
+          muted
+        >
           <source src="http://sentiany.fr/trailer/lesEnfantsDuTemps-bo-film.mp4" type="video/mp4">
           <source src="http://sentiany.fr/trailer/lesEnfantsDuTemps-bo-film.mp4" type="video/ogg">
           Your browser does not support the video tag.
         </video>
       </div>
-      <div class="overlayOnFilm"></div>
-      <div class="infosMainFilm">
-      <div class="genre">
-        <button class="genre__button">GENRE</button>
-        <div class="genre__list">
-          <ul>
-            <li>Arts Martiaux</li>
-            <li>Policier/Thriller</li>
-            <li>Aventure/Action</li>
-            <li>Ecchi/ Fan service</li>
-            <li>Fantastique/Science-Fiction</li>
-          </ul>
-          <ul>
-            <li>Shojo</li>
-            <li>Mecha</li>
-            <li>Seinen</li>
-            <li>Shonen</li>
-            <li>Violence</li>
-          </ul>
-          <ul>
-            <li>Sport</li>
-            <li>Drama</li>
-            <li>Comédie</li>
-            <li>Romance</li>
-            <li>Psychologie</li>
-          </ul>
-          <ul>
-            <li>Paramètres</li>
-            <li>Abonnement</li>
-            <li>Se déconnecter</li>
-          </ul>
+
+      <div class="hero__content">
+        <img class="hero__img" src="./images/LesEnfantsDuTemps 2.svg" alt="" class="film__title" />
+        <p class="hero__realisator titles-genres-hero">
+          Réalisé par Makoto Shinkai
+        </p>
+        <img
+          class="hero__average hero__average--film"
+          src="/icons/icon_stars.svg"
+          alt="note des utilisateurs"
+        />
+        <p class="hero__synopsis synopsis-hero">
+          Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo. <br>Sans argent ni emploi, 
+        il tente de survivre dans la jungle urbaine.
+        </p>
+        <div class="hero__ctas">
+          <button class="hero__play button">
+            <a href="playerFilm.html">Lecture</a>
+            <img src="/icons/icon_play.svg" alt="" />
+          </button>
+          <img
+            class="hero__download"
+            src="/icons/download--yellow.svg"
+            alt="download"
+          />
+          <img class="hero__add" src="/icons/icon_add.svg" alt="add" />
+          <img class="hero__mute" src="/icons/icon_mute.svg" alt="mute" />
         </div>
       </div>
-      <div class="titleFilm">
-        <img  class="titleFilm__image" src="images/LesEnfantsDuTemps 2.svg">
-        <h2 class="titleFilm__producer">Réalisé par Makoto Shinkai</h2>
-      </div>
-      <p class="synopsis synopsis-hero">Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo. <br>Sans argent ni emploi, 
-        il tente de survivre dans la jungle urbaine. </p>
-      <img  class="ratingStar" src="icons/icon_stars.svg">
-      <div class="mainFilmButtons">
-        <a class="mainFilmButtons__play buttonPlayMainFilm">
-          <div class="buttonPlayMainFilm__box boxButton  button">
-            <p class="boxButton__text">Lecture</p>
-            <img class="boxButton__icon" src="icons/icon_play.svg">
-          </div>
-        </a>
-        <img src="icons/DownloadYellow.svg">
-        <img src= "icons/Plus.svg">
-      </div>
-    </div>
     </section>
     <section class="allFilms">
       <div class="allFilms__First filmList">

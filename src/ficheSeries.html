@@ -1,79 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/ficheSeries.js"></script>
+  <title>OTAKU - series</title>
+</head>
 
-    <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
-    <script defer src="./js/script.js"></script>
-    <script defer src="./js/ficheSeries.js"></script>
-    <title>OTAKU - series</title>
-  </head>
+<body>
+  <header class ="header">
+    <div class="header__firstPart headerFirstPart">
+      <img class="headerFirstPart__logo" src="logos/logo.png" />
+      <div class="headerFirstPart__menu menu">
+        <ul class="menu__list titles-header">
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="pageFilms.html">Films</a>
+          </li>
+          <li>
+            <a href="pageSeries.html">Series</a>
+          </li>
+          <li>
+            <a class="icon-text">
+              <img src="/icons/hero_addToMyList.svg" alt="add">
+              <p>My list</p>
+            </a>
+          </li>
+          <li>
+            <a>Calendar</a>
+          </li>
+          <li>
+            <a>Forum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__secondPart headerSecondPart">
+      <img class="headerSecondPart__iconsSearch" src="icons/icons8-search.svg" />
+      <img class="headerSecondPart__iconsNotification" src="icons/icons8-notification.svg" />
+      <img class="headerSecondPart__profilPicture" src="images/users_profil1.png" />
+      <img class="headerSecondPart__profilArrow" src="icons/icons8-expand_arrow.svg" />
 
-  <body>
-    <header class="header">
-      <div class="header__firstPart headerFirstPart">
-        <img class="headerFirstPart__logo" src="logos/logo.png" />
-        <div class="headerFirstPart__menu menu">
-          <ul class="menu__list titles-header">
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a href="pageFilms.html">Films</a>
-            </li>
-            <li>
-              <a>Series</a>
-            </li>
-            <li>
-              <a class="icon-text">
-                <img src="/icons/hero_addToMyList.svg" alt="add" />
-                <p>My list</p>
-              </a>
-            </li>
-            <li>
-              <a>Calendar</a>
-            </li>
-            <li>
-              <a>Forum</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="header__secondPart headerSecondPart">
-        <img
-          class="headerSecondPart__iconsSearch"
-          src="icons/icons8-search.svg"
-        />
-        <img
-          class="headerSecondPart__iconsNotification"
-          src="icons/icons8-notification.svg"
-        />
-        <img
-          class="headerSecondPart__profilPicture"
-          src="images/users_profil1.png"
-        />
-        <img
-          class="headerSecondPart__profilArrow"
-          src="icons/icons8-expand_arrow.svg"
-        />
-      </div>
-    </header>
-    <section class="ficheSeries">
+    </div>
+  </header>
+    <section class ="ficheSeries">
       <section class="hero hero--serie">
+
         <div class="hero__content hero__content--serie">
-          <img
-            class="hero__img"
-            src="/logos/FicheSerie-Logo-AttackOnTitan.png"
-            alt=""
-          />
+          <img class="hero__img" src="/logos/FicheSerie-Logo-AttackOnTitan.png" alt="" />
           <p class="hero__realisator titles-genres-hero">
             Réalisé par Shinji Higuchi
           </p>
           <div class="suggestion__season">
-            <p class="time-date">saison 2</p>
-            <p class="time-date">2020</p>
+            <p class="time-date">saison 4</p>
+            <p class="time-date">2013</p>
           </div>
           <img
             class="hero__average"
@@ -81,10 +67,8 @@
             alt="note des utilisateurs"
           />
           <p class="hero__synopsis synopsis-hero">
-            L'humanité vit regroupée dans une citadelle pour se protéger des
-            Titans. des gigantesque monstres dévoreurs de chair humaine. Un
-            jeune garçon va néanmoins déjouer le destin destin des siens
-            lorsqu'il se découvre la possibilité de se transformer en Titan...
+            L'humanité vit regroupée  dans une citadelle pour se protéger  des Titans. des gigantesque monstres dévoreurs de chair humaine.
+            Un jeune garçon  va néanmoins déjouer le destin destin  des siens lorsqu'il se découvre la possibilité  de se transformer en Titan...
           </p>
           <div class="hero__ctas">
             <button class="hero__play button">
@@ -101,267 +85,149 @@
         </div>
       </section>
 
-      <section>
-      <div class="ficheSeries__choice">
-
-        <div class="ficheSeries__episode">
-          <div
-          class="ficheSeries__seasonMenu ficheSeries__seasonMenu--serie"
-          id="choiceSeason"
-        >
-          <div class="ficheSeries__season" id="buttonSeason">Saisons</div>
-          <div
-            class="ficheSeries__season ficheSeries__season--item"
-            id="season1"
-          >
-            Saison 1
-          </div>
-          <div
-            class="ficheSeries__season ficheSeries__season--item"
-            id="season2"
-          >
-            Saison 2
-          </div>
-        </div>
-          <div class="episode episode1">
-            <img src="images/Titan01.png" alt="episode1" />
-            <article>
-              <h2>1.Le réveil de l'humanité</h2>
-              <p>
-                Réfugiés dans une ville fortifiée, les survivants de l'humanité
-                tentent d'échapper aux titans qui les dévorent. Jusqu'au jour où
-                un titan colossal apparaît
-              </p>
-            </article>
-            <div class="historic__episode">
-              <p>Saison 1</p>
-              <p>Episode 1</p>
-              <div class="episode_add">
-                <img src="icons/add.png" />
-              </div>
-            </div>
-            <div class="yellowBox">
-              <p>23 aout 2017</p>
-              <p>1h04 min</p>
-              <img src="icons/16+.png" />
-              <p>Sous-titres</p>
-              <p>Audio</p>
-              <img
-                class="yellowBox_download"
-                src="icons/yellowBox_download.png"
-              />
-            </div>
-          </div>
-          <div class="episode episode2">
-            <img src="images/Titan02.png" alt="episode2" />
-            <article>
-              <h2>2. Chute de Shiganshina</h2>
-              <p>
-                Les titans ont percé la première enceinte de la ville. Les
-                survivants s'enfuient. Hannes présente ses excuses à Eren pour
-                la mort de sa mère.
-              </p>
-            </article>
-            <div class="historic__episode">
-              <p>Saison 1</p>
-              <p>Episode 2</p>
-              <div class="episode_add">
-                <img src="icons/add.png" />
-              </div>
-            </div>
-            <div class="yellowBox">
-              <p>23 aout 2017</p>
-              <p>1h04 min</p>
-              <img src="icons/16+.png" />
-              <p>Sous-titres</p>
-              <p>Audio</p>
-              <img
-                class="yellowBox_download"
-                src="icons/yellowBox_download.png"
-              />
-            </div>
-          </div>
-          <div class="episode episode3">
-            <img src="images/Titan03.png" alt="episode3" />
-            <article>
-              <h2>3. Le réveil de l'humanité</h2>
-              <p>
-                Eren intègre l'armée. Il se retrouve sous le commandement de
-                Keith Sadies, un formateur sévère. Eren découvre l'équipement
-                spécifique des troupes
-              </p>
-            </article>
-            <div class="historic__episode">
-              <p>Saison 1</p>
-              <p>Episode 3</p>
-              <div class="episode_add">
-                <img src="icons/add.png" />
-              </div>
-            </div>
-            <div class="yellowBox">
-              <p>23 aout 2017</p>
-              <p>1h04 min</p>
-              <img src="icons/16+.png" />
-              <p>Sous-titres</p>
-              <p>Audio</p>
-              <img
-                class="yellowBox_download"
-                src="icons/yellowBox_download.png"
-              />
-            </div>
-          </div>
-          <div class="episode episode4">
-            <img src="images/Titan04.png" alt="episode4" />
-            <article>
-              <h2>4. Le retour</h2>
-              <p>
-                Eren poursuit son entraînement avec les autres recrues, sous la
-                supervision de Keith. Il apprend que certains engagés souhaitent
-                rejoindre la police militaire.
-              </p>
-            </article>
-            <div class="historic__episode">
-              <p>Saison 1</p>
-              <p>Episode 4</p>
-              <div class="episode_add">
-                <img src="icons/add.png" />
-              </div>
-            </div>
-            <div class="yellowBox">
-              <p>23 aout 2017</p>
-              <p>1h04 min</p>
-              <img src="icons/16+.png" />
-              <p>Sous-titres</p>
-              <p>Audio</p>
-              <img
-                class="yellowBox_download"
-                src="icons/yellowBox_download.png"
-              />
-            </div>
-          </div>
-          <div class="episode episode5">
-            <img src="images/Titan05.png" alt="episode5 " />
-            <article>
-              <h2>5. Première bataille</h2>
-              <p>
-                Eren attaque le titan colossal, qui montre une certaine
-                intelligence en s'en prenant aux canons du mur. Au moment où
-                Eren s'apprête à le frapper à son point faible, le monstre
-                disparaît...
-              </p>
-            </article>
-            <div class="historic__episode">
-              <p>Saison 1</p>
-              <p>Episode 5</p>
-              <div class="episode_add">
-                <img src="icons/add.png" />
-              </div>
-            </div>
-            <div class="yellowBox">
-              <p>23 aout 2017</p>
-              <p>1h04 min</p>
-              <img src="icons/16+.png" />
-              <p>Sous-titres</p>
-              <p>Audio</p>
-              <img
-                class="yellowBox_download"
-                src="icons/yellowBox_download.png"
-              />
-            </div>
-          </div>
-          <div class="episode episode6">
-            <img src="images/Titan06.png" alt="episode6" />
-            <article>
-              <h2>6. Une petite lame</h2>
-              <p>
-                Réfugiés dans une ville fortifiée, les survivants de l'humanité
-                tentent d'échapper aux titans qui les dévorent. Jusqu'au jour où
-                un titan colossal apparaîtArmin se réveille,
-              </p>
-            </article>
-            <div class="historic__episode">
-              <p>Saison 1</p>
-              <p>Episode 6</p>
-              <div class="episode_add">
-                <img src="icons/add.png" />
-              </div>
-            </div>
-            <div class="yellowBox">
-              <p>23 aout 2017</p>
-              <p>1h04 min</p>
-              <img src="icons/16+.png" />
-              <p>Sous-titres</p>
-              <p>Audio</p>
-              <img
-                class="yellowBox_download"
-                src="icons/yellowBox_download.png"
-              />
-            </div>
+    <div class ="ficheSeries__choice">
+      <div class="ficheSeries__seasonMenu ficheSeries__seasonMenu--serie" id='choiceSeason'>
+        <div class="ficheSeries__season" id='buttonSeason'>Saisons</div>
+        <div class="ficheSeries__season ficheSeries__season--item" id='season1'>Saison 1</div>
+        <div class="ficheSeries__season ficheSeries__season--item" id='season2'>Saison 2</div>
+        <div class="ficheSeries__season ficheSeries__season--item" id='season2'>Saison 3</div>
+        <div class="ficheSeries__season ficheSeries__season--item" id='season2'>Saison 4</div>
+      </div>
+    <div class ="ficheSeries__episode">
+      <div class="episode episode1">
+        <img src ="images/Titan01.png" alt ="episode1">
+        <article>
+          <h2> 1.Le réveil de l'humanité</h2>
+          <p>Réfugiés dans une ville fortifiée, les survivants de l'humanité tentent d'échapper aux titans qui les dévorent. Jusqu'au jour où un titan colossal apparaît</p>
+        </article>
+        <div class ="historic__episode">
+          <p> Saison 1</p>
+          <p> Episode 1</p>
+          <div class="episode_add">
+            <img src="icons/add.png">
           </div>
         </div>
-      </div>
-    </section>
-
-    <footer class="footer ">
-      <div class="footer__logo">
-        <img class="logo" src="logos/Group 92.png" />
-      </div>
-      <div class="footer__account account">
-        <h2 class="account__title">Compte</h2>
-        <p class="account__inside">Paramètres</p>
-        <p class="account__inside">Abonnement</p>
-        <p class="account__inside">Se déconnecter</p>
-      </div>
-      <div class="footer__help help">
-        <h2 class="help__title">Aide</h2>
-        <p class="help__inside">FAQ</p>
-        <p class="help__inside">Appareils compatibles</p>
-        <p class="help__inside">Nous contacter</p>
-      </div>
-      <div class="footer__enterprise enterprise">
-        <h2 class="enterprise__title">Société</h2>
-        <p class="enterprise__inside">Confidentialité</p>
-        <p class="enterprise__inside">Conditions</p>
-      </div>
-      <div class="footer__languages languages">
-        <button class="languages__button button">
-          <img src="/icons/icon_france.svg" alt="Français" />
-          <p>Français</p>
-          <img
-            class="arrowDown"
-            src="/images/users_chevron-down.png"
-            alt="chevron déroulant"
-          />
-        </button>
-      </div>
-      <img
-        class="footer__picture footerPicture"
-        src="images/Footer-Img-Personnage.svg"
-      />
-      <div class="footer__socialMedia socialMedia">
-        <h2 class="socialMedia__text">Suivez-nous</h2>
-        <div class="socialMedia__icons icons">
-          <img class="icons__facebook" src="icons/icons8-facebook_old.svg" />
-          <img class="icons__insta" src="icons/icons8-instagram.svg" />
-          <img class="icons__twitter" src="icons/icons8-twitter_circled.svg" />
+        <div class ="yellowBox">
+          <p>23 aout 2017</p>
+          <p> 1h04 min </p>
+          <img src ="icons/16+.png" >
+          <p>Sous-titres</p>
+          <p>Audio</p>
+          <img class ="yellowBox_download" src ="icons/yellowBox_download.png">
         </div>
       </div>
-      <div class="footer__moreInfos">
-        <p>règles de respect de la vie privée</p>
-        <p>modalités relatives aux cookies</p>
-        <p>conditions générales d’abonnement</p>
-        <p>à propos de ...</p>
+      <div class="episode episode2">
+        <img src ="images/Titan02.png" alt ="episode2">
+        <article>
+          <h2> 2. Chute de Shiganshina</h2>
+          <p>Les titans ont percé la première enceinte de la ville. Les survivants s'enfuient. Hannes présente ses excuses à Eren pour la mort de sa mère.</p>
+        </article>
+        <div class ="historic__episode">
+          <p> Saison 1</p>
+          <p> Episode 2</p>
+          <div class="episode_add">
+            <img src="icons/add.png">
+          </div>
+        </div>
+        <div class ="yellowBox">
+          <p>23 aout 2017</p>
+          <p> 1h04 min </p>
+          <img src ="icons/16+.png" >
+          <p>Sous-titres</p>
+          <p>Audio</p>
+          <img class ="yellowBox_download" src ="icons/yellowBox_download.png">
+        </div>
       </div>
-
-      <p class="footer__project">
-        Projet étudiant réalisé par &nbsp
-        <strong>Priska Sentiany Sumampow</strong>,&nbsp
-        <strong>Anthony Roux</strong>,&nbsp
-        <strong>Quentin Trouve</strong>,&nbsp <strong>Hanna Achab</strong>,&nbsp
-        <strong>Oum Mauduit</strong> &nbsp et &nbsp
-        <strong>Laurent Dashwood</strong>.
-      </p>
-      <p class="footer__copyRight">© Copyright 2020</p>
-    </footer>
-  </body>
+      <div class="episode episode3">
+        <img src ="images/Titan03.png" alt ="episode3">
+        <article>
+          <h2> 3. Le réveil de l'humanité </h2>
+          <p>Eren intègre l'armée. Il se retrouve sous le commandement de Keith Sadies, un formateur sévère. Eren découvre l'équipement spécifique des troupes</p>
+        </article>
+        <div class ="historic__episode">
+          <p> Saison 1</p>
+          <p> Episode 3</p>
+          <div class="episode_add">
+            <img src="icons/add.png">
+          </div>
+        </div>
+        <div class ="yellowBox">
+          <p>23 aout 2017</p>
+          <p> 1h04 min </p>
+          <img src ="icons/16+.png" >
+          <p>Sous-titres</p>
+          <p>Audio</p>
+          <img class ="yellowBox_download" src ="icons/yellowBox_download.png">
+        </div>
+      </div>
+      <div class="episode episode4">
+        <img src ="images/Titan04.png" alt ="episode4">
+        <article>
+          <h2> 4. Le retour</h2>
+          <p>Eren poursuit son entraînement avec les autres recrues, sous la supervision de Keith. Il apprend que certains engagés souhaitent rejoindre la police militaire.</p>
+        </article>
+        <div class ="historic__episode">
+          <p> Saison 1</p>
+          <p> Episode 4</p>
+          <div class="episode_add">
+            <img src="icons/add.png">
+          </div>
+        </div>
+        <div class ="yellowBox">
+          <p>23 aout 2017</p>
+          <p> 1h04 min </p>
+          <img src ="icons/16+.png" >
+          <p>Sous-titres</p>
+          <p>Audio</p>
+          <img class ="yellowBox_download" src ="icons/yellowBox_download.png">
+        </div>
+      </div>
+      <div class="episode episode5">
+        <img src ="images/Titan05.png" alt ="episode5 ">
+        <article>
+          <h2> 5. Première bataille</h2>
+          <p>Eren attaque le titan colossal, qui montre une certaine intelligence en s'en prenant aux canons du mur. Au moment où Eren s'apprête à le frapper à son point faible, le monstre disparaît...</p>
+        </article>
+        <div class ="historic__episode">
+          <p> Saison 1</p>
+          <p> Episode 5</p>
+          <div class="episode_add">
+            <img src="icons/add.png">
+          </div>
+        </div>
+        <div class ="yellowBox">
+          <p>23 aout 2017</p>
+          <p> 1h04 min </p>
+          <img src ="icons/16+.png" >
+          <p>Sous-titres</p>
+          <p>Audio</p>
+          <img class ="yellowBox_download" src ="icons/yellowBox_download.png">
+        </div>
+      </div>
+      <div class="episode episode6">
+        <img src ="images/Titan06.png" alt ="episode6">
+        <article>
+          <h2> 6. Une petite lame</h2>
+          <p>Réfugiés dans une ville fortifiée, les survivants de l'humanité tentent d'échapper aux titans qui les dévorent. Jusqu'au jour où un titan colossal apparaîtArmin se réveille, </p>
+        </article>
+        <div class ="historic__episode">
+          <p> Saison 1</p>
+          <p> Episode 6</p>
+          <div class="episode_add">
+            <img src="icons/add.png">
+          </div>
+        </div>
+        <div class ="yellowBox">
+          <p>23 aout 2017</p>
+          <p> 1h04 min </p>
+          <img src ="icons/16+.png" >
+          <p>Sous-titres</p>
+          <p>Audio</p>
+          <img class ="yellowBox_download" src ="icons/yellowBox_download.png">
+        </div>
+      </div>
+    </div>
+   </div>
+  </section>
+</body>
 </html>
