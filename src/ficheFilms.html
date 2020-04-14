@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
     <script defer src="./js/script.js"></script>
+    <script defer src="./js/ficheFilms.js"></script>
     <title>OTAKU - films</title>
   </head>
 
@@ -62,13 +63,18 @@
       <section class="hero">
         <div class="hero__videoContainer">
           <video
+<<<<<<< Updated upstream
             class="videoOnPage"
+=======
+            class="video__background"
+>>>>>>> Stashed changes
             autoplay
             loop
             muted
             poster="../src/images/background_dragonCry.svg"
           >
             <source
+<<<<<<< Updated upstream
               src="http://sentiany.fr/trailer/stampede-BO-filmvostfr_1.mp4"
               type="video/mp4"
             />
@@ -76,10 +82,16 @@
               src="http://sentiany.fr/trailer/stampede-BO-filmvostfr_1.mp4"
               type="video/ogg"
             />
+=======
+              src="..//src/vidéos/stampede-BO-filmvostfr_1.mp4"
+              type="video/mp4"
+            />
+>>>>>>> Stashed changes
             Your browser does not support the video tag.
           </video>
         </div>
 
+<<<<<<< Updated upstream
         <div class="hero__content">
           <img class="hero__img" src="./images/pageFilm-farcry3.svg" alt="" class="film__title" />
           <p class="hero__realisator titles-genres-hero">
@@ -161,311 +173,200 @@
                   <p class="time-date">2019</p>
                   <p class="time-date">saison 3</p>
                   <img class="slideCard__average" src="/icons/icon_stars.svg" alt="note des utilisateurs" />
-                </div>
-              </div>
+=======
+        <div class="heroFilm__describe film">
+          <img src="./images/pageFilm-farcry3.svg" alt="" class="film__title" />
+          <div class="heroFilm__info film">
+            <p class="film__director">Réalisé par Shinji Higuchi</p>
+            <p class="film__synopsis">
+              Dragon Cry, un artefact magique, possède<br />suffisamment de
+              pouvoir pour détruire le monde.<br />Il contient la colère des
+              dragons confinée dans un sceptre.<br />Ce dernier est consigné
+              dans un temple du Royaume de Fiore.
+            </p>
+          </div>
+          <div class="heroFilm__notation notation">
+            <img src="./icons/icon_stars.svg" alt="" class="notation__stars" />
+          </div>
+          <div class="heroFilm__fonctionnality film">
+            <div class="film__player player">
+              <button class="player__button button" id="film">
+                <a href="playerFilm.html">Lecture</a>
+                <img src="./icons/icon_play.svg" alt="" class="button__play" />
+              </button>
+
+              <button class="player__upload">
+                <img src="./icons/icons-download-Hero.svg" alt="" class="" />
+              </button>
+
+              <button class="player__addToMyList">
+                <img src="../src/icons/icons-add-Hero.svg" alt="" class="" />
+              </button>
             </div>
-            <div class="slide slideCard">
-              <img class="hover img" src="/images/Comedie2-SaikiKusuo-Serie.svg" alt="" />
-              <div class="slideCard__info">
-                <svg class="slideCard__add" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="plus"
-                    d="M37 24C37 24.9468 36.2325 25.7143 35.2857 25.7143H28.7143C27.6097 25.7143 26.7143 26.6097 26.7143 27.7143V34.2857C26.7143 35.2325 25.9468 36 25 36C24.0532 36 23.2857 35.2325 23.2857 34.2857V27.7143C23.2857 26.6097 22.3903 25.7143 21.2857 25.7143H14.7143C13.7675 25.7143 13 24.9468 13 24C13 23.0532 13.7675 22.2857 14.7143 22.2857H21.2857C22.3903 22.2857 23.2857 21.3903 23.2857 20.2857V13.7143C23.2857 12.7675 24.0532 12 25 12C25.9468 12 26.7143 12.7675 26.7143 13.7143V20.2857C26.7143 21.3903 27.6097 22.2857 28.7143 22.2857H35.2857C36.2325 22.2857 37 23.0532 37 24Z" />
-                </svg>
-                <svg class="slideCard__star" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="star"
-                    d="M38.4635 18.7134L30.271 17.5071L26.6093 10.0088C25.9533 8.67224 24.0523 8.65525 23.3907 10.0088L19.729 17.5071L11.5365 18.7134C10.0673 18.9286 9.47853 20.7579 10.544 21.8056L16.471 27.6388L15.0692 35.879C14.8168 37.3685 16.3701 38.4842 17.671 37.7876L25 33.8969L32.329 37.7876C33.6299 38.4785 35.1832 37.3685 34.9308 35.879L33.529 27.6388L39.456 21.8056C40.5215 20.7579 39.9327 18.9286 38.4635 18.7134ZM30.6411 26.6874L31.9701 34.5255L25 30.8273L18.0299 34.5255L19.3589 26.6874L13.7178 21.1373L21.5122 19.9933L25 12.8575L28.4878 19.9933L36.2822 21.1373L30.6411 26.6874Z" />
-                </svg>
-                <div class="slideCard__lecture">
-                  <svg class="slideCard__button" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="16" cy="16" r="15.5" fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                    <g clip-path="url(#clip0)">
-                      <path class="lecture"
-                        d="M24.7811 14.0874L12.5688 6.81924C11.5766 6.22898 10.057 6.80178 10.057 8.2617V22.7946C10.057 24.1043 11.469 24.8937 12.5688 24.2371L24.7811 16.9724C25.8705 16.3262 25.8739 14.7336 24.7811 14.0874Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <rect x="10.057" y="6.58789" width="15.5429" height="17.8824" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <p class="play-hover">lecture</p>
+            <button class="player__mute">
+              <img src="./icons/icon_mute.svg" alt="" class="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="allFilms__title">Vous allez aussi aimer</h2>
+      <section class="allFilms">
+          <div class="allFilms__one filmListing">
+            <div class="filmLIst__infos filmLIstInfos">
+              <div class="filmLIstInfos__general general">
+                <div class="general__title">
+                  <p class="titleText title-card">STAMPED</p>
+                  <p class="ratingFilm">4.8</h3>
+>>>>>>> Stashed changes
                 </div>
-                <h1 class="slideCard__title title-cards-hover">
-                  FULLMETAL ALCHEMIST
-                </h1>
-                <p class="slideCard__synopsis synopsis-cards-hover">
-                  Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo.
-                  <br />Sans argent ni emploi, il tente de survivre dans la
-                  jungle urbaine.
-                </p>
-                <div class="slideCard__season suggestion__season">
-                  <p class="time-date">2019</p>
-                  <p class="time-date">saison 3</p>
-                  <img class="slideCard__average" src="/icons/icon_stars.svg" alt="note des utilisateurs" />
-                </div>
+                <p class="filmLIstInfos__category category">Action/Aventure</p>
               </div>
-            </div>
-            <div class="slide slideCard">
-              <img class="hover img" src="/images/Comedie3-AssassinClassroom-Serie.svg" alt="" />
-              <div class="slideCard__info">
-                <svg class="slideCard__add" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="plus"
-                    d="M37 24C37 24.9468 36.2325 25.7143 35.2857 25.7143H28.7143C27.6097 25.7143 26.7143 26.6097 26.7143 27.7143V34.2857C26.7143 35.2325 25.9468 36 25 36C24.0532 36 23.2857 35.2325 23.2857 34.2857V27.7143C23.2857 26.6097 22.3903 25.7143 21.2857 25.7143H14.7143C13.7675 25.7143 13 24.9468 13 24C13 23.0532 13.7675 22.2857 14.7143 22.2857H21.2857C22.3903 22.2857 23.2857 21.3903 23.2857 20.2857V13.7143C23.2857 12.7675 24.0532 12 25 12C25.9468 12 26.7143 12.7675 26.7143 13.7143V20.2857C26.7143 21.3903 27.6097 22.2857 28.7143 22.2857H35.2857C36.2325 22.2857 37 23.0532 37 24Z" />
-                </svg>
-                <svg class="slideCard__star" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="star"
-                    d="M38.4635 18.7134L30.271 17.5071L26.6093 10.0088C25.9533 8.67224 24.0523 8.65525 23.3907 10.0088L19.729 17.5071L11.5365 18.7134C10.0673 18.9286 9.47853 20.7579 10.544 21.8056L16.471 27.6388L15.0692 35.879C14.8168 37.3685 16.3701 38.4842 17.671 37.7876L25 33.8969L32.329 37.7876C33.6299 38.4785 35.1832 37.3685 34.9308 35.879L33.529 27.6388L39.456 21.8056C40.5215 20.7579 39.9327 18.9286 38.4635 18.7134ZM30.6411 26.6874L31.9701 34.5255L25 30.8273L18.0299 34.5255L19.3589 26.6874L13.7178 21.1373L21.5122 19.9933L25 12.8575L28.4878 19.9933L36.2822 21.1373L30.6411 26.6874Z" />
-                </svg>
-                <div class="slideCard__lecture">
-                  <svg class="slideCard__button" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="16" cy="16" r="15.5" fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                    <g clip-path="url(#clip0)">
-                      <path class="lecture"
-                        d="M24.7811 14.0874L12.5688 6.81924C11.5766 6.22898 10.057 6.80178 10.057 8.2617V22.7946C10.057 24.1043 11.469 24.8937 12.5688 24.2371L24.7811 16.9724C25.8705 16.3262 25.8739 14.7336 24.7811 14.0874Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <rect x="10.057" y="6.58789" width="15.5429" height="17.8824" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <p class="play-hover">lecture</p>
-                </div>
-                <h1 class="slideCard__title title-cards-hover">
-                  FULLMETAL ALCHEMIST
-                </h1>
-                <p class="slideCard__synopsis synopsis-cards-hover">
-                  Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo.
-                  <br />Sans argent ni emploi, il tente de survivre dans la
-                  jungle urbaine.
-                </p>
-                <div class="slideCard__season suggestion__season">
-                  <p class="time-date">2019</p>
-                  <p class="time-date">saison 3</p>
-                  <img class="slideCard__average" src="/icons/icon_stars.svg" alt="note des utilisateurs" />
-                </div>
-              </div>
-            </div>
-            <div class="slide slideCard">
-              <img class="hover img" src="/images/Comedie4-NaurutoSdRockLee-Serie.svg" alt="" />
-              <div class="slideCard__info">
-                <svg class="slideCard__add" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="plus"
-                    d="M37 24C37 24.9468 36.2325 25.7143 35.2857 25.7143H28.7143C27.6097 25.7143 26.7143 26.6097 26.7143 27.7143V34.2857C26.7143 35.2325 25.9468 36 25 36C24.0532 36 23.2857 35.2325 23.2857 34.2857V27.7143C23.2857 26.6097 22.3903 25.7143 21.2857 25.7143H14.7143C13.7675 25.7143 13 24.9468 13 24C13 23.0532 13.7675 22.2857 14.7143 22.2857H21.2857C22.3903 22.2857 23.2857 21.3903 23.2857 20.2857V13.7143C23.2857 12.7675 24.0532 12 25 12C25.9468 12 26.7143 12.7675 26.7143 13.7143V20.2857C26.7143 21.3903 27.6097 22.2857 28.7143 22.2857H35.2857C36.2325 22.2857 37 23.0532 37 24Z" />
-                </svg>
-                <svg class="slideCard__star" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="star"
-                    d="M38.4635 18.7134L30.271 17.5071L26.6093 10.0088C25.9533 8.67224 24.0523 8.65525 23.3907 10.0088L19.729 17.5071L11.5365 18.7134C10.0673 18.9286 9.47853 20.7579 10.544 21.8056L16.471 27.6388L15.0692 35.879C14.8168 37.3685 16.3701 38.4842 17.671 37.7876L25 33.8969L32.329 37.7876C33.6299 38.4785 35.1832 37.3685 34.9308 35.879L33.529 27.6388L39.456 21.8056C40.5215 20.7579 39.9327 18.9286 38.4635 18.7134ZM30.6411 26.6874L31.9701 34.5255L25 30.8273L18.0299 34.5255L19.3589 26.6874L13.7178 21.1373L21.5122 19.9933L25 12.8575L28.4878 19.9933L36.2822 21.1373L30.6411 26.6874Z" />
-                </svg>
-                <div class="slideCard__lecture">
-                  <svg class="slideCard__button" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="16" cy="16" r="15.5" fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                    <g clip-path="url(#clip0)">
-                      <path class="lecture"
-                        d="M24.7811 14.0874L12.5688 6.81924C11.5766 6.22898 10.057 6.80178 10.057 8.2617V22.7946C10.057 24.1043 11.469 24.8937 12.5688 24.2371L24.7811 16.9724C25.8705 16.3262 25.8739 14.7336 24.7811 14.0874Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <rect x="10.057" y="6.58789" width="15.5429" height="17.8824" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <p class="play-hover">lecture</p>
-                </div>
-                <h1 class="slideCard__title title-cards-hover">
-                  FULLMETAL ALCHEMIST
-                </h1>
-                <p class="slideCard__synopsis synopsis-cards-hover">
-                  Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo.
-                  <br />Sans argent ni emploi, il tente de survivre dans la
-                  jungle urbaine.
-                </p>
-                <div class="slideCard__season suggestion__season">
-                  <p class="time-date">2019</p>
-                  <p class="time-date">saison 3</p>
-                  <img class="slideCard__average" src="/icons/icon_stars.svg" alt="note des utilisateurs" />
-                </div>
-              </div>
-            </div>
-            <div class="slide slideCard">
-              <img class="hover img" src="/images/Comedie5-Prisonschool-Serie.svg" alt="" />
-              <div class="slideCard__info">
-                <svg class="slideCard__add" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="plus"
-                    d="M37 24C37 24.9468 36.2325 25.7143 35.2857 25.7143H28.7143C27.6097 25.7143 26.7143 26.6097 26.7143 27.7143V34.2857C26.7143 35.2325 25.9468 36 25 36C24.0532 36 23.2857 35.2325 23.2857 34.2857V27.7143C23.2857 26.6097 22.3903 25.7143 21.2857 25.7143H14.7143C13.7675 25.7143 13 24.9468 13 24C13 23.0532 13.7675 22.2857 14.7143 22.2857H21.2857C22.3903 22.2857 23.2857 21.3903 23.2857 20.2857V13.7143C23.2857 12.7675 24.0532 12 25 12C25.9468 12 26.7143 12.7675 26.7143 13.7143V20.2857C26.7143 21.3903 27.6097 22.2857 28.7143 22.2857H35.2857C36.2325 22.2857 37 23.0532 37 24Z" />
-                </svg>
-                <svg class="slideCard__star" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="star"
-                    d="M38.4635 18.7134L30.271 17.5071L26.6093 10.0088C25.9533 8.67224 24.0523 8.65525 23.3907 10.0088L19.729 17.5071L11.5365 18.7134C10.0673 18.9286 9.47853 20.7579 10.544 21.8056L16.471 27.6388L15.0692 35.879C14.8168 37.3685 16.3701 38.4842 17.671 37.7876L25 33.8969L32.329 37.7876C33.6299 38.4785 35.1832 37.3685 34.9308 35.879L33.529 27.6388L39.456 21.8056C40.5215 20.7579 39.9327 18.9286 38.4635 18.7134ZM30.6411 26.6874L31.9701 34.5255L25 30.8273L18.0299 34.5255L19.3589 26.6874L13.7178 21.1373L21.5122 19.9933L25 12.8575L28.4878 19.9933L36.2822 21.1373L30.6411 26.6874Z" />
-                </svg>
-                <div class="slideCard__lecture">
-                  <svg class="slideCard__button" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="16" cy="16" r="15.5" fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                    <g clip-path="url(#clip0)">
-                      <path class="lecture"
-                        d="M24.7811 14.0874L12.5688 6.81924C11.5766 6.22898 10.057 6.80178 10.057 8.2617V22.7946C10.057 24.1043 11.469 24.8937 12.5688 24.2371L24.7811 16.9724C25.8705 16.3262 25.8739 14.7336 24.7811 14.0874Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <rect x="10.057" y="6.58789" width="15.5429" height="17.8824" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <p class="play-hover">lecture</p>
-                </div>
-                <h1 class="slideCard__title title-cards-hover">
-                  FULLMETAL ALCHEMIST
-                </h1>
-                <p class="slideCard__synopsis synopsis-cards-hover">
-                  Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo.
-                  <br />Sans argent ni emploi, il tente de survivre dans la
-                  jungle urbaine.
-                </p>
-                <div class="slideCard__season suggestion__season">
-                  <p class="time-date">2019</p>
-                  <p class="time-date">saison 3</p>
-                  <img class="slideCard__average" src="/icons/icon_stars.svg" alt="note des utilisateurs" />
-                </div>
-              </div>
-            </div>
-            <div class="slide slideCard">
-              <img class="hover img" src="/images/Comedie6-CityHunter-Serie.svg" alt="" />
-              <div class="slideCard__info">
-                <svg class="slideCard__add" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="plus"
-                    d="M37 24C37 24.9468 36.2325 25.7143 35.2857 25.7143H28.7143C27.6097 25.7143 26.7143 26.6097 26.7143 27.7143V34.2857C26.7143 35.2325 25.9468 36 25 36C24.0532 36 23.2857 35.2325 23.2857 34.2857V27.7143C23.2857 26.6097 22.3903 25.7143 21.2857 25.7143H14.7143C13.7675 25.7143 13 24.9468 13 24C13 23.0532 13.7675 22.2857 14.7143 22.2857H21.2857C22.3903 22.2857 23.2857 21.3903 23.2857 20.2857V13.7143C23.2857 12.7675 24.0532 12 25 12C25.9468 12 26.7143 12.7675 26.7143 13.7143V20.2857C26.7143 21.3903 27.6097 22.2857 28.7143 22.2857H35.2857C36.2325 22.2857 37 23.0532 37 24Z" />
-                </svg>
-                <svg class="slideCard__star" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="star"
-                    d="M38.4635 18.7134L30.271 17.5071L26.6093 10.0088C25.9533 8.67224 24.0523 8.65525 23.3907 10.0088L19.729 17.5071L11.5365 18.7134C10.0673 18.9286 9.47853 20.7579 10.544 21.8056L16.471 27.6388L15.0692 35.879C14.8168 37.3685 16.3701 38.4842 17.671 37.7876L25 33.8969L32.329 37.7876C33.6299 38.4785 35.1832 37.3685 34.9308 35.879L33.529 27.6388L39.456 21.8056C40.5215 20.7579 39.9327 18.9286 38.4635 18.7134ZM30.6411 26.6874L31.9701 34.5255L25 30.8273L18.0299 34.5255L19.3589 26.6874L13.7178 21.1373L21.5122 19.9933L25 12.8575L28.4878 19.9933L36.2822 21.1373L30.6411 26.6874Z" />
-                </svg>
-                <div class="slideCard__lecture">
-                  <svg class="slideCard__button" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="16" cy="16" r="15.5" fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                    <g clip-path="url(#clip0)">
-                      <path class="lecture"
-                        d="M24.7811 14.0874L12.5688 6.81924C11.5766 6.22898 10.057 6.80178 10.057 8.2617V22.7946C10.057 24.1043 11.469 24.8937 12.5688 24.2371L24.7811 16.9724C25.8705 16.3262 25.8739 14.7336 24.7811 14.0874Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <rect x="10.057" y="6.58789" width="15.5429" height="17.8824" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <p class="play-hover">lecture</p>
-                </div>
-                <h1 class="slideCard__title title-cards-hover">
-                  FULLMETAL ALCHEMIST
-                </h1>
-                <p class="slideCard__synopsis synopsis-cards-hover">
-                  Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo.
-                  <br />Sans argent ni emploi, il tente de survivre dans la
-                  jungle urbaine.
-                </p>
-                <div class="slideCard__season suggestion__season">
-                  <p class="time-date">2019</p>
-                  <p class="time-date">saison 3</p>
-                  <img class="slideCard__average" src="/icons/icon_stars.svg" alt="note des utilisateurs" />
-                </div>
-              </div>
-            </div>
-            <div class="slide slideCard">
-              <img class="hover img" src="/images/Comedie7-FoodWars-Serie.svg" alt="" />
-              <div class="slideCard__info">
-                <svg class="slideCard__add" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="plus"
-                    d="M37 24C37 24.9468 36.2325 25.7143 35.2857 25.7143H28.7143C27.6097 25.7143 26.7143 26.6097 26.7143 27.7143V34.2857C26.7143 35.2325 25.9468 36 25 36C24.0532 36 23.2857 35.2325 23.2857 34.2857V27.7143C23.2857 26.6097 22.3903 25.7143 21.2857 25.7143H14.7143C13.7675 25.7143 13 24.9468 13 24C13 23.0532 13.7675 22.2857 14.7143 22.2857H21.2857C22.3903 22.2857 23.2857 21.3903 23.2857 20.2857V13.7143C23.2857 12.7675 24.0532 12 25 12C25.9468 12 26.7143 12.7675 26.7143 13.7143V20.2857C26.7143 21.3903 27.6097 22.2857 28.7143 22.2857H35.2857C36.2325 22.2857 37 23.0532 37 24Z" />
-                </svg>
-                <svg class="slideCard__star" width="50" height="48" viewBox="0 0 50 48" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M48.9118 24C48.9118 36.9651 38.0882 47.5 24.7059 47.5C11.3236 47.5 0.5 36.9651 0.5 24C0.5 11.0349 11.3236 0.5 24.7059 0.5C38.0882 0.5 48.9118 11.0349 48.9118 24Z"
-                    fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                  <path class="star"
-                    d="M38.4635 18.7134L30.271 17.5071L26.6093 10.0088C25.9533 8.67224 24.0523 8.65525 23.3907 10.0088L19.729 17.5071L11.5365 18.7134C10.0673 18.9286 9.47853 20.7579 10.544 21.8056L16.471 27.6388L15.0692 35.879C14.8168 37.3685 16.3701 38.4842 17.671 37.7876L25 33.8969L32.329 37.7876C33.6299 38.4785 35.1832 37.3685 34.9308 35.879L33.529 27.6388L39.456 21.8056C40.5215 20.7579 39.9327 18.9286 38.4635 18.7134ZM30.6411 26.6874L31.9701 34.5255L25 30.8273L18.0299 34.5255L19.3589 26.6874L13.7178 21.1373L21.5122 19.9933L25 12.8575L28.4878 19.9933L36.2822 21.1373L30.6411 26.6874Z" />
-                </svg>
-                <div class="slideCard__lecture">
-                  <svg class="slideCard__button" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="16" cy="16" r="15.5" fill="black" fill-opacity="0.58" stroke="#E7E7E7" />
-                    <g clip-path="url(#clip0)">
-                      <path class="lecture"
-                        d="M24.7811 14.0874L12.5688 6.81924C11.5766 6.22898 10.057 6.80178 10.057 8.2617V22.7946C10.057 24.1043 11.469 24.8937 12.5688 24.2371L24.7811 16.9724C25.8705 16.3262 25.8739 14.7336 24.7811 14.0874Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <rect x="10.057" y="6.58789" width="15.5429" height="17.8824" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <p class="play-hover">lecture</p>
-                </div>
-                <h1 class="slideCard__title title-cards-hover">
-                  FULLMETAL ALCHEMIST
-                </h1>
-                <p class="slideCard__synopsis synopsis-cards-hover">
-                  Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo.
-                  <br />Sans argent ni emploi, il tente de survivre dans la
-                  jungle urbaine.
-                </p>
-                <div class="slideCard__season suggestion__season">
-                  <p class="time-date">2019</p>
-                  <p class="time-date">saison 3</p>
-                  <img class="slideCard__average" src="/icons/icon_stars.svg" alt="note des utilisateurs" />
-                </div>
+              <div class="filmLIstInfos__icons">
+                <img src="icons/DownloadYellow.svg">
+                <img src= "icons/Plus.svg">
               </div>
             </div>
           </div>
+          <div class="allFilmsTwo filmListing">
+            <div class="filmLIst__infos filmLIstInfos">
+              <div class="filmLIstInfos__general general">
+                <div class="general__title">
+                  <p class="titleText title-card">BLACK BUTTLER</p>
+                  <p class="ratingFilm">2.9</h3>
+                </div>
+                <p class="filmLIstInfos__category category">Action/Aventure</p>
+              </div>
+              <div class="filmLIstInfos__icons">
+                <img src="icons/DownloadYellow.svg">
+                <img src= "icons/Plus.svg">
+              </div>
+            </div>
+          </div>
+          <div class="allFilmsThree filmListing">
+            <div class="filmLIst__infos filmLIstInfos">
+              <div class="filmLIstInfos__general general">
+                <div class="general__title">
+                  <p class="titleText title-card">NARUTO</p>
+                  <p class="ratingFilm">3.7</h3>
+                </div>
+                <p class="filmLIstInfos__category category">Action/Aventure</p>
+              </div>
+              <div class="filmLIstInfos__icons">
+                <img src="icons/DownloadYellow.svg">
+                <img src= "icons/Plus.svg">
+              </div>
+            </div>
+          </div>
+          <div class="allFilmsFour filmListing">
+            <div class="filmLIst__infos filmLIstInfos">
+              <div class="filmLIstInfos__general general">
+                <div class="general__title">
+                  <p class="titleText title-card">DRAGON BALL Z</p>
+                  <p class="ratingFilm">4.8</h3>
+                </div>
+                <p class="filmLIstInfos__category category">Action/Aventure</p>
+              </div>
+              <div class="filmLIstInfos__icons">
+                <img src="icons/DownloadYellow.svg">
+                <img src= "icons/Plus.svg">
+              </div>
+            </div>
+          </div>
+          <div  class="allFilmsFive filmListing">
+              <div class="filmLIst__infos filmLIstInfos">
+                <div class="filmLIstInfos__general general">
+                  <div class="general__title">
+                    <p class="titleText title-card">FATE STAY NIGHT</p>
+                    <p class="ratingFilm">4.6</h3>
+                  </div>
+                  <p class="filmLIstInfos__category category">Action/Aventure</p>
+                </div>
+                <div class="filmLIstInfos__icons">
+                  <img src="icons/DownloadYellow.svg">
+                  <img src= "icons/Plus.svg">
+                </div>
+              </div>
+            </div>
+            <div class="allFilmsSix filmListing">
+              <div class="filmLIst__infos filmLIstInfos">
+                <div class="filmLIstInfos__general general">
+                  <div class="general__title">
+                    <p class="titleText title-card">PSYCHO PASS</p>
+                    <p class="ratingFilm">4.8</h3>
+                  </div>
+                  <p class="filmLIstInfos__category category">Action/Aventure</p>
+                </div>
+                <div class="filmLIstInfos__icons">
+                  <img src="icons/DownloadYellow.svg">
+                  <img src= "icons/Plus.svg">
+                </div>
+              </div>
+            </div>
+          
         </section>
+
     </main>
+    <footer class="footer ">
+      <div class="footer__logo">
+        <img class="logo" src="logos/Group 92.png" />
+      </div>
+      <div class="footer__account account">
+        <h2 class="account__title">Compte</h2>
+        <p class="account__inside">Paramètres</p>
+        <p class="account__inside">Abonnement</p>
+        <p class="account__inside">Se déconnecter</p>
+      </div>
+      <div class="footer__help help">
+        <h2 class="help__title">Aide</h2>
+        <p class="help__inside">FAQ</p>
+        <p class="help__inside">Appareils compatibles</p>
+        <p class="help__inside">Nous contacter</p>
+      </div>
+      <div class="footer__enterprise enterprise">
+        <h2 class="enterprise__title">Société</h2>
+        <p class="enterprise__inside">Confidentialité</p>
+        <p class="enterprise__inside">Conditions</p>
+      </div>
+      <div class="footer__languages languages">
+        <button class="languages__button button">
+          <img src="/icons/icon_france.svg" alt="Français" />
+          <p>Français</p>
+          <img
+            class="arrowDown"
+            src="/images/users_chevron-down.png"
+            alt="chevron déroulant"
+          />
+        </button>
+      </div>
+      <img
+        class="footer__picture footerPicture"
+        src="images/Footer-Img-Personnage.svg"
+      />
+      <div class="footer__socialMedia socialMedia">
+        <h2 class="socialMedia__text">Suivez-nous</h2>
+        <div class="socialMedia__icons icons">
+          <img class="icons__facebook" src="icons/icons8-facebook_old.svg" />
+          <img class="icons__insta" src="icons/icons8-instagram.svg" />
+          <img class="icons__twitter" src="icons/icons8-twitter_circled.svg" />
+        </div>
+      </div>
+      <div class="footer__moreInfos">
+        <p>règles de respect de la vie privée</p>
+        <p>modalités relatives aux cookies</p>
+        <p>conditions générales d’abonnement</p>
+        <p>à propos de ...</p>
+      </div>
+
+      <p class="footer__project">
+        Projet étudiant réalisé par &nbsp
+        <strong>Priska Sentiany Sumampow</strong>,&nbsp
+        <strong>Anthony Roux</strong>,&nbsp
+        <strong>Quentin Trouve</strong>,&nbsp <strong>Hanna Achab</strong>,&nbsp
+        <strong>Oum Mauduit</strong> &nbsp et &nbsp
+        <strong>Laurent Dashwood</strong>.
+      </p>
+      <p class="footer__copyRight">© Copyright 2020</p>
+    </footer>
   </body>
 </html>

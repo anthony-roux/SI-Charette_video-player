@@ -74,4 +74,77 @@
       }
     }
   }
+<<<<<<< Updated upstream
 } */
+=======
+}
+.allFilms__title {
+  color: #f9b32d;
+  font-family: 'Nunito Bold', sans-serif;
+  font-size: 1.25rem;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  //position: relative;
+  margin-top: 95px;
+  margin-left: 130px;
+}
+.allFilms {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 80px;
+}
+
+.filmListing {
+  width: 360px;
+  height: 260px;
+  background-image: url('/images/ficheFilm-stamped.svg');
+  @include flexbox(row, space-between, flex-end);
+  margin-top: 24px;
+
+  &:hover {
+    border: 2px solid $textYellow;
+  }
+
+  .filmLIstInfos {
+    background-image: $backgroundImageFilm;
+    @include flexbox(row, space-between, flex-end);
+    height: 100px;
+    width: 360px;
+    padding: 0 8px 4px 8px;
+    line-height: 1.5;
+
+    &__category {
+      font-size: rem(14px);
+      font-family: $nunito-bold;
+    }
+
+    .filmLIstInfos__icons {
+      align-self: center;
+    }
+  }
+}
+
+.allFilmsTwo {
+  background-image: url('/images/ficheFilms-blackButler.svg');
+}
+
+.allFilmsThree {
+  background-image: url('/images/PageFilm1-Naruto-Aventure-Film.svg');
+}
+
+.allFilmsFour {
+  background-image: url('/images/ficheFilmsDBZ.svg');
+}
+
+.allFilmsFive {
+  background-image: url('/images/ficheFilms-fateStay.svg');
+}
+
+.allFilmsSix {
+  background-image: url('/images/ficheFilms-psychoPass.svg');
+}
+>>>>>>> Stashed changes

@@ -128,6 +128,7 @@ fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
 })
 .catch(error => console.error(error))
 */
+<<<<<<< Updated upstream
 
 const videoFarcry = document.querySelector('.video__background');
 const vid = document.querySelector('.player__mute');
@@ -141,3 +142,6 @@ const visible = document.querySelector('.heroFilm__info');
 setTimeout(function() {
 visible.style.display = 'none';
 }, 9000);
+=======
+
+>>>>>>> Stashed changes
