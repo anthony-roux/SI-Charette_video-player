@@ -7,12 +7,11 @@ import { users } from './user.js';
 
 let buttonUsers = document.querySelector('.headerSecondPart__profilArrow');
 let menuDown = document.querySelector('.menuUsers');
-console.log(menuDown);
-console.log(buttonUsers);
-buttonUsers.addEventListener('click', function() {
-  console.log('mama');
-  buttonUsers.classList.toggle('is-open-down');
-  menuDown.classList.toggle('menu-users-is-open');
+  console.log(menuDown);
+  console.log(buttonUsers);
+  buttonUsers.addEventListener('click', function() {
+    buttonUsers.classList.toggle('is-open-down');
+    menuDown.classList.toggle('menu-users-is-open');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,8 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   var user = users.find(function(user) {
     return user.id === userId;
   });
-
-  console.log(user.email);
 
   var userLogOut = document.querySelector('.userMenuSecondPart__logOut');
   var reprendreSlider = document.querySelector('.reprendre');
@@ -60,25 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
   
   //connection users to page users
 
-  var userhanna = document.querySelector('.userHanna');
-  var userquentin = document.querySelector('.userQuentin');
-  var userPriska = document.querySelector('.userPriska');
-  var userOum = document.querySelector('.userOum');
   var toPageUsers = document.querySelector('.goToPageUser');
 
   toPageUsers.addEventListener('click', function () {
     window.location.href = 'users.html';
   })
 
-
-
   // logout
   userLogOut.addEventListener('click', () => {
     window.localStorage.setItem('userId' , null);
     window.location.href = 'connexion.html';
   });
-
-  console.log(reprendreSlider);
 });
 
 var obj = {
@@ -139,15 +128,16 @@ fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
 })
 .catch(error => console.error(error))
 */
+
 const videoFarcry = document.querySelector('.video__background');
 const vid = document.querySelector('.player__mute');
 
-vid.addEventListener('click', function() {
+  vid.addEventListener('click', function() {
   videoFarcry.muted = true;
-});
+  });
 
 const visible = document.querySelector('.heroFilm__info');
 
 setTimeout(function() {
-  visible.style.display = 'none';
+visible.style.display = 'none';
 }, 9000);
