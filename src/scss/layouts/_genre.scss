@@ -5,6 +5,7 @@
 
 
   .genre__button{
+    @include scale-animation-text;
     display: block;
     background-color: $white;
     width: 120px;
@@ -14,7 +15,6 @@
     border: 2px solid $textYellow;
     border-radius: 4px;
     cursor: pointer;
-    //background-color: #000a30;
     @include scale-animation-text;
     text-align: center;
     font-family: $nunito-regular;
