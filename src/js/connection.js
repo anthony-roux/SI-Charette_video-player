@@ -20,11 +20,11 @@ buttonConnection.addEventListener('click', function(e) {
   } else if (email === users[3].email && password === users[3].password) {
     window.localStorage.setItem('userId', users[3].id);
     window.location.href = 'index.html';
-  } else if (email === users[4].email && password === users[3].password) {
-    window.localStorage.setItem('userId', users[3].id);
+  } else if (email === users[4].email && password === users[4].password) {
+    window.localStorage.setItem('userId', users[4].id);
     window.location.href = 'index.html';
-  } else if (email === users[5].email && password === users[3].password) {
-    window.localStorage.setItem('userId', users[3].id);
+  } else if (email === users[5].email && password === users[5].password) {
+    window.localStorage.setItem('userId', users[5].id);
     window.location.href = 'index.html';
   }
     else {
