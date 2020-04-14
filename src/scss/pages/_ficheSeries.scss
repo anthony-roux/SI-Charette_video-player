@@ -30,8 +30,7 @@
   color: $black;
   cursor: pointer;
 
-  @include scale-animation-text
-
+  @include scale-animation-text;
 }
 
 .episode article {
@@ -104,7 +103,7 @@
 
 .ficheSeries__seasonMenu--serie {
   // position: absolute;
-  top: 47em;
+  // top: 47em;
   transform: translate(-160px, -50px);
 }
 
@@ -130,3 +129,9 @@
 .ficheSeries__season--item:hover {
   background-color: #000a2d;
 }
+
+// .icheSeries__seasonMenu {
+//   // position: absolute;
+//   top: 47em;
+//   transform: translate(-160px, -50px);
+// }
