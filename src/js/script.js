@@ -7,11 +7,11 @@ import { users } from './user.js';
 
 let buttonUsers = document.querySelector('.headerSecondPart__profilArrow');
 let menuDown = document.querySelector('.menuUsers');
-  console.log(menuDown);
-  console.log(buttonUsers);
-  buttonUsers.addEventListener('click', function() {
-    buttonUsers.classList.toggle('is-open-down');
-    menuDown.classList.toggle('menu-users-is-open');
+console.log(menuDown);
+console.log(buttonUsers);
+buttonUsers.addEventListener('click', function() {
+  buttonUsers.classList.toggle('is-open-down');
+  menuDown.classList.toggle('menu-users-is-open');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -54,18 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
       //window.reprendreSlider.rebuild();
     })
     .catch(error => console.error(error));
-  
+
   //connection users to page users
 
   var toPageUsers = document.querySelector('.goToPageUser');
 
-  toPageUsers.addEventListener('click', function () {
+  toPageUsers.addEventListener('click', function() {
     window.location.href = 'users.html';
-  })
+  });
 
   // logout
   userLogOut.addEventListener('click', () => {
-    window.localStorage.setItem('userId' , null);
+    window.localStorage.setItem('userId', null);
     window.location.href = 'connexion.html';
   });
 });
@@ -110,7 +110,7 @@ function generateSliderElement(picture, title) {
     '</div>' +
     '</div>' +
     '</div>';
-};
+}
 
 /*
 fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
@@ -128,20 +128,3 @@ fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
 })
 .catch(error => console.error(error))
 */
-<<<<<<< Updated upstream
-
-const videoFarcry = document.querySelector('.video__background');
-const vid = document.querySelector('.player__mute');
-
-  vid.addEventListener('click', function() {
-  videoFarcry.muted = true;
-  });
-
-const visible = document.querySelector('.heroFilm__info');
-
-setTimeout(function() {
-visible.style.display = 'none';
-}, 9000);
-=======
-
->>>>>>> Stashed changes
