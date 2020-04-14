@@ -29,12 +29,11 @@
   background-color: $white;
   color: $black;
   cursor: pointer;
-  transition: transform 0.2s ease-in;
+
+  @include scale-animation-text
+
 }
 
-.episode:hover {
-  transform: scale(1.1);
-}
 .episode article {
   padding-top: 1rem;
   padding-left: 1rem;
