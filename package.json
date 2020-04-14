@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/connexion.html",
+    "dev": "parcel src/pageSeries.html",
     "build": "parcel build src/connexion.html"
   },
   "repository": {
