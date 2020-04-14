@@ -14,20 +14,20 @@ button {
 }
 
 .primarySvg {
-  width: 4em;
-  height: 4em;
+  width: 64px;
+  height: 64px;
   fill: $white;
 }
 
 .secondarySvg {
-  width: 2em;
-  height: 2em;
+  width: 32px;
+  height: 32px;
   fill: $white;
 }
 
 .croixSvg {
-  width: 2.5em;
-  height: 2.5em;
+  width: 40px;
+  height: 40px;
   fill: $white;
 }
 
@@ -145,8 +145,8 @@ button {
 }
 
 .menuPlayer__buttonPlayEpisode {
-  width: 4.5em;
-  height: 4.5em;
+  width: 56px;
+  height: 56px;
   background-image: url(../icons/playerIcons/play.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -204,8 +204,8 @@ video {
   top: 37%;
   left: 47%;
   display: flex;
-  height: 6em;
-  width: 6em;
+  height: 96px;
+  width: 96px;
   cursor: pointer;
   fill: $white;
 }
@@ -284,25 +284,25 @@ video {
 
 .controller {
   width: 100%;
-  height: 5em;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 1em;
+  padding: 8px 16px;
   position: relative;
 }
 
 .controller__sound {
-  width: 2em;
+  width: 32px;
   display: flex;
-  margin: 1.4em 0 1em 0;
+  margin: 20px 0 16px 0;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.5s;
 }
 
 .controller__sound:hover {
-  width: 11em;
+  width: 172px;
   right: 100%;
 }
 
@@ -311,12 +311,12 @@ video {
   outline: none;
   cursor: pointer;
   background-color: transparent;
-  margin-left: 0.5em;
+  margin-left: 8px;
 }
 
 /* le slider pour chrome*/
 .controller__soundSlider::-webkit-slider-runnable-track {
-  height: 0.5em;
+  height: 8px;
   border: none;
   border-radius: 10px;
   background-color: $textYellow;
@@ -326,20 +326,20 @@ video {
 /* le curseur pour chrome*/
 .controller__soundSlider::-webkit-slider-thumb {
   -webkit-appearance: none;       /* également nécessaire sur le curseur */
-  width: 1em;
-  height: 1em;
+  width: 16px;
+  height: 16px;
   border: 1px solid $textYellow;
   border-radius: 50%;             
-  padding: 0.25em;                /* largeur du bord */
+  padding: 4px;                /* largeur du bord */
   background: $white;
-  margin-top: -0.25em;
+  margin-top: -4px;
 }
 
 .controller__mainSettings {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 62%;
+  width: 65%;
 }
 
 .controller__mainSettings--film {
@@ -347,7 +347,7 @@ video {
 }
 
 .controller__settings {
-  width: 25em;
+  width: 470px;
   display: flex;
   justify-content: space-between;
   align-items: center;
