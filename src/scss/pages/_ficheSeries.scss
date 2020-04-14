@@ -1,23 +1,23 @@
-.ficheSeries__banniere  {
-    background-image: url("/images/titans.png");
-    background-size:cover;
-    background-repeat:no-repeat;
-    color: $white;
-    padding: 1rem 5rem 5rem 10rem;
-    width: 100%;
+.ficheSeries__banniere {
+  background-image: url('/images/titans.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $white;
+  padding: 1rem 5rem 5rem 10rem;
+  width: 100%;
 }
 
 .ficheSeries__choice {
-padding-bottom: 2.5rem;
-padding-top: 3.2rem;
+  padding-bottom: 2.5rem;
+  padding-top: 3.2rem;
 }
 
 .ficheSeries__episode {
-margin-right: auto;
-margin-left: auto;
-max-width: 1206px;
-padding-top: 2.5rem;
-border-radius: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1206px;
+  padding-top: 2.5rem;
+  border-radius: 8px;
 }
 
 .episode {
@@ -26,14 +26,14 @@ border-radius: 8px;
   display: grid;
   grid-template-columns: 2fr 3fr 2fr 1fr;
   grid-template-rows: auto;
-  background-color:$white;
+  background-color: $white;
   color: $black;
   cursor: pointer;
   transition: transform 0.2s ease-in;
 }
 
 .episode:hover {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .episode article {
   padding-top: 1rem;
@@ -42,22 +42,22 @@ transform: scale(1.1);
   font-size: 14px;
 }
 .episode article h2 {
-  margin-bottom:0.5rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
 .historic__episode {
-display: flex;
-justify-content: space-evenly;
-position: relative;
-padding-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding-top: 1rem;
 }
 
 .episode_add {
-position: absolute;
-top: 0;
-right: 0;
-padding: 0.9rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.9rem;
 }
 
 .yellowBox {
@@ -71,7 +71,7 @@ padding: 0.9rem;
 }
 
 .yellowBox p {
-padding-bottom: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .yellowBox_download {
@@ -109,25 +109,20 @@ padding-bottom: 0.2rem;
 }
 
 .seasonMenu-is-open {
-height: auto;
+  height: auto;
 }
 
 .ficheSeries__season {
-text-align: center;
-height: 2em;
-cursor: pointer;
-display: flex;
-justify-content: center;
-align-items: center;
+  text-align: center;
+  height: 2em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ficheSeries__season--item {
   background-color: #014a8d;
   font-size: 0.8rem;
   border-top: 1px solid $DetailsLightGrey;
-
-  &:hover{
-    background-color: #000A2D;
-  }
 }
-
