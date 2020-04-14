@@ -20,7 +20,14 @@ buttonConnection.addEventListener('click', function(e) {
   } else if (email === users[3].email && password === users[3].password) {
     window.localStorage.setItem('userId', users[3].id);
     window.location.href = 'index.html';
-  } else {
+  } else if (email === users[4].email && password === users[3].password) {
+    window.localStorage.setItem('userId', users[3].id);
+    window.location.href = 'index.html';
+  } else if (email === users[5].email && password === users[3].password) {
+    window.localStorage.setItem('userId', users[3].id);
+    window.location.href = 'index.html';
+  }
+    else {
     alert('go awway');
   }
 });
