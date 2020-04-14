@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "dev": "parcel src/connexion.html",
     "build": "parcel build src/connexion.html"
 =======
@@ -17,6 +18,10 @@
     "dev": "parcel src/users.html",
     "build": "parcel build src/users.html"
 >>>>>>> connectionBackUp
+=======
+    "dev": "parcel src/connexion.html",
+    "build": "parcel build src/connexion.html"
+>>>>>>> 64c5914c93baff24acfcbc4f99bd25b8be92de80
   },
   "repository": {
     "type": "git",

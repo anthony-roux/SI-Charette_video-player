@@ -104,8 +104,9 @@
 }
 
 .ficheSeries__seasonMenu--serie {
-  position: absolute;
+  // position: absolute;
   top: 47em;
+  transform: translate(-160px, -50px);
 }
 
 .seasonMenu-is-open {
