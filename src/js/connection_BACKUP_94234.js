@@ -9,6 +9,21 @@ var user = [
     password: 'kevingila'
   },
   {
+<<<<<<< Updated upstream
+    id: '4',
+    email: 'oum.caramel@gmail.com',
+    password: 'oumoum'
+  },
+  {
+    id: '3',
+    email: 'quentinsan@gmail.com',
+    password: 'quentin'
+  },
+  {
+    id: '3',
+    email: 'hannachan@gmail.com',
+    password: 'hannah'
+=======
   id: "5",
   email: "oum.caramel@gmail.com",
   password: "oumoum",
@@ -32,6 +47,7 @@ var user = [
     id: "9",
     email: "laurentsan@gmail.com",
     password: "laurent",
+>>>>>>> Stashed changes
   }
 ];
 
