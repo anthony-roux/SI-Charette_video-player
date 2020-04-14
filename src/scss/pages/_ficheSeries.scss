@@ -53,7 +53,7 @@
 
 .ficheSeries__choice {
   padding-bottom: 2.5rem;
-  padding-top: 1.2rem;
+  padding-top: 3.2rem;
 }
 
 .ficheSeries__episode {
@@ -68,7 +68,7 @@
     margin-bottom:1.5rem;
     border-radius:8px;
     display:grid;
-    grid-template-columns: 2fr 2fr 3fr 1fr;
+    grid-template-columns: 2fr 3fr 2fr 1fr;
     grid-template-rows: auto;
     background-color:$white;
     color: $black;
@@ -126,6 +126,18 @@
     padding:1rem;
 }
 
+.hero--serie {
+  background-image: url("/images/titans.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  color: $white;
+  width: 100%;
+}
+
+.hero__content--serie {
+  background: transparent;
+}
+
 .ficheSeries__seasonMenu {
   border: 1px solid $textYellow;
   border-radius: 8px;
@@ -134,6 +146,11 @@
   overflow: hidden;
   background-color: #000A2D;
   margin: 2em 0 0 10em;
+}
+
+.ficheSeries__seasonMenu--serie {
+  position: absolute;
+  top: 47em;
 }
 
 .seasonMenu-is-open {
