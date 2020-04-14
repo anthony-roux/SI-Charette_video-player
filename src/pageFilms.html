@@ -53,22 +53,20 @@
   <div class="menuUsers">
     <div class="menuUsers__firstPart">
       <div class="menuUsers__profilConnected">
-        <p class="menuUsers__fonts userOum goToPageUser">Oum</p>
-        <img src="/images/users_profil1.svg" alt="Photo de profil connectée" />
-        <img class="arrowDown" src="/images/users_chevron-down.png" alt="chevron déroulant" />
+        <p data-columns="5" class="menuUsers__fonts userOum goToPageUser">Oum</p>
       </div>
       <ul class="menuUsers__othersProfils">
         <li class="menuUsers__eachProfils">
           <img src="/images/users_profil2.svg" alt="second profil" />
-          <p class="menuUsers__fonts userQuentin goToPageUser">Quentin</p>
+          <p data-userId="6" class="menuUsers__fonts userQuentin goToPageUser">Quentin</p>
         </li>
         <li class="menuUsers__eachProfils">
           <img src="/images/users_profil3.svg" alt="troisième profil" />
-          <p class="menuUsers__fonts userHanna goToPageUser">Hanna</p>
+          <p data-userId="7" class="menuUsers__fonts userHanna goToPageUser">Hanna</p>
         </li>
         <li class="menuUsers__eachProfils">
           <img src="/images/users_profil4.svg" alt="4ème profil" />
-          <p class="menuUsers__fonts userPriska goToPageUser">Priska</p>
+          <p data-userId="3" class="menuUsers__fonts userPriska goToPageUser">Priska</p>
         </li>
         <li class="menuUsers__eachProfils">
           <img src="images/users_profilNone.svg" alt="ajouter un profil" />
@@ -86,34 +84,39 @@
   </div>
   <main class="mainPageFilms">
     <div class="genre">
-      <button class="genre__button">Genre</button>
-      <div class="genre__list">
-        <ul>
-          <li>Arts Martiaux</li>
-          <li>Policier/Thriller</li>
-          <li>Aventure/Action</li>
-          <li>Ecchi/ Fan service</li>
-          <li>Fantastique/Science-Fiction</li>
-        </ul>
-        <ul>
-          <li>Shojo</li>
-          <li>Mecha</li>
-          <li>Seinen</li>
-          <li>Shonen</li>
-          <li>Violence</li>
-        </ul>
-        <ul>
-          <li>Sport</li>
-          <li>Drama</li>
-          <li>Comédie</li>
-          <li>Romance</li>
-          <li>Psychologie</li>
-        </ul>
-      </div>
+    <button class="genre__button">Genre</button>
+    <div class="genre__list">
+      <ul>
+        <li>Arts Martiaux</li>
+        <li>Policier/Thriller</li>
+        <li>Aventure/Action</li>
+        <li>Ecchi/ Fan service</li>
+        <li>Fantastique/Science-Fiction</li>
+      </ul>
+      <ul>
+        <li>Shojo</li>
+        <li>Mecha</li>
+        <li>Seinen</li>
+        <li>Shonen</li>
+        <li>Violence</li>
+      </ul>
+      <ul>
+        <li>Sport</li>
+        <li>Drama</li>
+        <li>Comédie</li>
+        <li>Romance</li>
+        <li>Psychologie</li>
+      </ul>
     </div>
+  </div>
     <section class="hero">
       <div class="hero__videoContainer">
-        <video class="videoOnPage" autoplay loop muted>
+        <video
+          class="videoOnPage"
+          autoplay
+          loop
+          muted
+        >
           <source src="http://sentiany.fr/trailer/lesEnfantsDuTemps-bo-film.mp4" type="video/mp4">
           <source src="http://sentiany.fr/trailer/lesEnfantsDuTemps-bo-film.mp4" type="video/ogg">
           Your browser does not support the video tag.
@@ -125,23 +128,31 @@
         <p class="hero__realisator titles-genres-hero">
           Réalisé par Makoto Shinkai
         </p>
-        <img class="hero__average hero__average--film" src="/icons/icon_stars.svg" alt="note des utilisateurs" />
+        <img
+          class="hero__average hero__average--film"
+          src="/icons/icon_stars.svg"
+          alt="note des utilisateurs"
+        />
         <p class="hero__synopsis synopsis-hero">
-          Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo. <br>Sans argent ni emploi,
-          il tente de survivre dans la jungle urbaine.
+          Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo. <br>Sans argent ni emploi, 
+        il tente de survivre dans la jungle urbaine.
         </p>
         <div class="hero__ctas">
           <button class="hero__play button">
             <a href="playerFilm.html">Lecture</a>
             <img src="/icons/icon_play.svg" alt="" />
           </button>
-          <img class="hero__download" src="/icons/download--yellow.svg" alt="download" />
+          <img
+            class="hero__download"
+            src="/icons/download--yellow.svg"
+            alt="download"
+          />
           <img class="hero__add" src="/icons/icon_add.svg" alt="add" />
           <img class="hero__mute" src="/icons/icon_mute.svg" alt="mute" />
         </div>
       </div>
     </section>
-
+    
     <section class="allFilms">
       <div class="allFilms__First filmList">
         <div class="filmLIst__infos filmLIstInfos">
@@ -154,7 +165,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -169,7 +180,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -184,7 +195,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -199,11 +210,11 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
-      <div class="allFilmsFifth filmList">
+      <div  class="allFilmsFifth filmList">
         <div class="filmLIst__infos filmLIstInfos">
           <div class="filmLIstInfos__general general">
             <div class="general__title">
@@ -214,7 +225,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -229,7 +240,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -244,7 +255,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -259,7 +270,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -274,7 +285,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -289,7 +300,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -304,7 +315,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -319,7 +330,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -334,7 +345,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -349,7 +360,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -364,7 +375,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -379,7 +390,7 @@
           </div>
           <div class="filmLIstInfos__icons">
             <img src="icons/DownloadYellow.svg">
-            <img src="icons/Plus.svg">
+            <img src= "icons/Plus.svg">
           </div>
         </div>
       </div>
@@ -411,10 +422,17 @@
       <button class="languages__button button">
         <img src="/icons/icon_france.svg" alt="Français" />
         <p>Français</p>
-        <img class="arrowDown" src="/images/users_chevron-down.png" alt="chevron déroulant" />
+        <img
+          class="arrowDown"
+          src="/images/users_chevron-down.png"
+          alt="chevron déroulant"
+        />
       </button>
     </div>
-    <img class="footer__picture footerPicture" src="images/Footer-Img-Personnage.svg" />
+    <img
+      class="footer__picture footerPicture"
+      src="images/Footer-Img-Personnage.svg"
+    />
     <div class="footer__socialMedia socialMedia">
       <h2 class="socialMedia__text">Suivez-nous</h2>
       <div class="socialMedia__icons icons">
