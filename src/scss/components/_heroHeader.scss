@@ -98,14 +98,14 @@
 
   &__mute {
     position: absolute;
-    top: 450px;
-    right: -700px;
+    top: 400px;
+    right: -650px;
     width: 35px;
     @include scale-animation-icon;
 
     @include desktop-Xlarge {
-      top: 500px;
-      right: -950px;
+      top: 370px;
+      right: -900px;
     }
   }
 }
