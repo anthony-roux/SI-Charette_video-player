@@ -1,46 +1,75 @@
-.video__container {
+.hero__section {
   position: relative;
-  width: 100vw;
-  height: 572vh;
-  background-size: 100%;
-}
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
 
-.heroFilm__describe {
-  position: absolute;
-  top: 50%;
-  font-size: rem(18px);
-  left: 80px;
-  line-height: 1.3;
-  font-family: $nunito-regular;
+  .heroFilm__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    height: 100vh;
 
-  .film__director {
-    margin: 24px 0;
+    .video__background {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 
-  .film__synopsis {
-    margin-bottom: 16px;
-  }
+  .heroFilm__describe {
+    font-family: $nunito-regular;
+    position: relative;
+    padding: 32px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 5px;
+    width: 100vw;
 
-  .film__notation {
-    margin-bottom: 32px;
-  }
+    .film__director {
+      margin: 24px 0;
+    }
 
-  .film__player {
-    display: flex;
-    justify-content: space-between;
-    max-width: 300px;
+    .heroFilm__notation {
+      margin-bottom: 32px;
+      margin-top: 16px;
+    }
 
-    .player__button {
+    .heroFilm__fonctionnality {
       display: flex;
       justify-content: space-between;
-      padding: 0.8em;
+      width: 100%;
 
-      .button__play {
-        width: 20px;
-      }
+      .film__player {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
 
-      a {
-        margin-right: 0.5em;
+        .player__button {
+          display: flex;
+          justify-content: space-between;
+          cursor: pointer;
+          @include scale-animation-icon;
+
+          .button__play {
+            width: 20px;
+          }
+        }
+
+        .player__addToMyList {
+          @include scale-animation-icon;
+          cursor: pointer;
+        }
+
+        .player__upload {
+          @include scale-animation-icon;
+          cursor: pointer;
+        }
       }
     }
   }

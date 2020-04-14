@@ -111,3 +111,33 @@ function generateSliderElement(picture, title) {
     '</div>' +
     '</div>';
 }
+});
+
+/*
+fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
+.then(response => response.json())
+  .then(categories => {
+    
+    categories.forEach(category => {
+      console.log(category.anime);
+      category.anime.forEach(anime => {
+        console.log(anime.name);
+        console.log(anime.picture);
+      })
+    });
+  
+})
+.catch(error => console.error(error))
+*/
+const videoFarcry = document.querySelector('.video__background');
+const vid = document.querySelector('.player__mute');
+
+vid.addEventListener('click', function() {
+  videoFarcry.muted = true;
+});
+
+const visible = document.querySelector('.heroFilm__info');
+
+setTimeout(function() {
+  visible.style.display = 'none';
+}, 9000);
