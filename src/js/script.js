@@ -57,11 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
   
   //connection users to page users
 
-  var toPageUsers = document.querySelector('.goToPageUser');
+  var toPageUsers = document.querySelectorAll('.goToPageUser');
 
-  toPageUsers.addEventListener('click', function () {
-    window.location.href = 'users.html';
-  })
+  toPageUsers.forEach(function (pageUser) {
+    pageUser.addEventListener('click', function (item) {
+      var userIdFromPageUser = item.toElement.dataset.userid;
+      window.localStorage.setItem('userId', userIdFromPageUser);
+      window.location.href = 'users.html';
+    })
+  });
+
+ 
 
   // logout
   userLogOut.addEventListener('click', () => {

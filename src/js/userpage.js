@@ -19,16 +19,16 @@ var userPriska = document.querySelector('.userPriska');
   });
 
   console.log(user.id);
-  if (users.id === 3) {
+  if (user.id === "3") {
     newAnime.innerHTML = '20 nouveaux épisodes';
     totalAnime.innerHTML = '5 Animes en cours';
-  }else if(users.id === 5) {
+  }else if(user.id === "5") {
     newAnime.innerHTML  = '8 nouveaux épisodes';
     totalAnime.innerHTML  = '3 Animes en cours';
-  }else if(users.id === 6) {
+  }else if(user.id === "6") {
     newAnime.innerHTML  = '15 nouveaux épisodes';
     totalAnime.innerHTML  = '6 Animes en cours';
-  }else if(users.id === 7) {
+  }else if(user.id === "7") {
     newAnime.innerHTML  = '12 nouveaux épisodes';
     totalAnime.innerHTML  = '2 Animes en cours';
   }else{
