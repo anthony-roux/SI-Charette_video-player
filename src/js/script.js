@@ -142,3 +142,21 @@ fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
 })
 .catch(error => console.error(error))
 */
+
+
+// BUTTON SOUND HERO HEADER
+const $videoHeader = document.querySelector('.videoOnPage');
+const $soundButton = document.querySelector('.hero__mute');
+let  $muteIcon = require("../icons/icon_mute.svg");
+let $soundIcon = require("../icons/icon-soundOn.svg");
+
+$soundButton.addEventListener('click', function() {
+
+    if($videoHeader.muted != true){
+        $videoHeader.muted = true;
+        $soundButton.setAttribute('src', $muteIcon);
+    }else{
+        $videoHeader.muted = false;
+        $soundButton.setAttribute('src', $soundIcon);
+    }
+});

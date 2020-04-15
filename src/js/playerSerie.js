@@ -217,10 +217,6 @@ $video.onloadedmetadata = function() {
 
   setupTimers();
 
-  // EXIT
-  const $exitButton = document.getElementById('buttonExit');
-
-
   // FULLSCREEN
   $fullScreenButton.addEventListener('click', () => {
     toggleFullScreen()
