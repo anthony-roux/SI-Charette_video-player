@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   var pictureUserOnMenu = document.querySelector('.headerSecondPart__profilPicture');
   var recentUser = document.querySelector('.menuUsers__fonts');
-
   pictureUserOnMenu.src = user.picture;
   recentUser.innerHTML = user.name;
   
