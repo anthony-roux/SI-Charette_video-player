@@ -23,9 +23,6 @@ buttonConnection.addEventListener('click', function(e) {
   } else if (email === users[4].email && password === users[4].password) {
     window.localStorage.setItem('userId', users[4].id);
     window.location.href = 'homepage.html';
-  } else if (email === users[5].email && password === users[5].password) {
-    window.localStorage.setItem('userId', users[5].id);
-    window.location.href = 'homepage.html';
   } else {
     alert('go awway');
   }
