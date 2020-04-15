@@ -2,6 +2,7 @@ import profil1 from '/images/users_profil1.svg';
 import profil2 from '/images/users_profil2.svg';
 import profil3 from '/images/users_profil3.svg';
 import profil4 from '/images/users_profil4.svg';
+import profil5 from '/images/users_profilNone.svg';
 
 export let users = [
   {
@@ -37,7 +38,7 @@ export let users = [
     email: "anthoniosan@gmail.com",
     password: "anthonio",
     name: 'Anthony',
-    picture: ''
+    picture: profil5.svg
   },
   {
     id: "9",
