@@ -25,6 +25,7 @@
       text-align: center;
       background: #895280;
       border-radius: 15px;
+      color: $white;
       @include flexbox;
     }
 
@@ -36,20 +37,24 @@
 
 .manage {
   flex-wrap: wrap;
-  margin-top: 400px;
+  margin: 300px 80px 80px;
   @include flexbox($justify: space-around);
 
   .manage__setting {
     font-family: $nunito-regular;
     margin-bottom: 100px;
+    margin-right: 30px;
     font-size: rem(20px);
     border-radius: 15px;
     width: 360px;
     height: 240px;
+    color: $white;
     @include flexbox(column);
 
     &:nth-child(1) {
       background-color: #ffb800;
+      @mixin scale-animation {
+      }
     }
     &:nth-child(2) {
       background-color: #e25f29;
