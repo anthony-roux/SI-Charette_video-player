@@ -1,7 +1,13 @@
 .landingHero {
   &__contenair {
     height: 80vh;
-    background-image: linear-gradient(113.07deg, rgba(0, 0, 0, 0.5) 4.78%, rgba(0, 0, 0, 0.4) 51.33%, rgba(0, 0, 0, 0.3) 97.88%), url(/images/LandingPage-hero-medium1.svg);
+    background-image: linear-gradient(
+        113.07deg,
+        rgba(0, 0, 0, 0.5) 4.78%,
+        rgba(0, 0, 0, 0.4) 51.33%,
+        rgba(0, 0, 0, 0.3) 97.88%
+      ),
+      url(/images/LandingPage-hero-medium1.svg);
     // background-image: url(/images/Landingpage-1hero.svg);
 
     background-repeat: no-repeat;
@@ -234,9 +240,19 @@
   padding-left: 58px;
 }
 
-// footer social media transform: translateY(-80px)
-//footer entreprise help account retirer margin: 16px ou mettre o social medi la mm
-// contenair div  footer__picture__personnage
-//     <img
-//     class="footer__picture footerPicture"
-//     src="images/Footer-Img-Personnage.svg" />
+.landing__Otaku__avatar__Lufy {
+  animation-duration: 3s;
+  animation-name: glissement;
+  animation-iteration-count: 1;
+}
+@keyframes glissement {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
