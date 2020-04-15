@@ -109,16 +109,57 @@
         </div>
       </div>
     </div>
-
-    <main class="account">
-      <section class="account__user">
-        <div class="account__profil profil">
-          <img
-            src="../src/images/PageUtilisateur-logo-profil-Big.svg"
-            alt="photo de profil"
-            class="profil__picture"
-          />
-          <p class="profil__name">OUMEL CARAMEL</p>
+    <div class="header__secondPart headerSecondPart">
+      <img class="headerSecondPart__iconsSearch" src="icons/icons8-search.svg" />
+      <img class="headerSecondPart__iconsNotification" src="icons/icons8-notification.svg" />
+      <img class="headerSecondPart__profilPicture" src="images/users_profil1.svg" />
+      <img class="headerSecondPart__profilArrow" src="icons/icons8-expand_arrow.svg" />
+    </div>
+  </header>
+  <div class="menuUsers">
+    <div class="menuUsers__firstPart">
+      <div class="menuUsers__profilConnected">
+        <p data-userId="5" class="menuUsers__fonts userOum goToPageUser">Oum</p>
+      </div>
+      <ul class="menuUsers__othersProfils">
+        <li class="menuUsers__eachProfils">
+          <img src="/images/users_profil3.svg" alt="second profil" />
+          <p data-userId="6" class="menuUsers__fonts userQuentin goToPageUser">Quentin</p>
+        </li>
+        <li class="menuUsers__eachProfils">
+          <img src="/images/users_profil2.svg" alt="troisième profil" />
+          <p data-userId="7" class="menuUsers__fonts userHanna goToPageUser">Hanna</p>
+        </li>
+        <li class="menuUsers__eachProfils">
+          <img src="/images/users_profil4.svg" alt="4ème profil" />
+          <p data-userId="3" class="menuUsers__fonts userPriska goToPageUser">Priska</p>
+        </li>
+        <li class="menuUsers__eachProfils">
+          <img src="images/users_profilNone.svg" class='profilPictureAnthony' alt="ajouter un profil" />
+          <p data-userId="8" class="menuUsers__fonts userMoreUser goToPageUser">Anthony</p>
+        </li>
+      </ul>
+      <div class="menuUsers__secondPart">
+        <p>Compte</p>
+        <p>Paramètres</p>
+        <p>Liste de favoris</p>
+        <p>Centre d'aide</p>
+        <p class="userMenuSecondPart__logOut">Se deconnecter</p>
+      </div>
+    </div>
+  </div>
+  <main class="content-wrapper account">
+    <section class="account__user">
+      <div class="account__profil profil">
+        <img src="../src/images/PageUtilisateur-logo-profil-Big.svg" alt="photo de profil" class="profil__picture" />
+        <p class="profil__name">OUMEL CARAMEL</p>
+      </div>
+      <section class="profil__info animes">
+        <div class="animes__info animes__info--inProgress">
+          <p>4 Animes en cours</p>
+        </div>
+        <div class="animes__info animes__info--new">
+          <p>3 Nouveaux épisodes</p>
         </div>
         <section class="profil__info animes">
           <button class="animes__info animes__info--inProgress">
