@@ -27,6 +27,6 @@ buttonConnection.addEventListener('click', function(e) {
     window.localStorage.setItem('userId', users[5].id);
     window.location.href = 'homepage.html';
   } else {
-    alert('go awway');
+    alert('try again');
   }
 });
