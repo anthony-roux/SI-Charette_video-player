@@ -1,4 +1,4 @@
-//////////  ELEMENTS DU DOM //////////
+// ELEMENTS DU DOM //
 
 const $video = document.querySelector('.video');
 
@@ -24,7 +24,7 @@ const $timeWrapper = document.getElementById('time');
 
 const $fullScreenButton = document.getElementById('buttonFullScreen');
 
-////////// ACTIONS MEDIA PLAYER //////////
+// ACTIONS MEDIA PLAYER //
 
 const togglePlay = () => {
   if (!$video.paused && !$video.ended) {
@@ -122,7 +122,7 @@ $video.onloadedmetadata = function() {
   $timeWrapper.textContent = transformTime(Math.floor($video.duration));
 };
 
-////////// EVENNEMENTS //////////
+// EVENNEMENTS //
 
 // PLAY
 $video.addEventListener('click', () => {
@@ -178,7 +178,7 @@ $nextButton.addEventListener('click', () => {
   }
 });
 
-//INACTIVTÉ (Mise en place d'un timer)
+// INACTIVTÉ (Mise en place d'un timer)
 
 let timeoutInMiliseconds = 5000;
 let timeoutId;
@@ -401,8 +401,8 @@ for (episode of saison01) {
 const $seasonButtonPlay = document.getElementsByClassName(
   'menuPlayer__buttonPlayEpisode'
 );
-const svgPause = require('../icons/playerIcons/pause.svg');
-const svgPlay = require('../icons/playerIcons/play.svg');
+const svgPause = '../icons/playerIcons/pause.svg';
+const svgPlay = '../icons/playerIcons/play.svg';
 const $titlePlayer = document.getElementById('headerTitle');
 const $nextEpisode = document.getElementById('nextEpisode');
 
@@ -414,9 +414,10 @@ for (let i = 0; i < $seasonButtonPlay.length; i++) {
     $volumeSlider.value = $video.volume * 100;
     $playSvg.setAttribute('href', '#pause');
     $mainPlay.classList.add('is-hidden');
+    for (let j = 0; j < $seasonButtonPlay.length; j++) {
+      $seasonButtonPlay[j].style.backgroundImage = "url('" + svgPlay + "')";
+    }
     $seasonButtonPlay[i].style.backgroundImage = "url('" + svgPause + "')";
-    $seasonButtonPlay[i + 1].style.backgroundImage = "url('" + svgPlay + "')";
-    $seasonButtonPlay[i - 1].style.backgroundImage = "url('" + svgPlay + "')";
   });
 
   // MAJ des éléments playButton et progressBar selon le temps de vidéo atteint
