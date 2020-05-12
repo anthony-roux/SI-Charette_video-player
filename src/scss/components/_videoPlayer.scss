@@ -14,8 +14,8 @@ button {
 }
 
 .primarySvg {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   fill: $white;
 }
 
@@ -26,8 +26,8 @@ button {
 }
 
 .croixSvg {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   fill: $white;
 }
 
@@ -40,27 +40,27 @@ button {
   height: 100vh;
   position: fixed;
   z-index: 10;
-  background-color: #000A2d;
+  background-color: #000a2d;
   transition: transform 0.5s ease;
   transform: translateX(-320px);
   overflow-y: scroll;
-  
+
   &::-webkit-scrollbar {
     width: 5px;
   }
-  
+
   /* Track */
   &::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+    box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
   }
-  
+
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: $textYellow; 
+    background: $textYellow;
     border-radius: 10px;
   }
-  
+
   &::-webkit-scrollbar-thumb:hover {
     background: $textOrange;
   }
@@ -87,20 +87,20 @@ button {
   left: 38%;
   top: 25%;
   overflow: hidden;
-  background-color: #000A2D;
+  background-color: #000a2d;
 }
 
 .seasonMenu-is-open {
   height: auto;
 }
- 
+
 .menuPlayer__season {
-   text-align: center;
-   height: 2em;
-   cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  text-align: center;
+  height: 2em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menuPlayer__season--item {
@@ -110,7 +110,7 @@ button {
 }
 
 .menuPlayer__season--item:hover {
-  background-color: #000A2D;
+  background-color: #000a2d;
 }
 
 .menuPlayer__episodeCard {
@@ -137,7 +137,6 @@ button {
   align-items: center;
 }
 
-
 .menuPlayer__episodeDescriptif {
   width: 60%;
   font-size: 12px;
@@ -151,7 +150,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .headerPlayer {
   width: 100%;
@@ -183,7 +181,6 @@ button {
   margin-left: 0.5em;
   font-size: 14px;
   text-decoration: underline;
-  
 }
 
 .headerPlayer__title {
@@ -210,15 +207,37 @@ video {
   fill: $white;
 }
 
-.videoTimeHover {
+.miniVideo {
   display: none;
-  position: absolute;
-  top: 51em;
+  position: relative;
+  top: -170px;
   left: 0;
-  width: 4em;
+  width: 125px;
+  height: 75px;
+  padding: 0 3px;
+  border: 1px solid $textYellow;
+  overflow: hidden;
+}
+
+.miniVideo__videoHover {
+  width: 100%;
+  height: 75px;
+}
+
+.miniVideo__videoTimeHover {
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 58px;
+  height: 16px;
+  padding: 3px 0;
   text-align: center;
   font-weight: bold;
   font-size: 0.8rem;
+  background-color: rgba(249, 179, 45, 0.5);
+  border-radius: 10px;
 }
 
 .isHover {
@@ -250,7 +269,7 @@ video {
 
 .settingBar__progressTime {
   width: 0%;
-	transform-origin: left;
+  transform-origin: left;
   height: 0.2em;
   background-color: $textYellow;
   position: relative;
@@ -307,7 +326,7 @@ video {
 }
 
 .controller__soundSlider {
-  -webkit-appearance: none;     /*nécessaire pour Chrome */
+  -webkit-appearance: none; /*nécessaire pour Chrome */
   outline: none;
   cursor: pointer;
   background-color: transparent;
@@ -325,12 +344,12 @@ video {
 
 /* le curseur pour chrome*/
 .controller__soundSlider::-webkit-slider-thumb {
-  -webkit-appearance: none;       /* également nécessaire sur le curseur */
+  -webkit-appearance: none; /* également nécessaire sur le curseur */
   width: 16px;
   height: 16px;
   border: 1px solid $textYellow;
-  border-radius: 50%;             
-  padding: 4px;                /* largeur du bord */
+  border-radius: 50%;
+  padding: 4px; /* largeur du bord */
   background: $white;
   margin-top: -4px;
 }
@@ -373,4 +392,3 @@ video {
   font-weight: bold;
   text-decoration: underline;
 }
-

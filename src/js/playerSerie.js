@@ -5,6 +5,7 @@ const $video = document.querySelector('.video');
 const $playButton = document.getElementById('buttonPlay');
 const $playSvg = document.getElementById('svgPlay');
 const $mainPlay = document.querySelector('.mainPlay');
+
 const $previousButton = document.getElementById('buttonPrevious');
 const $nextButton = document.getElementById('buttonNext');
 
@@ -12,10 +13,13 @@ const $soundButton = document.getElementById('buttonSound');
 const $soundSvg = document.getElementById('svgSound');
 const $volumeSlider = document.getElementById('controller__soundSlider');
 
+const $miniVideoContainer = document.getElementById('miniVideo');
+const $miniVideo = document.getElementById('videoHover');
+const $timeContainer = document.getElementById('videoTimeHover');
+
 const $durationBar = document.getElementById('durationBar');
 const $progressBar = document.getElementById('progressTime');
 const $progressBarIndicator = document.getElementById('indicatorTime');
-const $timeContainer = document.getElementById('videoTimeHover');
 
 const progressElements = [$durationBar, $progressBar, $progressBarIndicator];
 
@@ -56,6 +60,7 @@ const clickedBar = e => {
   let mouseX = e.offsetX;
   let newTime = mouseX / ($durationBar.offsetWidth / $video.duration);
   $video.currentTime = newTime;
+  $miniVideo.currentTime = newTime;
 };
 
 //Transformation du temps => mminutes : secondes
@@ -84,12 +89,13 @@ const isHover = e => {
   if (e.type == 'mouseover') {
     $durationBar.classList.add('durationBar-is-hover');
     $progressBar.classList.add('durationBar-is-hover');
+    $miniVideoContainer.classList.add('isHover');
     $progressBarIndicator.classList.add('indicator-is-hover');
   }
   if (e.type == 'mouseout') {
     $durationBar.classList.remove('durationBar-is-hover');
     $progressBar.classList.remove('durationBar-is-hover');
-    $timeContainer.classList.remove('isHover');
+    $miniVideoContainer.classList.remove('isHover');
     $progressBarIndicator.classList.remove('indicator-is-hover');
   }
 };
@@ -109,12 +115,13 @@ const setTime = e => {
   let mouseX = e.offsetX;
   let videoTimeSeconds = (mouseX * $video.duration) / $durationBar.offsetWidth;
   $timeContainer.innerHTML = transformTime(Math.floor(videoTimeSeconds));
-  $timeContainer.classList.add('isHover');
-  let halfWidth = $timeContainer.offsetWidth / 2;
+  let halfWidth = $miniVideoContainer.offsetWidth / 2;
   let stopMove = $durationBar.offsetWidth - halfWidth;
   if (mouseX < stopMove) {
-    $timeContainer.style.left = mouseX - halfWidth + 'px';
+    $miniVideoContainer.style.left = mouseX - halfWidth + 'px';
   }
+  let newTime = mouseX / ($durationBar.offsetWidth / $video.duration);
+  $miniVideo.currentTime = newTime;
 };
 
 // ONLOADMETADATA => Pour duration, dimensions et text tracks
@@ -401,8 +408,8 @@ for (episode of saison01) {
 const $seasonButtonPlay = document.getElementsByClassName(
   'menuPlayer__buttonPlayEpisode'
 );
-const svgPause = '../icons/playerIcons/pause.svg';
-const svgPlay = '../icons/playerIcons/play.svg';
+const svgPause = require('../icons/playerIcons/pause.svg');
+const svgPlay = require('../icons/playerIcons/play.svg');
 const $titlePlayer = document.getElementById('headerTitle');
 const $nextEpisode = document.getElementById('nextEpisode');
 
@@ -411,6 +418,8 @@ for (let i = 0; i < $seasonButtonPlay.length; i++) {
     $titlePlayer.innerHTML = `S01:E${saison01[i].number} - ${saison01[i].title}`;
 
     $video.setAttribute('src', saison01[i].urlVideo);
+    $miniVideo.setAttribute('src', saison01[i].urlVideo);
+    $miniVideo.pause();
     $volumeSlider.value = $video.volume * 100;
     $playSvg.setAttribute('href', '#pause');
     $mainPlay.classList.add('is-hidden');
@@ -424,6 +433,7 @@ for (let i = 0; i < $seasonButtonPlay.length; i++) {
   $video.addEventListener('timeupdate', () => {
     if ($video.ended) {
       $video.setAttribute('src', saison01[i + 1].urlVideo);
+      $miniVideo.setAttribute('src', saison01[i + 1].urlVideo);
       $titlePlayer.innerHTML = `S01:E${saison01[i + 1].number} - ${saison01[i + 1].title}`;
       $seasonButtonPlay[i].style.backgroundImage = "url('" + svgPlay + "')";
       $seasonButtonPlay[i + 1].style.backgroundImage =
