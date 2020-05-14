@@ -15,6 +15,9 @@ buttonUsers.addEventListener('click', function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+
+
+  
   var userId = window.localStorage.getItem('userId');
 
   var user = users.find(function(user) {
@@ -78,8 +81,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // logout
   userLogOut.addEventListener('click', () => {
-    window.localStorage.setItem('userId', null);
-    window.location.href = 'connexion.html';
+    fetch("http://localhost:8888/logout.php", {
+      method: "GET"
+    })
+    .then(response => response.json())
+    .then(userInfo => {
+        if (userInfo["logout"] === true) {
+          window.localStorage.setItem('userId', null);
+          window.location.href = 'connexion.html';
+        }
+    })
+    .catch(error => console.error(error));
   });
 });
 
