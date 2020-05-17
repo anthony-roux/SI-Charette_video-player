@@ -129,7 +129,7 @@ $video.onloadedmetadata = function() {
   $timeWrapper.textContent = transformTime(Math.floor($video.duration));
 };
 
-// EVENNEMENTS //
+////////// EVENNEMENTS //
 
 // PLAY
 $video.addEventListener('click', () => {
