@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //   window.location.href = 'connexion.html';
   // }
 
-  fetch('http://localhost:8888/getCategoriesForUser.php?userId=' + userId)
+ /* fetch('http://localhost:8888/getCategoriesForUser.php?userId=' + userId)
     .then(response => response.json())
     .then(categories => {
       categories.forEach(category => {
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       //window.reprendreSlider.rebuild();
     })
-    .catch(error => console.error(error));
+    .catch(error => console.error(error));*/
 
   //connection users to page users
 
@@ -81,19 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // logout
   userLogOut.addEventListener('click', () => {
-    fetch("http://localhost:8888/logout.php", {
-      method: "GET"
-    })
-    .then(response => response.json())
-    .then(userInfo => {
-        if (userInfo["logout"] === true) {
-          window.localStorage.setItem('userId', null);
-          window.location.href = 'connexion.html';
-        }
-    })
-    .catch(error => console.error(error));
+    window.localStorage.setItem('userId', null);
+    window.location.href = 'connexion.html';
   });
-});
 
 var obj = {
   picture: '',

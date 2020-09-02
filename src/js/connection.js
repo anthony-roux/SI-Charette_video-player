@@ -10,8 +10,29 @@ buttonConnection.addEventListener('click', function(e) {
   var email = emailInput.value;
   var password = passwordInput.value;
 
+    if (email === users[0].email && password === users[0].password) {
+        window.localStorage.setItem('userId', users[0].id);
+        window.location.href = 'homepage.html';
+    } else if (email === users[1].email && password === users[1].password) {
+        window.localStorage.setItem('userId', users[1].id);
+        window.location.href = 'homepage.html';
+    } else if (email === users[2].email && password === users[2].password) {
+        window.localStorage.setItem('userId', users[2].id);
+        window.location.href = 'homepage.html';
+    } else if (email === users[3].email && password === users[3].password) {
+        window.localStorage.setItem('userId', users[3].id);
+        window.location.href = 'homepage.html';
+    } else if (email === users[4].email && password === users[4].password) {
+        window.localStorage.setItem('userId', users[4].id);
+        window.location.href = 'homepage.html';
+    } else if (email === users[5].email && password === users[5].password) {
+        window.localStorage.setItem('userId', users[5].id);
+        window.location.href = 'homepage.html';
+    } else {
+        alert('try again');
+    }
 
-  fetch("http://sentianyof.cluster027.hosting.ovh.net/anime/signIn.php", {
+  /*fetch("http://sentianyof.cluster027.hosting.ovh.net/anime/signIn.php", {
     method: "POST",
     headers: {'Content-Type':'application/x-www-form-urlencoded'},
     body: "email="+email+"&password="+password
@@ -25,5 +46,5 @@ buttonConnection.addEventListener('click', function(e) {
         alert('try again');
       }
     })
-    .catch(error => console.error(error));
+    .catch(error => console.error(error));*/
 });
