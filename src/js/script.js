@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   var userId = window.localStorage.getItem('userId');
 
-  var user = users.find(function(user) {
+  var user = users.find(function (user) {
     return user.id === userId;
   });
 
@@ -39,31 +39,31 @@ document.addEventListener('DOMContentLoaded', () => {
   //   window.location.href = 'connexion.html';
   // }
 
- /* fetch('http://localhost:8888/getCategoriesForUser.php?userId=' + userId)
-    .then(response => response.json())
-    .then(categories => {
-      categories.forEach(category => {
-        console.log(category);
-        switch (category.name) {
-          case 'reprendre':
-            console.log(category.anime);
-            category.anime.forEach(anime => {
-              console.log(anime.name);
-              console.log(anime.picture);
-              //reprendreSlider.insertAdjacentHTML('beforeend', generateSliderElement(anime.picture, anime.name));
-            });
-            break;
-          case 'ma liste':
-            // todo
-            break;
-          default:
-            break;
-        }
-      });
-
-      //window.reprendreSlider.rebuild();
-    })
-    .catch(error => console.error(error));*/
+  /* fetch('http://localhost:8888/getCategoriesForUser.php?userId=' + userId)
+     .then(response => response.json())
+     .then(categories => {
+       categories.forEach(category => {
+         console.log(category);
+         switch (category.name) {
+           case 'reprendre':
+             console.log(category.anime);
+             category.anime.forEach(anime => {
+               console.log(anime.name);
+               console.log(anime.picture);
+               //reprendreSlider.insertAdjacentHTML('beforeend', generateSliderElement(anime.picture, anime.name));
+             });
+             break;
+           case 'ma liste':
+             // todo
+             break;
+           default:
+             break;
+         }
+       });
+ 
+       //window.reprendreSlider.rebuild();
+     })
+     .catch(error => console.error(error));*/
 
   //connection users to page users
 
@@ -85,79 +85,80 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = 'connexion.html';
   });
 
-var obj = {
-  picture: '',
-  title: ''
-};
+  var obj = {
+    picture: '',
+    title: ''
+  };
 
-function generateSliderElement(picture, title) {
-  return (
-    "<div class='slide slideCard'>" +
-    "<img class='over img' src='" +
-    picture +
-    "' alt='' />" +
-    "<div class='slideCard__info'>" +
-    "<img class='slideCard__add' src='" +
-    iconAdd +
-    "' alt='add' />" +
-    "<img class='slideCard__star' src='" +
-    iconStar +
-    "' alt='star' />" +
-    "<div class='slideCard__lecture'>" +
-    "<img class='slideCard__button' src='" +
-    iconPlay +
-    "' alt='' />" +
-    "<p class='play-hover'>lecture</p>" +
-    '</div>' +
-    "<h1 class='slideCard__title title-cards-hover'>" +
-    title +
-    '</h1>' +
-    "<p class='slideCard__synopsis synopsis-cards-hover'>" +
-    'Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo.' +
-    '<br />Sans argent ni emploi, il tente de survivre dans la' +
-    'jungle urbaine.' +
-    '</p>' +
-    "<div class='slideCard__season suggestion__season'>" +
-    "<p class='time-date'>2019</p>" +
-    "<p class='time-date'>saison 3</p>"
-  );
-  "<img class='slideCard__average' src='/icons/icon_stars.svg' alt='note des utilisateurs' />" +
-    '</div>' +
-    '</div>' +
-    '</div>';
-}
+  function generateSliderElement(picture, title) {
+    return (
+      "<div class='slide slideCard'>" +
+      "<img class='over img' src='" +
+      picture +
+      "' alt='' />" +
+      "<div class='slideCard__info'>" +
+      "<img class='slideCard__add' src='" +
+      iconAdd +
+      "' alt='add' />" +
+      "<img class='slideCard__star' src='" +
+      iconStar +
+      "' alt='star' />" +
+      "<div class='slideCard__lecture'>" +
+      "<img class='slideCard__button' src='" +
+      iconPlay +
+      "' alt='' />" +
+      "<p class='play-hover'>lecture</p>" +
+      '</div>' +
+      "<h1 class='slideCard__title title-cards-hover'>" +
+      title +
+      '</h1>' +
+      "<p class='slideCard__synopsis synopsis-cards-hover'>" +
+      'Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo.' +
+      '<br />Sans argent ni emploi, il tente de survivre dans la' +
+      'jungle urbaine.' +
+      '</p>' +
+      "<div class='slideCard__season suggestion__season'>" +
+      "<p class='time-date'>2019</p>" +
+      "<p class='time-date'>saison 3</p>"
+    );
+    "<img class='slideCard__average' src='/icons/icon_stars.svg' alt='note des utilisateurs' />" +
+      '</div>' +
+      '</div>' +
+      '</div>';
+  }
 
-/*
-fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
-.then(response => response.json())
-  .then(categories => {
+  /*
+  fetch('http://localhost:8888/getCategoriesForUser.php?userId=3')
+  .then(response => response.json())
+    .then(categories => {
+      
+      categories.forEach(category => {
+        console.log(category.anime);
+        category.anime.forEach(anime => {
+          console.log(anime.name);
+          console.log(anime.picture);
+        })
+      });
     
-    categories.forEach(category => {
-      console.log(category.anime);
-      category.anime.forEach(anime => {
-        console.log(anime.name);
-        console.log(anime.picture);
-      })
-    });
-  
-})
-.catch(error => console.error(error))
-*/
+  })
+  .catch(error => console.error(error))
+  */
 
 
-// BUTTON SOUND HERO HEADER
-const $videoHeader = document.querySelector('.videoOnPage');
-const $soundButton = document.querySelector('.hero__mute');
-let  $muteIcon = require("../icons/icon_mute.svg");
-let $soundIcon = require("../icons/icon-soundOn.svg");
+  // BUTTON SOUND HERO HEADER
+  const $videoHeader = document.querySelector('.videoOnPage');
+  const $soundButton = document.querySelector('.hero__mute');
+  let $muteIcon = require("../icons/icon_mute.svg");
+  let $soundIcon = require("../icons/icon-soundOn.svg");
 
-$soundButton.addEventListener('click', function() {
+  $soundButton.addEventListener('click', function () {
 
-    if($videoHeader.muted != true){
-        $videoHeader.muted = true;
-        $soundButton.setAttribute('src', $muteIcon);
-    }else{
-        $videoHeader.muted = false;
-        $soundButton.setAttribute('src', $soundIcon);
+    if ($videoHeader.muted != true) {
+      $videoHeader.muted = true;
+      $soundButton.setAttribute('src', $muteIcon);
+    } else {
+      $videoHeader.muted = false;
+      $soundButton.setAttribute('src', $soundIcon);
     }
+  });
 });
