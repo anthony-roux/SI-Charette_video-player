@@ -11,7 +11,7 @@ buttonConnection.addEventListener('click', function(e) {
   var password = passwordInput.value;
 
 
-  fetch("http://localhost:8888/signIn.php", {
+  fetch("http://sentianyof.cluster027.hosting.ovh.net/anime/signIn.php", {
     method: "POST",
     headers: {'Content-Type':'application/x-www-form-urlencoded'},
     body: "email="+email+"&password="+password
